@@ -1,0 +1,614 @@
+Plugin Manager, plugin API version:
+Loading simulation input.
+Found sub-directory in terrain directory.
+Loading simulation input complete.
+Log Client Connected to Logging Server
+Initializing simulation.
+Activating DIS connection.
+Created DIS entity.
+Track processor will not report tracks as it has no external communication links.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+0: UAV-SLOW-1-1: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-2: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-3: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-4: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-5: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-6: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-7: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-8: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-9: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-10: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-11: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-12: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-13: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-14: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-15: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-16: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-17: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-18: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-19: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-20: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-21: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-22: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-23: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-24: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-25: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-26: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-27: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-28: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-29: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-30: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-31: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-32: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-33: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-34: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-35: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-36: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-37: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-38: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-39: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-40: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-41: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-42: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-43: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-44: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-45: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-46: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-47: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-48: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-49: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-50: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-51: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-52: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-53: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-54: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-55: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-56: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-57: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-58: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-59: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-60: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-61: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-62: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-63: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-64: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-65: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-66: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-67: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-68: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-69: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-70: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-71: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-72: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-73: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-74: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-75: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-76: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-77: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-78: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-79: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-80: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-81: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-82: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-83: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-84: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-85: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-86: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-87: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-88: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-89: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-90: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-91: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-92: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-93: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-94: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-95: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-96: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-97: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-98: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-99: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-100: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-101: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-102: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-103: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-104: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-105: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-106: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-107: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-108: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-109: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-110: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-111: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-112: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-113: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-114: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-115: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-116: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-117: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-118: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-119: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-120: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-121: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-122: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-123: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-124: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-125: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-126: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-127: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-128: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-129: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-130: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-131: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-132: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-133: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-134: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-135: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-136: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-137: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-138: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-139: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-140: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-141: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-142: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-143: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-144: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-145: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-146: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-147: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-148: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-149: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-150: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+Initializing simulation complete.
+Starting simulation.
+T = 0
+2: Firing at target: UAV-SLOW-1-1 library/VM_data/const_1s_dynint.ll
+2: Peak Irradiance (W/cm^2): 2.18653e+07
+2: Spot Size (cm): 0.0269529
+2: Range (m): 100
+2.5: Peak Irradiance (W/cm^2): 2.18653e+07
+2.5: Spot Size (cm): 0.0269529
+2.5: Range (m): 100
+Platform broken.
+Distance to target: 100
+3: Target UAV-SLOW-1-1 destroyed... READY
+4: Firing at target: UAV-SLOW-1-2 library/VM_data/const_1s_dynint.ll
+4: Peak Irradiance (W/cm^2): 4.78322e+06
+4: Spot Size (cm): 0.0575719
+4: Range (m): 200
+4.5: Peak Irradiance (W/cm^2): 4.78322e+06
+4.5: Spot Size (cm): 0.0575719
+4.5: Range (m): 200
+Platform broken.
+Distance to target: 200
+5: Target UAV-SLOW-1-2 destroyed... READY
+6: Firing at target: UAV-SLOW-1-3 library/VM_data/const_1s_dynint.ll
+6: Peak Irradiance (W/cm^2): 1.91562e+06
+6: Spot Size (cm): 0.0908901
+6: Range (m): 300
+6.5: Peak Irradiance (W/cm^2): 1.91562e+06
+6.5: Spot Size (cm): 0.0908901
+6.5: Range (m): 300
+Platform broken.
+Distance to target: 300
+7: Target UAV-SLOW-1-3 destroyed... READY
+8: Firing at target: UAV-SLOW-1-4 library/VM_data/const_1s_dynint.ll
+8: Peak Irradiance (W/cm^2): 990671
+8: Spot Size (cm): 0.126276
+8: Range (m): 400
+8.5: Peak Irradiance (W/cm^2): 990671
+8.5: Spot Size (cm): 0.126276
+8.5: Range (m): 400
+Platform broken.
+Distance to target: 400
+9: Target UAV-SLOW-1-4 destroyed... READY
+10: Firing at target: UAV-SLOW-1-5 library/VM_data/const_1s_dynint.ll
+10: Peak Irradiance (W/cm^2): 590953
+10: Spot Size (cm): 0.163356
+10: Range (m): 500
+T = 10.000
+10.5: Peak Irradiance (W/cm^2): 590953
+10.5: Spot Size (cm): 0.163356
+10.5: Range (m): 500
+Platform broken.
+Distance to target: 500
+11: Target UAV-SLOW-1-5 destroyed... READY
+12: Firing at target: UAV-SLOW-1-6 library/VM_data/const_1s_dynint.ll
+12: Peak Irradiance (W/cm^2): 386186
+12: Spot Size (cm): 0.201907
+12: Range (m): 600
+12.5: Peak Irradiance (W/cm^2): 386186
+12.5: Spot Size (cm): 0.201907
+12.5: Range (m): 600
+Platform broken.
+Distance to target: 600
+13: Target UAV-SLOW-1-6 destroyed... READY
+14: Firing at target: UAV-SLOW-1-7 library/VM_data/const_1s_dynint.ll
+14: Peak Irradiance (W/cm^2): 268867
+14: Spot Size (cm): 0.241787
+14: Range (m): 700
+14.5: Peak Irradiance (W/cm^2): 268867
+14.5: Spot Size (cm): 0.241787
+14.5: Range (m): 700
+Platform broken.
+Distance to target: 700
+15: Target UAV-SLOW-1-7 destroyed... READY
+16: Firing at target: UAV-SLOW-1-8 library/VM_data/const_1s_dynint.ll
+16: Peak Irradiance (W/cm^2): 196101
+16: Spot Size (cm): 0.282893
+16: Range (m): 800
+16.5: Peak Irradiance (W/cm^2): 196101
+16.5: Spot Size (cm): 0.282893
+16.5: Range (m): 800
+Platform broken.
+Distance to target: 800
+17: Target UAV-SLOW-1-8 destroyed... READY
+18: Firing at target: UAV-SLOW-1-9 library/VM_data/const_1s_dynint.ll
+18: Peak Irradiance (W/cm^2): 148221
+18: Spot Size (cm): 0.325148
+18: Range (m): 900
+18.5: Peak Irradiance (W/cm^2): 148221
+18.5: Spot Size (cm): 0.325148
+18.5: Range (m): 900
+Platform broken.
+Distance to target: 900
+19: Target UAV-SLOW-1-9 destroyed... READY
+20: Firing at target: UAV-SLOW-1-10 library/VM_data/const_1s_dynint.ll
+20: Peak Irradiance (W/cm^2): 115238
+20: Spot Size (cm): 0.368486
+20: Range (m): 1000
+T = 20.000
+20.5: Peak Irradiance (W/cm^2): 115238
+20.5: Spot Size (cm): 0.368486
+20.5: Range (m): 1000
+Platform broken.
+Distance to target: 1000
+21: Target UAV-SLOW-1-10 destroyed... READY
+22: Firing at target: UAV-SLOW-1-11 library/VM_data/const_1s_dynint.ll
+22: Peak Irradiance (W/cm^2): 91672.8
+22: Spot Size (cm): 0.412851
+22: Range (m): 1100
+22.5: Peak Irradiance (W/cm^2): 91672.8
+22.5: Spot Size (cm): 0.412851
+22.5: Range (m): 1100
+Platform broken.
+Distance to target: 1100
+23: Target UAV-SLOW-1-11 destroyed... READY
+24: Firing at target: UAV-SLOW-1-12 library/VM_data/const_1s_dynint.ll
+24: Peak Irradiance (W/cm^2): 74326.9
+24: Spot Size (cm): 0.458189
+24: Range (m): 1200
+24.5: Peak Irradiance (W/cm^2): 74326.9
+24.5: Spot Size (cm): 0.458189
+24.5: Range (m): 1200
+Platform broken.
+Distance to target: 1200
+25: Target UAV-SLOW-1-12 destroyed... READY
+26: Firing at target: UAV-SLOW-1-13 library/VM_data/const_1s_dynint.ll
+26: Peak Irradiance (W/cm^2): 61238.2
+26: Spot Size (cm): 0.504452
+26: Range (m): 1300
+26.5: Peak Irradiance (W/cm^2): 61238.2
+26.5: Spot Size (cm): 0.504452
+26.5: Range (m): 1300
+Platform broken.
+Distance to target: 1300
+27: Target UAV-SLOW-1-13 destroyed... READY
+28: Firing at target: UAV-SLOW-1-14 library/VM_data/const_1s_dynint.ll
+28: Peak Irradiance (W/cm^2): 51152.7
+28: Spot Size (cm): 0.551595
+28: Range (m): 1400
+28.5: Peak Irradiance (W/cm^2): 51152.7
+28.5: Spot Size (cm): 0.551595
+28.5: Range (m): 1400
+Platform broken.
+Distance to target: 1400
+29: Target UAV-SLOW-1-14 destroyed... READY
+30: Firing at target: UAV-SLOW-1-15 library/VM_data/const_1s_dynint.ll
+30: Peak Irradiance (W/cm^2): 43240.2
+30: Spot Size (cm): 0.599575
+30: Range (m): 1500
+T = 30.000
+30.5: Peak Irradiance (W/cm^2): 43240.2
+30.5: Spot Size (cm): 0.599575
+30.5: Range (m): 1500
+Platform broken.
+Simulation terminated

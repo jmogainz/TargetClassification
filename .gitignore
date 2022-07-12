@@ -1,0 +1,8 @@
+ArchiveData/
+dist/
+build/
+Models/
+Best_Models/
+
+Stored_datasets/
+*.csv

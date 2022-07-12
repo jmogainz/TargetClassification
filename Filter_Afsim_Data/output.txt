@@ -1,0 +1,1050 @@
+platform UAV-SLOW-1-1 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 102 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-2 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 202 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-3 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 302 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-4 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 402 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-5 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 502 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-6 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 602 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-7 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 702 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-8 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 802 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-9 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 902 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-10 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 1002 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-11 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 1102 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-12 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 1202 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-13 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 1302 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-14 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 1402 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-15 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 1502 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-16 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 1602 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-17 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 1702 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-18 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 1802 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-19 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 1902 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-20 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 2002 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-21 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 2102 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-22 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 2202 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-23 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 2302 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-24 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 2402 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-25 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 2502 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-26 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 2602 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-27 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 2702 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-28 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 2802 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-29 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 2902 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-30 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 3002 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-31 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 3102 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-32 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 3202 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-33 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 3302 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-34 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 3402 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-35 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 3502 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-36 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 3602 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-37 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 3702 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-38 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 3802 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-39 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 3902 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-40 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 4002 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-41 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 4102 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-42 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 4202 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-43 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 4302 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-44 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 4402 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-45 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 4502 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-46 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 4602 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-47 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 4702 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-48 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 4802 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-49 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 4902 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-50 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 5002 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-51 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 5102 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-52 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 5202 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-53 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 5302 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-54 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 5402 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-55 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 5502 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-56 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 5602 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-57 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 5702 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-58 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 5802 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-59 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 5902 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-60 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 6002 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-61 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 6102 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-62 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 6202 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-63 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 6302 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-64 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 6402 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-65 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 6502 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-66 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 6602 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-67 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 6702 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-68 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 6802 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-69 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 6902 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-70 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 7002 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-71 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 7102 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-72 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 7202 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-73 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 7302 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-74 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 7402 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-75 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 7502 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-76 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 7602 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-77 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 7702 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-78 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 7802 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-79 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 7902 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-80 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 8002 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-81 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 8102 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-82 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 8202 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-83 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 8302 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-84 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 8402 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-85 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 8502 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-86 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 8602 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-87 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 8702 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-88 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 8802 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-89 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 8902 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-90 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 9002 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-91 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 9102 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-92 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 9202 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-93 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 9302 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-94 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 9402 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-95 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 9502 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-96 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 9602 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-97 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 9702 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-98 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 9802 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-99 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 9902 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-100 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 10002 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-101 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 10102 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-102 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 10202 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-103 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 10302 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-104 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 10402 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-105 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 10502 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-106 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 10602 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-107 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 10702 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-108 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 10802 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-109 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 10902 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-110 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 11002 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-111 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 11102 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-112 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 11202 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-113 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 11302 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-114 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 11402 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-115 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 11502 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-116 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 11602 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-117 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 11702 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-118 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 11802 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-119 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 11902 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-120 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 12002 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-121 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 12102 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-122 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 12202 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-123 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 12302 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-124 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 12402 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-125 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 12502 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-126 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 12602 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-127 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 12702 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-128 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 12802 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-129 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 12902 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-130 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 13002 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-131 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 13102 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-132 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 13202 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-133 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 13302 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-134 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 13402 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-135 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 13502 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-136 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 13602 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-137 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 13702 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-138 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 13802 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-139 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 13902 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-140 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 14002 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-141 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 14102 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-142 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 14202 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-143 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 14302 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-144 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 14402 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-145 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 14502 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-146 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 14602 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-147 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 14702 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-148 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 14802 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-149 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 14902 m agl
+    end_route
+end_platform
+
+platform UAV-SLOW-1-150 UAV-SLOW
+    side red
+    route
+        position 37.99675n 79.46305555555556w altitude 15002 m agl
+    end_route
+end_platform
+

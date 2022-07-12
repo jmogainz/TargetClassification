@@ -1,0 +1,1528 @@
+2: Peak Irradiance (kW/cm^2): 3150.06
+2: Spot Size (m): 0.000709196
+2: Range (m): 228.166
+Distance to target: 209.669
+3: Lost track, restarting firing at target: UAV-SLOW-1-1
+3: Peak Irradiance (kW/cm^2): 4011.27
+3: Spot Size (m): 0.000628599
+3: Range (m): 207.68
+Distance to target: 187.455
+4: Lost track, restarting firing at target: UAV-SLOW-1-1
+4: Peak Irradiance (kW/cm^2): 5122
+4: Spot Size (m): 0.000556389
+4: Range (m): 188.391
+Distance to target: 169.759
+5: Lost track, restarting firing at target: UAV-SLOW-1-1
+5: Peak Irradiance (kW/cm^2): 6563.41
+5: Spot Size (m): 0.000491601
+5: Range (m): 170.177
+Distance to target: 153.179
+6: Lost track, restarting firing at target: UAV-SLOW-1-1
+6: Peak Irradiance (kW/cm^2): 8481.08
+6: Spot Size (m): 0.000432541
+6: Range (m): 152.781
+Distance to target: 137.02
+7: Lost track, restarting firing at target: UAV-SLOW-1-1
+7: Peak Irradiance (kW/cm^2): 10942.5
+7: Spot Size (m): 0.000380858
+7: Range (m): 136.905
+Distance to target: 123.195
+8: Lost track, restarting firing at target: UAV-SLOW-1-1
+8: Peak Irradiance (kW/cm^2): 13733.5
+8: Spot Size (m): 0.000340007
+8: Range (m): 123.91
+Distance to target: 114.297
+9: Lost track, restarting firing at target: UAV-SLOW-1-1
+9: Peak Irradiance (kW/cm^2): 16485.5
+9: Spot Size (m): 0.000310362
+9: Range (m): 114.234
+Distance to target: 108.875
+10: Lost track, restarting firing at target: UAV-SLOW-1-1
+10: Peak Irradiance (kW/cm^2): 18409.7
+10: Spot Size (m): 0.000293712
+10: Range (m): 108.721
+T = 10.000
+Distance to target: 108.203
+11: Lost track, restarting firing at target: UAV-SLOW-1-1
+11: Peak Irradiance (kW/cm^2): 18452.7
+11: Spot Size (m): 0.000293369
+11: Range (m): 108.649
+Distance to target: 113.779
+12: Lost track, restarting firing at target: UAV-SLOW-1-1
+12: Peak Irradiance (kW/cm^2): 16565.8
+12: Spot Size (m): 0.00030961
+12: Range (m): 114.149
+Distance to target: 124.493
+13: Lost track, restarting firing at target: UAV-SLOW-1-1
+13: Peak Irradiance (kW/cm^2): 13753.1
+13: Spot Size (m): 0.000339765
+13: Range (m): 124.181
+Distance to target: 138.193
+14: Lost track, restarting firing at target: UAV-SLOW-1-1
+14: Peak Irradiance (kW/cm^2): 10787.6
+14: Spot Size (m): 0.000383581
+14: Range (m): 138.427
+Distance to target: 155.209
+15: Lost track, restarting firing at target: UAV-SLOW-1-1
+15: Peak Irradiance (kW/cm^2): 8337.05
+15: Spot Size (m): 0.000436257
+15: Range (m): 155.027
+Distance to target: 173.827
+16: Lost track, restarting firing at target: UAV-SLOW-1-1
+16: Peak Irradiance (kW/cm^2): 6364.6
+16: Spot Size (m): 0.000499208
+16: Range (m): 174.168
+Distance to target: 194.224
+17: Lost track, restarting firing at target: UAV-SLOW-1-1
+17: Peak Irradiance (kW/cm^2): 4905.29
+17: Spot Size (m): 0.000568524
+17: Range (m): 194.453
+Distance to target: 215.613
+18: Lost track, restarting firing at target: UAV-SLOW-1-1
+18: Peak Irradiance (kW/cm^2): 3762.59
+18: Spot Size (m): 0.000648996
+18: Range (m): 217.045
+Distance to target: 238.654
+19: Lost track, restarting firing at target: UAV-SLOW-1-1
+19: Peak Irradiance (kW/cm^2): 2949.86
+19: Spot Size (m): 0.000732806
+19: Range (m): 239.859
+Distance to target: 262.311
+20: Lost track, restarting firing at target: UAV-SLOW-1-1
+20: Peak Irradiance (kW/cm^2): 2356.73
+20: Spot Size (m): 0.000819669
+20: Range (m): 262.625
+T = 20.000
+Distance to target: 285.875
+21: Lost track, restarting firing at target: UAV-SLOW-1-1
+21: Peak Irradiance (kW/cm^2): 1882.93
+21: Spot Size (m): 0.000916799
+21: Range (m): 287.113
+Distance to target: 310.565
+22: Lost track, restarting firing at target: UAV-SLOW-1-1
+22: Peak Irradiance (kW/cm^2): 1526.59
+22: Spot Size (m): 0.00101795
+22: Range (m): 311.912
+Distance to target: 335.75
+23: Lost track, restarting firing at target: UAV-SLOW-1-1
+23: Peak Irradiance (kW/cm^2): 1260.57
+23: Spot Size (m): 0.00111995
+23: Range (m): 336.602
+Distance to target: 360.944
+24: Lost track, restarting firing at target: UAV-SLOW-1-1
+24: Peak Irradiance (kW/cm^2): 1040.71
+24: Spot Size (m): 0.00123228
+24: Range (m): 362.997
+Distance to target: 387.331
+25: Lost track, restarting firing at target: UAV-SLOW-1-1
+25: Peak Irradiance (kW/cm^2): 877.194
+25: Spot Size (m): 0.00134191
+25: Range (m): 388.039
+Distance to target: 413.049
+26: Lost track, restarting firing at target: UAV-SLOW-1-1
+26: Peak Irradiance (kW/cm^2): 734.25
+26: Spot Size (m): 0.00146635
+26: Range (m): 415.151
+Distance to target: 440.086
+27: Lost track, restarting firing at target: UAV-SLOW-1-1
+27: Peak Irradiance (kW/cm^2): 622.29
+27: Spot Size (m): 0.00159241
+27: Range (m): 441.7
+Distance to target: 467.055
+28: Lost track, restarting firing at target: UAV-SLOW-1-1
+28: Peak Irradiance (kW/cm^2): 530.874
+28: Spot Size (m): 0.00172363
+28: Range (m): 468.538
+Distance to target: 494.247
+29: Lost track, restarting firing at target: UAV-SLOW-1-1
+29: Peak Irradiance (kW/cm^2): 455.849
+29: Spot Size (m): 0.00185961
+29: Range (m): 495.085
+Distance to target: 521.257
+30: Lost track, restarting firing at target: UAV-SLOW-1-1
+30: Peak Irradiance (kW/cm^2): 391.795
+30: Spot Size (m): 0.00200535
+30: Range (m): 522.106
+T = 30.000
+Distance to target: 548.505
+31: Lost track, restarting firing at target: UAV-SLOW-1-1
+31: Peak Irradiance (kW/cm^2): 337.752
+31: Spot Size (m): 0.00215927
+31: Range (m): 549.723
+Distance to target: 576.182
+32: Lost track, restarting firing at target: UAV-SLOW-1-1
+32: Peak Irradiance (kW/cm^2): 290.411
+32: Spot Size (m): 0.00232799
+32: Range (m): 578.517
+Distance to target: 604.797
+33: Lost track, restarting firing at target: UAV-SLOW-1-1
+33: Peak Irradiance (kW/cm^2): 248.295
+33: Spot Size (m): 0.00251701
+33: Range (m): 606.623
+Distance to target: 633.286
+34: Lost track, restarting firing at target: UAV-SLOW-1-1
+34: Peak Irradiance (kW/cm^2): 212.846
+34: Spot Size (m): 0.00271781
+34: Range (m): 634.961
+Distance to target: 661.959
+35: Lost track, restarting firing at target: UAV-SLOW-1-1
+35: Peak Irradiance (kW/cm^2): 182.913
+35: Spot Size (m): 0.00293096
+35: Range (m): 663.526
+Distance to target: 690.814
+36: Lost track, restarting firing at target: UAV-SLOW-1-1
+36: Peak Irradiance (kW/cm^2): 161.284
+36: Spot Size (m): 0.00312049
+36: Range (m): 691.35
+Distance to target: 719.199
+37: Lost track, restarting firing at target: UAV-SLOW-1-1
+37: Peak Irradiance (kW/cm^2): 142.685
+37: Spot Size (m): 0.00331675
+37: Range (m): 719.882
+Distance to target: 747.86
+38: Lost track, restarting firing at target: UAV-SLOW-1-1
+38: Peak Irradiance (kW/cm^2): 126.162
+38: Spot Size (m): 0.00352628
+38: Range (m): 749.565
+Distance to target: 777.309
+39: Lost track, restarting firing at target: UAV-SLOW-1-1
+39: Peak Irradiance (kW/cm^2): 113.554
+39: Spot Size (m): 0.00371586
+39: Range (m): 779.979
+Distance to target: 807.54
+40: Lost track, restarting firing at target: UAV-SLOW-1-1
+40: Peak Irradiance (kW/cm^2): 103.583
+40: Spot Size (m): 0.00388957
+40: Range (m): 809.627
+T = 40.000
+Distance to target: 837.634
+41: Lost track, restarting firing at target: UAV-SLOW-1-1
+41: Peak Irradiance (kW/cm^2): 94.7291
+41: Spot Size (m): 0.00406618
+41: Range (m): 839.485
+41.5: Peak Irradiance (kW/cm^2): 91.0111
+41.5: Spot Size (m): 0.0041479
+41.5: Range (m): 853.051
+Distance to target: 867.871
+42: Lost track, restarting firing at target: UAV-SLOW-1-1
+42: Peak Irradiance (kW/cm^2): 86.2887
+42: Spot Size (m): 0.00425925
+42: Range (m): 869.55
+Distance to target: 898.257
+43: Lost track, restarting firing at target: UAV-SLOW-1-1
+43: Peak Irradiance (kW/cm^2): 78.6998
+43: Spot Size (m): 0.0044587
+43: Range (m): 898.81
+Distance to target: 928.137
+44: Lost track, restarting firing at target: UAV-SLOW-1-1
+44: Peak Irradiance (kW/cm^2): 71.7303
+44: Spot Size (m): 0.00466901
+44: Range (m): 929.28
+Distance to target: 958.557
+45: Lost track, restarting firing at target: UAV-SLOW-1-1
+45: Peak Irradiance (kW/cm^2): 65.2366
+45: Spot Size (m): 0.00489453
+45: Range (m): 959.476
+Distance to target: 988.95
+46: Lost track, restarting firing at target: UAV-SLOW-1-1
+46: Peak Irradiance (kW/cm^2): 58.8017
+46: Spot Size (m): 0.00515388
+46: Range (m): 991.372
+Distance to target: 1020.43
+47: Lost track, restarting firing at target: UAV-SLOW-1-1
+47: Peak Irradiance (kW/cm^2): 53.3838
+47: Spot Size (m): 0.00540759
+47: Range (m): 1021.91
+Distance to target: 1051.51
+48: Lost track, restarting firing at target: UAV-SLOW-1-1
+48: Peak Irradiance (kW/cm^2): 47.8848
+48: Spot Size (m): 0.00570796
+48: Range (m): 1053.67
+Distance to target: 1083.24
+49: Lost track, restarting firing at target: UAV-SLOW-1-1
+49: Peak Irradiance (kW/cm^2): 42.5299
+49: Spot Size (m): 0.0060548
+49: Range (m): 1085.73
+Distance to target: 1115.41
+50: Lost track, restarting firing at target: UAV-SLOW-1-1
+50: Peak Irradiance (kW/cm^2): 37.9884
+50: Spot Size (m): 0.00640461
+50: Range (m): 1116.79
+T = 50.000
+Distance to target: 1147.15
+51: Lost track, restarting firing at target: UAV-SLOW-1-1
+51: Peak Irradiance (kW/cm^2): 33.8269
+51: Spot Size (m): 0.0067851
+51: Range (m): 1148.23
+Distance to target: 1178.94
+52: Lost track, restarting firing at target: UAV-SLOW-1-1
+52: Peak Irradiance (kW/cm^2): 29.8933
+52: Spot Size (m): 0.00721542
+52: Range (m): 1181.38
+Distance to target: 1211.73
+53: Lost track, restarting firing at target: UAV-SLOW-1-1
+53: Peak Irradiance (kW/cm^2): 26.7041
+53: Spot Size (m): 0.00763187
+53: Range (m): 1212.11
+Distance to target: 1243.46
+54: Lost track, restarting firing at target: UAV-SLOW-1-1
+54: Peak Irradiance (kW/cm^2): 24.0318
+54: Spot Size (m): 0.00804251
+54: Range (m): 1245.06
+Distance to target: 1276.09
+55: Lost track, restarting firing at target: UAV-SLOW-1-1
+55: Peak Irradiance (kW/cm^2): 21.8663
+55: Spot Size (m): 0.00842878
+55: Range (m): 1277.73
+Distance to target: 1308.89
+56: Lost track, restarting firing at target: UAV-SLOW-1-1
+56: Peak Irradiance (kW/cm^2): 19.9602
+56: Spot Size (m): 0.00881941
+56: Range (m): 1310.05
+Distance to target: 1341.58
+57: Lost track, restarting firing at target: UAV-SLOW-1-1
+57: Peak Irradiance (kW/cm^2): 18.2212
+57: Spot Size (m): 0.00922775
+57: Range (m): 1344.77
+Distance to target: 1375.67
+58: Lost track, restarting firing at target: UAV-SLOW-1-1
+58: Peak Irradiance (kW/cm^2): 16.7811
+58: Spot Size (m): 0.00961267
+58: Range (m): 1377.35
+Distance to target: 1409.12
+59: Lost track, restarting firing at target: UAV-SLOW-1-1
+59: Peak Irradiance (kW/cm^2): 15.4511
+59: Spot Size (m): 0.0100148
+59: Range (m): 1410.81
+Distance to target: 1442.82
+60: Lost track, restarting firing at target: UAV-SLOW-1-1
+60: Peak Irradiance (kW/cm^2): 14.4045
+60: Spot Size (m): 0.0103691
+60: Range (m): 1445.16
+T = 60.000
+Distance to target: 1477.13
+61: Lost track, restarting firing at target: UAV-SLOW-1-1
+61: Peak Irradiance (kW/cm^2): 13.4654
+61: Spot Size (m): 0.0107213
+61: Range (m): 1479.01
+Distance to target: 1511.41
+62: Lost track, restarting firing at target: UAV-SLOW-1-1
+62: Peak Irradiance (kW/cm^2): 12.6294
+62: Spot Size (m): 0.0110672
+62: Range (m): 1512.5
+Distance to target: 1545.43
+63: Lost track, restarting firing at target: UAV-SLOW-1-1
+63: Peak Irradiance (kW/cm^2): 11.8722
+63: Spot Size (m): 0.0114113
+63: Range (m): 1547.31
+Distance to target: 1580.1
+64: Lost track, restarting firing at target: UAV-SLOW-1-1
+64: Peak Irradiance (kW/cm^2): 11.1955
+64: Spot Size (m): 0.0117476
+64: Range (m): 1581.1
+Distance to target: 1614.43
+65: Lost track, restarting firing at target: UAV-SLOW-1-1
+65: Peak Irradiance (kW/cm^2): 10.619
+65: Spot Size (m): 0.0120588
+65: Range (m): 1615.85
+Distance to target: 1649.16
+66: Lost track, restarting firing at target: UAV-SLOW-1-1
+66: Peak Irradiance (kW/cm^2): 10.1465
+66: Spot Size (m): 0.0123328
+66: Range (m): 1650.04
+Distance to target: 1683.72
+67: Lost track, restarting firing at target: UAV-SLOW-1-1
+67: Peak Irradiance (kW/cm^2): 9.69306
+67: Spot Size (m): 0.0126143
+67: Range (m): 1685.06
+Distance to target: 1718.67
+68: Lost track, restarting firing at target: UAV-SLOW-1-1
+68: Peak Irradiance (kW/cm^2): 9.10203
+68: Spot Size (m): 0.0130135
+68: Range (m): 1719.72
+Distance to target: 1753.59
+69: Lost track, restarting firing at target: UAV-SLOW-1-1
+69: Peak Irradiance (kW/cm^2): 8.50397
+69: Spot Size (m): 0.0134591
+69: Range (m): 1755.67
+Distance to target: 1789.26
+70: Lost track, restarting firing at target: UAV-SLOW-1-1
+70: Peak Irradiance (kW/cm^2): 7.9531
+70: Spot Size (m): 0.0139129
+70: Range (m): 1792.46
+T = 70.000
+Distance to target: 1825.8
+71: Lost track, restarting firing at target: UAV-SLOW-1-1
+71: Peak Irradiance (kW/cm^2): 7.51185
+71: Spot Size (m): 0.0143115
+71: Range (m): 1826.52
+Distance to target: 1861.18
+72: Lost track, restarting firing at target: UAV-SLOW-1-1
+72: Peak Irradiance (kW/cm^2): 7.08104
+72: Spot Size (m): 0.0147358
+72: Range (m): 1862.46
+Distance to target: 1897.05
+73: Lost track, restarting firing at target: UAV-SLOW-1-1
+73: Peak Irradiance (kW/cm^2): 6.63439
+73: Spot Size (m): 0.0152188
+73: Range (m): 1900.43
+Distance to target: 1934.32
+74: Lost track, restarting firing at target: UAV-SLOW-1-1
+74: Peak Irradiance (kW/cm^2): 6.2436
+74: Spot Size (m): 0.0156831
+74: Range (m): 1935.01
+Distance to target: 1970.31
+75: Lost track, restarting firing at target: UAV-SLOW-1-1
+75: Peak Irradiance (kW/cm^2): 5.85616
+75: Spot Size (m): 0.0161883
+75: Range (m): 1972.16
+Distance to target: 2007.13
+76: Lost track, restarting firing at target: UAV-SLOW-1-1
+76: Peak Irradiance (kW/cm^2): 5.4824
+76: Spot Size (m): 0.0167256
+76: Range (m): 2008.92
+Distance to target: 2044.11
+77: Lost track, restarting firing at target: UAV-SLOW-1-1
+77: Peak Irradiance (kW/cm^2): 5.13144
+77: Spot Size (m): 0.0172823
+77: Range (m): 2046.49
+Distance to target: 2081.64
+78: Lost track, restarting firing at target: UAV-SLOW-1-1
+78: Peak Irradiance (kW/cm^2): 4.81103
+78: Spot Size (m): 0.0178428
+78: Range (m): 2083.02
+Distance to target: 2118.83
+79: Lost track, restarting firing at target: UAV-SLOW-1-1
+79: Peak Irradiance (kW/cm^2): 4.49889
+79: Spot Size (m): 0.0184452
+79: Range (m): 2120.89
+Distance to target: 2156.6
+80: Lost track, restarting firing at target: UAV-SLOW-1-1
+80: Peak Irradiance (kW/cm^2): 4.21495
+80: Spot Size (m): 0.01905
+80: Range (m): 2158.37
+T = 80.000
+Distance to target: 2194.43
+81: Lost track, restarting firing at target: UAV-SLOW-1-1
+81: Peak Irradiance (kW/cm^2): 3.90837
+81: Spot Size (m): 0.0197763
+81: Range (m): 2195
+Distance to target: 2231.75
+82: Lost track, restarting firing at target: UAV-SLOW-1-1
+82: Peak Irradiance (kW/cm^2): 3.61425
+82: Spot Size (m): 0.0205578
+82: Range (m): 2233.53
+Distance to target: 2269.88
+83: Lost track, restarting firing at target: UAV-SLOW-1-1
+83: Peak Irradiance (kW/cm^2): 3.37533
+83: Spot Size (m): 0.0212656
+83: Range (m): 2272.15
+Distance to target: 2308.48
+84: Lost track, restarting firing at target: UAV-SLOW-1-1
+84: Peak Irradiance (kW/cm^2): 3.18547
+84: Spot Size (m): 0.0218829
+84: Range (m): 2309.94
+Distance to target: 2346.84
+85: Lost track, restarting firing at target: UAV-SLOW-1-1
+85: Peak Irradiance (kW/cm^2): 3.00844
+85: Spot Size (m): 0.02251
+85: Range (m): 2348.43
+Distance to target: 2385.46
+86: Lost track, restarting firing at target: UAV-SLOW-1-1
+86: Peak Irradiance (kW/cm^2): 2.8674
+86: Spot Size (m): 0.0230492
+86: Range (m): 2388.41
+Distance to target: 2425.05
+87: Lost track, restarting firing at target: UAV-SLOW-1-1
+87: Peak Irradiance (kW/cm^2): 2.74134
+87: Spot Size (m): 0.0235658
+87: Range (m): 2426.55
+Distance to target: 2464.1
+88: Lost track, restarting firing at target: UAV-SLOW-1-1
+88: Peak Irradiance (kW/cm^2): 2.59349
+88: Spot Size (m): 0.0242202
+88: Range (m): 2464.5
+Distance to target: 2502.71
+89: Lost track, restarting firing at target: UAV-SLOW-1-1
+89: Peak Irradiance (kW/cm^2): 2.42966
+89: Spot Size (m): 0.0250142
+89: Range (m): 2505.65
+UAV-SLOW-1-1 fired gbu-39 at GROUND-RADAR-2 at time 90
+Distance to target: 2542.86
+90: Lost track, restarting firing at target: UAV-SLOW-1-1
+90: Peak Irradiance (kW/cm^2): 2.28921
+90: Spot Size (m): 0.0257611
+90: Range (m): 2545.11
+Created DIS entity.
+T = 90.000
+Distance to target: 2582.91
+91: Lost track, restarting firing at target: UAV-SLOW-1-1
+91: Peak Irradiance (kW/cm^2): 2.16761
+91: Spot Size (m): 0.0264648
+91: Range (m): 2584.77
+Distance to target: 2622.71
+92: Lost track, restarting firing at target: UAV-SLOW-1-1
+92: Peak Irradiance (kW/cm^2): 2.05363
+92: Spot Size (m): 0.0271799
+92: Range (m): 2624.62
+Distance to target: 2662.42
+93: Lost track, restarting firing at target: UAV-SLOW-1-1
+93: Peak Irradiance (kW/cm^2): 1.98757
+93: Spot Size (m): 0.0276192
+93: Range (m): 2664.66
+Distance to target: 2703.09
+94: Lost track, restarting firing at target: UAV-SLOW-1-1
+94: Peak Irradiance (kW/cm^2): 1.92706
+94: Spot Size (m): 0.028041
+94: Range (m): 2704.3
+Distance to target: 2743.38
+95: Lost track, restarting firing at target: UAV-SLOW-1-1
+95: Peak Irradiance (kW/cm^2): 1.82642
+95: Spot Size (m): 0.028793
+95: Range (m): 2745.32
+Distance to target: 2784.29
+96: Lost track, restarting firing at target: UAV-SLOW-1-1
+96: Peak Irradiance (kW/cm^2): 1.71188
+96: Spot Size (m): 0.0297297
+96: Range (m): 2785.36
+Distance to target: 2824.87
+97: Lost track, restarting firing at target: UAV-SLOW-1-1
+97: Peak Irradiance (kW/cm^2): 1.61268
+97: Spot Size (m): 0.0306194
+97: Range (m): 2825.38
+Distance to target: 2865.46
+98: Lost track, restarting firing at target: UAV-SLOW-1-1
+98: Peak Irradiance (kW/cm^2): 1.53455
+98: Spot Size (m): 0.0313783
+98: Range (m): 2865.78
+Distance to target: 2906.64
+99: Lost track, restarting firing at target: UAV-SLOW-1-1
+99: Peak Irradiance (kW/cm^2): 1.45882
+99: Spot Size (m): 0.032171
+99: Range (m): 2907.57
+Distance to target: 2948.14
+100: Lost track, restarting firing at target: UAV-SLOW-1-1
+100: Peak Irradiance (kW/cm^2): 1.37853
+100: Spot Size (m): 0.0330821
+100: Range (m): 2950.33
+T = 100.000
+Distance to target: 2990.12
+101: Lost track, restarting firing at target: UAV-SLOW-1-1
+101: Peak Irradiance (kW/cm^2): 1.30926
+101: Spot Size (m): 0.0339342
+101: Range (m): 2989.9
+Platform broken.
+Distance to target: 3031.71
+102: Lost track, restarting firing at target: UAV-SLOW-1-1
+102: Peak Irradiance (kW/cm^2): 1.23543
+102: Spot Size (m): 0.0349199
+102: Range (m): 3033.68
+Distance to target: 3073.54
+103: Lost track, restarting firing at target: UAV-SLOW-1-1
+103: Peak Irradiance (kW/cm^2): 1.16891
+103: Spot Size (m): 0.0358863
+103: Range (m): 3075.64
+Distance to target: 3115.73
+104: Lost track, restarting firing at target: UAV-SLOW-1-1
+104: Peak Irradiance (kW/cm^2): 1.11794
+104: Spot Size (m): 0.0366825
+104: Range (m): 3116.97
+Distance to target: 3157.73
+105: Lost track, restarting firing at target: UAV-SLOW-1-1
+105: Peak Irradiance (kW/cm^2): 1.07612
+105: Spot Size (m): 0.0373756
+105: Range (m): 3160.15
+Distance to target: 3200.05
+106: Lost track, restarting firing at target: UAV-SLOW-1-1
+106: Peak Irradiance (kW/cm^2): 1.03057
+106: Spot Size (m): 0.0381794
+106: Range (m): 3201.76
+Distance to target: 3243.36
+107: Lost track, restarting firing at target: UAV-SLOW-1-1
+107: Peak Irradiance (kW/cm^2): 0.973828
+107: Spot Size (m): 0.039261
+107: Range (m): 3243.38
+Distance to target: 3286.67
+108: Lost track, restarting firing at target: UAV-SLOW-1-1
+108: Peak Irradiance (kW/cm^2): 0.919602
+108: Spot Size (m): 0.040386
+108: Range (m): 3286.91
+Distance to target: 3329.67
+109: Lost track, restarting firing at target: UAV-SLOW-1-1
+109: Peak Irradiance (kW/cm^2): 0.875224
+109: Spot Size (m): 0.0413816
+109: Range (m): 3330.52
+Distance to target: 3373.26
+110: Lost track, restarting firing at target: UAV-SLOW-1-1
+110: Peak Irradiance (kW/cm^2): 0.834899
+110: Spot Size (m): 0.0423537
+110: Range (m): 3372.68
+T = 110.000
+Distance to target: 3416.93
+111: Lost track, restarting firing at target: UAV-SLOW-1-1
+111: Peak Irradiance (kW/cm^2): 0.813642
+111: Spot Size (m): 0.0428891
+111: Range (m): 3418.26
+Distance to target: 3460.3
+112: Lost track, restarting firing at target: UAV-SLOW-1-1
+112: Peak Irradiance (kW/cm^2): 0.795657
+112: Spot Size (m): 0.0433579
+112: Range (m): 3460.49
+Distance to target: 3503.96
+113: Lost track, restarting firing at target: UAV-SLOW-1-1
+113: Peak Irradiance (kW/cm^2): 0.770867
+113: Spot Size (m): 0.0440346
+113: Range (m): 3505.02
+Distance to target: 3547.56
+114: Lost track, restarting firing at target: UAV-SLOW-1-1
+114: Peak Irradiance (kW/cm^2): 0.746763
+114: Spot Size (m): 0.0447248
+114: Range (m): 3547.81
+Distance to target: 3591.78
+115: Lost track, restarting firing at target: UAV-SLOW-1-1
+115: Peak Irradiance (kW/cm^2): 0.70855
+115: Spot Size (m): 0.0458964
+115: Range (m): 3594.18
+Distance to target: 3635.59
+116: Lost track, restarting firing at target: UAV-SLOW-1-1
+116: Peak Irradiance (kW/cm^2): 0.668878
+116: Spot Size (m): 0.0472184
+116: Range (m): 3638.64
+Distance to target: 3680.94
+117: Lost track, restarting firing at target: UAV-SLOW-1-1
+117: Peak Irradiance (kW/cm^2): 0.636299
+117: Spot Size (m): 0.0483932
+117: Range (m): 3682.58
+Distance to target: 3726.26
+118: Lost track, restarting firing at target: UAV-SLOW-1-1
+118: Peak Irradiance (kW/cm^2): 0.607533
+118: Spot Size (m): 0.0495064
+118: Range (m): 3727.45
+Distance to target: 3771.19
+119: Lost track, restarting firing at target: UAV-SLOW-1-1
+119: Peak Irradiance (kW/cm^2): 0.584836
+119: Spot Size (m): 0.0504398
+119: Range (m): 3771.66
+Distance to target: 3816.01
+120: Lost track, restarting firing at target: UAV-SLOW-1-1
+120: Peak Irradiance (kW/cm^2): 0.566116
+120: Spot Size (m): 0.0512485
+120: Range (m): 3818.39
+T = 120.000
+Distance to target: 3861.57
+121: Lost track, restarting firing at target: UAV-SLOW-1-1
+121: Peak Irradiance (kW/cm^2): 0.5483
+121: Spot Size (m): 0.0520563
+121: Range (m): 3863.81
+Distance to target: 3906.87
+122: Lost track, restarting firing at target: UAV-SLOW-1-1
+122: Peak Irradiance (kW/cm^2): 0.530726
+122: Spot Size (m): 0.0528925
+122: Range (m): 3909.42
+Distance to target: 3953.23
+123: Lost track, restarting firing at target: UAV-SLOW-1-1
+123: Peak Irradiance (kW/cm^2): 0.511017
+123: Spot Size (m): 0.0538829
+123: Range (m): 3955.23
+Distance to target: 3999.23
+124: Lost track, restarting firing at target: UAV-SLOW-1-1
+124: Peak Irradiance (kW/cm^2): 0.488217
+124: Spot Size (m): 0.0551048
+124: Range (m): 4001.22
+Distance to target: 4045.41
+125: Lost track, restarting firing at target: UAV-SLOW-1-1
+125: Peak Irradiance (kW/cm^2): 0.467406
+125: Spot Size (m): 0.0562963
+125: Range (m): 4046.42
+Distance to target: 4091.01
+126: Lost track, restarting firing at target: UAV-SLOW-1-1
+126: Peak Irradiance (kW/cm^2): 0.448022
+126: Spot Size (m): 0.0574789
+126: Range (m): 4092.23
+Distance to target: 4137.43
+127: Lost track, restarting firing at target: UAV-SLOW-1-1
+127: Peak Irradiance (kW/cm^2): 0.430225
+127: Spot Size (m): 0.0586329
+127: Range (m): 4138.8
+Distance to target: 4184.88
+128: Lost track, restarting firing at target: UAV-SLOW-1-1
+128: Peak Irradiance (kW/cm^2): 0.414501
+128: Spot Size (m): 0.0597116
+128: Range (m): 4187.11
+Distance to target: 4231.52
+129: Lost track, restarting firing at target: UAV-SLOW-1-1
+129: Peak Irradiance (kW/cm^2): 0.398994
+129: Spot Size (m): 0.0608377
+129: Range (m): 4233.19
+Distance to target: 4278.46
+130: Lost track, restarting firing at target: UAV-SLOW-1-1
+130: Peak Irradiance (kW/cm^2): 0.381573
+130: Spot Size (m): 0.0621854
+130: Range (m): 4280.46
+T = 130.000
+Distance to target: 4325.95
+131: Lost track, restarting firing at target: UAV-SLOW-1-1
+131: Peak Irradiance (kW/cm^2): 0.364437
+131: Spot Size (m): 0.0636043
+131: Range (m): 4326.97
+Distance to target: 4373.3
+132: Lost track, restarting firing at target: UAV-SLOW-1-1
+132: Peak Irradiance (kW/cm^2): 0.345903
+132: Spot Size (m): 0.0652567
+132: Range (m): 4375.19
+Distance to target: 4420.91
+133: Lost track, restarting firing at target: UAV-SLOW-1-1
+133: Peak Irradiance (kW/cm^2): 0.328164
+133: Spot Size (m): 0.0669672
+133: Range (m): 4422.2
+Distance to target: 4468.35
+134: Lost track, restarting firing at target: UAV-SLOW-1-1
+134: Peak Irradiance (kW/cm^2): 0.309944
+134: Spot Size (m): 0.0688747
+134: Range (m): 4470.11
+Distance to target: 4516.55
+135: Lost track, restarting firing at target: UAV-SLOW-1-1
+135: Peak Irradiance (kW/cm^2): 0.291947
+135: Spot Size (m): 0.0709304
+135: Range (m): 4519.81
+Distance to target: 4564.92
+136: Lost track, restarting firing at target: UAV-SLOW-1-1
+136: Peak Irradiance (kW/cm^2): 0.275454
+136: Spot Size (m): 0.0729875
+136: Range (m): 4567.34
+Distance to target: 4613.8
+137: Lost track, restarting firing at target: UAV-SLOW-1-1
+137: Peak Irradiance (kW/cm^2): 0.26023
+137: Spot Size (m): 0.0750556
+137: Range (m): 4614.98
+Distance to target: 4662.86
+138: Lost track, restarting firing at target: UAV-SLOW-1-1
+138: Peak Irradiance (kW/cm^2): 0.245713
+138: Spot Size (m): 0.0772021
+138: Range (m): 4664.34
+Distance to target: 4711.54
+139: Lost track, restarting firing at target: UAV-SLOW-1-1
+139: Peak Irradiance (kW/cm^2): 0.234208
+139: Spot Size (m): 0.0790393
+139: Range (m): 4712.52
+Distance to target: 4760.06
+140: Lost track, restarting firing at target: UAV-SLOW-1-1
+140: Peak Irradiance (kW/cm^2): 0.224195
+140: Spot Size (m): 0.0807482
+140: Range (m): 4763.21
+T = 140.000
+Distance to target: 4808.95
+141: Lost track, restarting firing at target: UAV-SLOW-1-1
+141: Peak Irradiance (kW/cm^2): 0.216977
+141: Spot Size (m): 0.0820481
+141: Range (m): 4810.82
+Distance to target: 4858.16
+142: Lost track, restarting firing at target: UAV-SLOW-1-1
+142: Peak Irradiance (kW/cm^2): 0.210594
+142: Spot Size (m): 0.0832497
+142: Range (m): 4860.84
+Distance to target: 4908.86
+143: Lost track, restarting firing at target: UAV-SLOW-1-1
+143: Peak Irradiance (kW/cm^2): 0.20872
+143: Spot Size (m): 0.0835987
+143: Range (m): 4909.89
+Distance to target: 4959.43
+144: Lost track, restarting firing at target: UAV-SLOW-1-1
+144: Peak Irradiance (kW/cm^2): 0.20818
+144: Spot Size (m): 0.0836847
+144: Range (m): 4961.38
+Distance to target: 5009.54
+145: Lost track, restarting firing at target: UAV-SLOW-1-1
+145: Peak Irradiance (kW/cm^2): 0.206681
+145: Spot Size (m): 0.0839643
+145: Range (m): 5011.4
+Distance to target: 5058.99
+146: Lost track, restarting firing at target: UAV-SLOW-1-1
+146: Peak Irradiance (kW/cm^2): 0.205004
+146: Spot Size (m): 0.0842834
+146: Range (m): 5061.61
+Distance to target: 5110.03
+147: Lost track, restarting firing at target: UAV-SLOW-1-1
+147: Peak Irradiance (kW/cm^2): 0.2012
+147: Spot Size (m): 0.0850489
+147: Range (m): 5110.33
+Distance to target: 5160.59
+148: Lost track, restarting firing at target: UAV-SLOW-1-1
+148: Peak Irradiance (kW/cm^2): 0.196764
+148: Spot Size (m): 0.085972
+148: Range (m): 5160.92
+Distance to target: 5211.79
+149: Lost track, restarting firing at target: UAV-SLOW-1-1
+149: Peak Irradiance (kW/cm^2): 0.188883
+149: Spot Size (m): 0.0877075
+149: Range (m): 5212.59
+Distance to target: 5263.03
+150: Lost track, restarting firing at target: UAV-SLOW-1-1
+150: Peak Irradiance (kW/cm^2): 0.181059
+150: Spot Size (m): 0.0895417
+150: Range (m): 5262.68
+T = 150.000
+Distance to target: 5313.85
+151: Lost track, restarting firing at target: UAV-SLOW-1-1
+151: Peak Irradiance (kW/cm^2): 0.172223
+151: Spot Size (m): 0.0917638
+151: Range (m): 5313.84
+Distance to target: 5364.6
+152: Lost track, restarting firing at target: UAV-SLOW-1-1
+152: Peak Irradiance (kW/cm^2): 0.164033
+152: Spot Size (m): 0.0939791
+152: Range (m): 5365.89
+Distance to target: 5415.73
+153: Lost track, restarting firing at target: UAV-SLOW-1-1
+153: Peak Irradiance (kW/cm^2): 0.156871
+153: Spot Size (m): 0.0960544
+153: Range (m): 5415.89
+Distance to target: 5467.21
+154: Lost track, restarting firing at target: UAV-SLOW-1-1
+154: Peak Irradiance (kW/cm^2): 0.15081
+154: Spot Size (m): 0.0979204
+154: Range (m): 5468.49
+Distance to target: 5518.6
+155: Lost track, restarting firing at target: UAV-SLOW-1-1
+155: Peak Irradiance (kW/cm^2): 0.145509
+155: Spot Size (m): 0.0996432
+155: Range (m): 5522.15
+Distance to target: 5570.36
+156: Lost track, restarting firing at target: UAV-SLOW-1-1
+156: Peak Irradiance (kW/cm^2): 0.144173
+156: Spot Size (m): 0.100075
+156: Range (m): 5574.28
+Distance to target: 5623.73
+157: Lost track, restarting firing at target: UAV-SLOW-1-1
+157: Peak Irradiance (kW/cm^2): 0.143342
+157: Spot Size (m): 0.100338
+157: Range (m): 5626.61
+Distance to target: 5676.44
+158: Lost track, restarting firing at target: UAV-SLOW-1-1
+158: Peak Irradiance (kW/cm^2): 0.142654
+158: Spot Size (m): 0.100554
+158: Range (m): 5679.12
+Distance to target: 5729.4
+159: Lost track, restarting firing at target: UAV-SLOW-1-1
+159: Peak Irradiance (kW/cm^2): 0.141091
+159: Spot Size (m): 0.10108
+159: Range (m): 5730.76
+Distance to target: 5782.9
+160: Lost track, restarting firing at target: UAV-SLOW-1-1
+160: Peak Irradiance (kW/cm^2): 0.137319
+160: Spot Size (m): 0.102418
+160: Range (m): 5784.72
+T = 160.000
+Distance to target: 5836.38
+161: Lost track, restarting firing at target: UAV-SLOW-1-1
+161: Peak Irradiance (kW/cm^2): 0.134155
+161: Spot Size (m): 0.10358
+161: Range (m): 5837.81
+Distance to target: 5888.64
+162: Lost track, restarting firing at target: UAV-SLOW-1-1
+162: Peak Irradiance (kW/cm^2): 0.131441
+162: Spot Size (m): 0.104607
+162: Range (m): 5891.09
+Distance to target: 5942.63
+163: Lost track, restarting firing at target: UAV-SLOW-1-1
+163: Peak Irradiance (kW/cm^2): 0.128522
+163: Spot Size (m): 0.105751
+163: Range (m): 5941.97
+Distance to target: 5996.65
+164: Lost track, restarting firing at target: UAV-SLOW-1-1
+164: Peak Irradiance (kW/cm^2): 0.125377
+164: Spot Size (m): 0.107028
+164: Range (m): 5996.43
+Distance to target: 6050.21
+165: Lost track, restarting firing at target: UAV-SLOW-1-1
+165: Peak Irradiance (kW/cm^2): 0.123268
+165: Spot Size (m): 0.107904
+165: Range (m): 6050.28
+Distance to target: 6104.56
+166: Lost track, restarting firing at target: UAV-SLOW-1-1
+166: Peak Irradiance (kW/cm^2): 0.121667
+166: Spot Size (m): 0.108577
+166: Range (m): 6106.12
+Distance to target: 6158.1
+167: Lost track, restarting firing at target: UAV-SLOW-1-1
+167: Peak Irradiance (kW/cm^2): 0.12142
+167: Spot Size (m): 0.108663
+167: Range (m): 6160.36
+Distance to target: 6212.34
+168: Lost track, restarting firing at target: UAV-SLOW-1-1
+168: Peak Irradiance (kW/cm^2): 0.119578
+168: Spot Size (m): 0.109462
+168: Range (m): 6213.97
+Distance to target: 6266.9
+169: Lost track, restarting firing at target: UAV-SLOW-1-1
+169: Peak Irradiance (kW/cm^2): 0.116584
+169: Spot Size (m): 0.110816
+169: Range (m): 6267.59
+Distance to target: 6322.22
+170: Lost track, restarting firing at target: UAV-SLOW-1-1
+170: Peak Irradiance (kW/cm^2): 0.112545
+170: Spot Size (m): 0.112736
+170: Range (m): 6323.15
+T = 170.000
+Distance to target: 6376.68
+171: Lost track, restarting firing at target: UAV-SLOW-1-1
+171: Peak Irradiance (kW/cm^2): 0.108863
+171: Spot Size (m): 0.114574
+171: Range (m): 6379.23
+Distance to target: 6431.5
+172: Lost track, restarting firing at target: UAV-SLOW-1-1
+172: Peak Irradiance (kW/cm^2): 0.107895
+172: Spot Size (m): 0.115056
+172: Range (m): 6433.59
+Distance to target: 6487
+173: Lost track, restarting firing at target: UAV-SLOW-1-1
+173: Peak Irradiance (kW/cm^2): 0.105428
+173: Spot Size (m): 0.116352
+173: Range (m): 6487.97
+Distance to target: 6542.33
+174: Lost track, restarting firing at target: UAV-SLOW-1-1
+174: Peak Irradiance (kW/cm^2): 0.100853
+174: Spot Size (m): 0.118897
+174: Range (m): 6545.4
+Distance to target: 6598.84
+175: Lost track, restarting firing at target: UAV-SLOW-1-1
+175: Peak Irradiance (kW/cm^2): 0.100824
+175: Spot Size (m): 0.11889
+175: Range (m): 6599.31
+Distance to target: 6655.33
+176: Lost track, restarting firing at target: UAV-SLOW-1-1
+176: Peak Irradiance (kW/cm^2): 0.101688
+176: Spot Size (m): 0.118367
+176: Range (m): 6657.13
+Distance to target: 6711.41
+177: Lost track, restarting firing at target: UAV-SLOW-1-1
+177: Peak Irradiance (kW/cm^2): 0.0975522
+177: Spot Size (m): 0.120788
+177: Range (m): 6712.07
+Distance to target: 6767.18
+178: Lost track, restarting firing at target: UAV-SLOW-1-1
+178: Peak Irradiance (kW/cm^2): 0.0951232
+178: Spot Size (m): 0.122273
+178: Range (m): 6767.75
+Distance to target: 6823.78
+179: Lost track, restarting firing at target: UAV-SLOW-1-1
+179: Peak Irradiance (kW/cm^2): 0.0950974
+179: Spot Size (m): 0.122265
+179: Range (m): 6824.95
+Distance to target: 6880.09
+180: Lost track, restarting firing at target: UAV-SLOW-1-1
+180: Peak Irradiance (kW/cm^2): 0.0936495
+180: Spot Size (m): 0.123168
+180: Range (m): 6880.21
+T = 180.000
+Distance to target: 6937.64
+181: Lost track, restarting firing at target: UAV-SLOW-1-1
+181: Peak Irradiance (kW/cm^2): 0.0915176
+181: Spot Size (m): 0.124547
+181: Range (m): 6937.92
+Distance to target: 6994.76
+182: Lost track, restarting firing at target: UAV-SLOW-1-1
+182: Peak Irradiance (kW/cm^2): 0.0878451
+182: Spot Size (m): 0.127057
+182: Range (m): 6995.68
+Distance to target: 7052.5
+183: Lost track, restarting firing at target: UAV-SLOW-1-1
+183: Peak Irradiance (kW/cm^2): 0.085503
+183: Spot Size (m): 0.128733
+183: Range (m): 7052.33
+Distance to target: 7110.29
+184: Lost track, restarting firing at target: UAV-SLOW-1-1
+184: Peak Irradiance (kW/cm^2): 0.0844762
+184: Spot Size (m): 0.129474
+184: Range (m): 7111.74
+Distance to target: 7167.7
+185: Lost track, restarting firing at target: UAV-SLOW-1-1
+185: Peak Irradiance (kW/cm^2): 0.0806731
+185: Spot Size (m): 0.132414
+185: Range (m): 7169.42
+Distance to target: 7224.88
+186: Lost track, restarting firing at target: UAV-SLOW-1-1
+186: Peak Irradiance (kW/cm^2): 0.0772713
+186: Spot Size (m): 0.135223
+186: Range (m): 7225.37
+Distance to target: 7282.01
+187: Lost track, restarting firing at target: UAV-SLOW-1-1
+187: Peak Irradiance (kW/cm^2): 0.0759155
+187: Spot Size (m): 0.136378
+187: Range (m): 7285.37
+Distance to target: 7341.04
+188: Lost track, restarting firing at target: UAV-SLOW-1-1
+188: Peak Irradiance (kW/cm^2): 0.0751958
+188: Spot Size (m): 0.136993
+188: Range (m): 7340.87
+Distance to target: 7400.06
+189: Lost track, restarting firing at target: UAV-SLOW-1-1
+189: Peak Irradiance (kW/cm^2): 0.0747698
+189: Spot Size (m): 0.13735
+189: Range (m): 7402.09
+Distance to target: 7459.1
+190: Lost track, restarting firing at target: UAV-SLOW-1-1
+190: Peak Irradiance (kW/cm^2): 0.074029
+190: Spot Size (m): 0.137998
+190: Range (m): 7460.74
+T = 190.000
+Distance to target: 7518.2
+191: Lost track, restarting firing at target: UAV-SLOW-1-1
+191: Peak Irradiance (kW/cm^2): 0.0727722
+191: Spot Size (m): 0.139138
+191: Range (m): 7518.65
+Distance to target: 7576.78
+192: Lost track, restarting firing at target: UAV-SLOW-1-1
+192: Peak Irradiance (kW/cm^2): 0.0708077
+192: Spot Size (m): 0.140996
+192: Range (m): 7576.63
+Distance to target: 7634.89
+193: Lost track, restarting firing at target: UAV-SLOW-1-1
+193: Peak Irradiance (kW/cm^2): 0.068622
+193: Spot Size (m): 0.143156
+193: Range (m): 7637.83
+Distance to target: 7693.95
+194: Lost track, restarting firing at target: UAV-SLOW-1-1
+194: Peak Irradiance (kW/cm^2): 0.0667008
+194: Spot Size (m): 0.145139
+194: Range (m): 7696.01
+Distance to target: 7754.31
+195: Lost track, restarting firing at target: UAV-SLOW-1-1
+195: Peak Irradiance (kW/cm^2): 0.0651717
+195: Spot Size (m): 0.146774
+195: Range (m): 7755.61
+Distance to target: 7814.21
+196: Lost track, restarting firing at target: UAV-SLOW-1-1
+196: Peak Irradiance (kW/cm^2): 0.0643115
+196: Spot Size (m): 0.147708
+196: Range (m): 7814.64
+Distance to target: 7873.35
+197: Lost track, restarting firing at target: UAV-SLOW-1-1
+197: Peak Irradiance (kW/cm^2): 0.0636577
+197: Spot Size (m): 0.148424
+197: Range (m): 7876.63
+Distance to target: 7933.9
+198: Lost track, restarting firing at target: UAV-SLOW-1-1
+198: Peak Irradiance (kW/cm^2): 0.0623834
+198: Spot Size (m): 0.149878
+198: Range (m): 7935.62
+Distance to target: 7994.98
+199: Lost track, restarting firing at target: UAV-SLOW-1-1
+199: Peak Irradiance (kW/cm^2): 0.0609501
+199: Spot Size (m): 0.151569
+199: Range (m): 7997.18
+Distance to target: 8055.61
+200: Lost track, restarting firing at target: UAV-SLOW-1-1
+200: Peak Irradiance (kW/cm^2): 0.059504
+200: Spot Size (m): 0.153338
+200: Range (m): 8056.44
+T = 200.000
+Distance to target: 8116.82
+201: Lost track, restarting firing at target: UAV-SLOW-1-1
+201: Peak Irradiance (kW/cm^2): 0.0582949
+201: Spot Size (m): 0.154863
+201: Range (m): 8117.25
+Distance to target: 8178.06
+202: Lost track, restarting firing at target: UAV-SLOW-1-1
+202: Peak Irradiance (kW/cm^2): 0.0574984
+202: Spot Size (m): 0.155884
+202: Range (m): 8179.44
+Distance to target: 8238.38
+203: Lost track, restarting firing at target: UAV-SLOW-1-1
+203: Peak Irradiance (kW/cm^2): 0.0571872
+203: Spot Size (m): 0.156274
+203: Range (m): 8238.53
+Distance to target: 8300.1
+204: Lost track, restarting firing at target: UAV-SLOW-1-1
+204: Peak Irradiance (kW/cm^2): 0.0560057
+204: Spot Size (m): 0.157854
+204: Range (m): 8301.9
+Distance to target: 8361.9
+205: Lost track, restarting firing at target: UAV-SLOW-1-1
+205: Peak Irradiance (kW/cm^2): 0.0547909
+205: Spot Size (m): 0.159533
+205: Range (m): 8362.43
+Distance to target: 8423.79
+206: Lost track, restarting firing at target: UAV-SLOW-1-1
+206: Peak Irradiance (kW/cm^2): 0.0535271
+206: Spot Size (m): 0.16134
+206: Range (m): 8424.09
+Distance to target: 8484.79
+207: Lost track, restarting firing at target: UAV-SLOW-1-1
+207: Peak Irradiance (kW/cm^2): 0.0523239
+207: Spot Size (m): 0.16312
+207: Range (m): 8486.18
+Distance to target: 8546.65
+208: Lost track, restarting firing at target: UAV-SLOW-1-1
+208: Peak Irradiance (kW/cm^2): 0.0512045
+208: Spot Size (m): 0.16483
+208: Range (m): 8547.06
+Distance to target: 8608.38
+209: Lost track, restarting firing at target: UAV-SLOW-1-1
+209: Peak Irradiance (kW/cm^2): 0.0500944
+209: Spot Size (m): 0.16658
+209: Range (m): 8611.42
+Distance to target: 8671.51
+210: Lost track, restarting firing at target: UAV-SLOW-1-1
+210: Peak Irradiance (kW/cm^2): 0.0490454
+210: Spot Size (m): 0.168287
+210: Range (m): 8672.67
+T = 210.000
+Distance to target: 8733.65
+211: Lost track, restarting firing at target: UAV-SLOW-1-1
+211: Peak Irradiance (kW/cm^2): 0.0480098
+211: Spot Size (m): 0.170027
+211: Range (m): 8735.33
+Distance to target: 8796.15
+212: Lost track, restarting firing at target: UAV-SLOW-1-1
+212: Peak Irradiance (kW/cm^2): 0.047018
+212: Spot Size (m): 0.171745
+212: Range (m): 8798.15
+Distance to target: 8859.53
+213: Lost track, restarting firing at target: UAV-SLOW-1-1
+213: Peak Irradiance (kW/cm^2): 0.0460278
+213: Spot Size (m): 0.173515
+213: Range (m): 8861.14
+Distance to target: 8923.49
+214: Lost track, restarting firing at target: UAV-SLOW-1-1
+214: Peak Irradiance (kW/cm^2): 0.0450847
+214: Spot Size (m): 0.175254
+214: Range (m): 8922.67
+Distance to target: 8987.44
+215: Lost track, restarting firing at target: UAV-SLOW-1-1
+215: Peak Irradiance (kW/cm^2): 0.0441099
+215: Spot Size (m): 0.177109
+215: Range (m): 8988.15
+Distance to target: 9050.37
+216: Lost track, restarting firing at target: UAV-SLOW-1-1
+216: Peak Irradiance (kW/cm^2): 0.0432007
+216: Spot Size (m): 0.178894
+216: Range (m): 9049.68
+Distance to target: 9114.71
+217: Lost track, restarting firing at target: UAV-SLOW-1-1
+217: Peak Irradiance (kW/cm^2): 0.0423005
+217: Spot Size (m): 0.180717
+217: Range (m): 9113.49
+Distance to target: 9179.08
+218: Lost track, restarting firing at target: UAV-SLOW-1-1
+218: Peak Irradiance (kW/cm^2): 0.0414192
+218: Spot Size (m): 0.182557
+218: Range (m): 9179.6
+Distance to target: 9243.5
+219: Lost track, restarting firing at target: UAV-SLOW-1-1
+219: Peak Irradiance (kW/cm^2): 0.040554
+219: Spot Size (m): 0.184421
+219: Range (m): 9244.83
+Distance to target: 9307.46
+220: Lost track, restarting firing at target: UAV-SLOW-1-1
+220: Peak Irradiance (kW/cm^2): 0.0397237
+220: Spot Size (m): 0.186266
+220: Range (m): 9309.23
+T = 220.000
+Distance to target: 9372.28
+221: Lost track, restarting firing at target: UAV-SLOW-1-1
+221: Peak Irradiance (kW/cm^2): 0.0389295
+221: Spot Size (m): 0.188085
+221: Range (m): 9372.57
+Distance to target: 9436.76
+222: Lost track, restarting firing at target: UAV-SLOW-1-1
+222: Peak Irradiance (kW/cm^2): 0.0381403
+222: Spot Size (m): 0.189946
+222: Range (m): 9437.28
+Distance to target: 9501.97
+223: Lost track, restarting firing at target: UAV-SLOW-1-1
+223: Peak Irradiance (kW/cm^2): 0.0373913
+223: Spot Size (m): 0.191767
+223: Range (m): 9500.33
+Distance to target: 9567.29
+224: Lost track, restarting firing at target: UAV-SLOW-1-1
+224: Peak Irradiance (kW/cm^2): 0.0366124
+224: Spot Size (m): 0.193718
+224: Range (m): 9567.37
+Distance to target: 9632.23
+225: Lost track, restarting firing at target: UAV-SLOW-1-1
+225: Peak Irradiance (kW/cm^2): 0.0358428
+225: Spot Size (m): 0.195707
+225: Range (m): 9634.08
+Distance to target: 9696.94
+226: Lost track, restarting firing at target: UAV-SLOW-1-1
+226: Peak Irradiance (kW/cm^2): 0.0351275
+226: Spot Size (m): 0.197614
+226: Range (m): 9697.44
+Distance to target: 9761.61
+227: Lost track, restarting firing at target: UAV-SLOW-1-1
+227: Peak Irradiance (kW/cm^2): 0.034368
+227: Spot Size (m): 0.199702
+227: Range (m): 9765.36
+Distance to target: 9827.76
+228: Lost track, restarting firing at target: UAV-SLOW-1-1
+228: Peak Irradiance (kW/cm^2): 0.033629
+228: Spot Size (m): 0.201801
+228: Range (m): 9831.29
+Distance to target: 9894.09
+229: Lost track, restarting firing at target: UAV-SLOW-1-1
+229: Peak Irradiance (kW/cm^2): 0.0328533
+229: Spot Size (m): 0.20408
+229: Range (m): 9897.41
+Distance to target: 9960.6
+230: Lost track, restarting firing at target: UAV-SLOW-1-1
+230: Peak Irradiance (kW/cm^2): 0.0320033
+230: Spot Size (m): 0.206674
+230: Range (m): 9961.51
+T = 230.000
+Distance to target: 10027.4
+231: Lost track, restarting firing at target: UAV-SLOW-1-1
+231: Peak Irradiance (kW/cm^2): 0.0310015
+231: Spot Size (m): 0.209868
+231: Range (m): 10028.9
+Distance to target: 10093.3
+232: Lost track, restarting firing at target: UAV-SLOW-1-1
+232: Peak Irradiance (kW/cm^2): 0.0298578
+232: Spot Size (m): 0.213711
+232: Range (m): 10095.8
+Distance to target: 10159.2
+233: Lost track, restarting firing at target: UAV-SLOW-1-1
+233: Peak Irradiance (kW/cm^2): 0.0292391
+233: Spot Size (m): 0.21587
+233: Range (m): 10163.8
+Distance to target: 10225.1
+234: Lost track, restarting firing at target: UAV-SLOW-1-1
+234: Peak Irradiance (kW/cm^2): 0.0286804
+234: Spot Size (m): 0.217877
+234: Range (m): 10230.9
+Distance to target: 10291
+235: Lost track, restarting firing at target: UAV-SLOW-1-1
+235: Peak Irradiance (kW/cm^2): 0.0277707
+235: Spot Size (m): 0.221288
+235: Range (m): 10294.8
+Distance to target: 10356.9
+236: Lost track, restarting firing at target: UAV-SLOW-1-1
+236: Peak Irradiance (kW/cm^2): 0.0270375
+236: Spot Size (m): 0.224153
+236: Range (m): 10364.3
+Distance to target: 10422.7
+237: Lost track, restarting firing at target: UAV-SLOW-1-1
+237: Peak Irradiance (kW/cm^2): 0.0266504
+237: Spot Size (m): 0.225702
+237: Range (m): 10432.2
+Distance to target: 10488.6
+238: Lost track, restarting firing at target: UAV-SLOW-1-1
+238: Peak Irradiance (kW/cm^2): 0.026423
+238: Spot Size (m): 0.226618
+238: Range (m): 10500.1
+Distance to target: 10554.5
+239: Lost track, restarting firing at target: UAV-SLOW-1-1
+239: Peak Irradiance (kW/cm^2): 0.0253989
+239: Spot Size (m): 0.230977
+239: Range (m): 10566.9
+Distance to target: 10620.4
+240: Lost track, restarting firing at target: UAV-SLOW-1-1
+240: Peak Irradiance (kW/cm^2): 0.0245825
+240: Spot Size (m): 0.234636
+240: Range (m): 10636
+T = 240.000
+Distance to target: 10686.3
+241: Lost track, restarting firing at target: UAV-SLOW-1-1
+241: Peak Irradiance (kW/cm^2): 0.0238739
+241: Spot Size (m): 0.237958
+241: Range (m): 10704.3
+Distance to target: 10752.2
+242: Lost track, restarting firing at target: UAV-SLOW-1-1
+242: Peak Irradiance (kW/cm^2): 0.0231963
+242: Spot Size (m): 0.241272
+242: Range (m): 10772.1
+Distance to target: 10818
+243: Lost track, restarting firing at target: UAV-SLOW-1-1
+243: Peak Irradiance (kW/cm^2): 0.0225069
+243: Spot Size (m): 0.244794
+243: Range (m): 10843.2
+Distance to target: 10883.9
+244: Lost track, restarting firing at target: UAV-SLOW-1-1
+244: Peak Irradiance (kW/cm^2): 0.0219871
+244: Spot Size (m): 0.24755
+244: Range (m): 10912.2
+Distance to target: 10949.8
+245: Lost track, restarting firing at target: UAV-SLOW-1-1
+245: Peak Irradiance (kW/cm^2): 0.0215045
+245: Spot Size (m): 0.250197
+245: Range (m): 10979.9
+Distance to target: 11015.7
+246: Lost track, restarting firing at target: UAV-SLOW-1-1
+246: Peak Irradiance (kW/cm^2): 0.0209
+246: Spot Size (m): 0.253642
+246: Range (m): 11050.8
+Distance to target: 11081.6
+247: Lost track, restarting firing at target: UAV-SLOW-1-1
+247: Peak Irradiance (kW/cm^2): 0.0205474
+247: Spot Size (m): 0.255712
+247: Range (m): 11120.3
+Distance to target: 11147.5
+248: Lost track, restarting firing at target: UAV-SLOW-1-1
+248: Peak Irradiance (kW/cm^2): 0.0201313
+248: Spot Size (m): 0.258227
+248: Range (m): 11189
+Distance to target: 11213.3
+249: Lost track, restarting firing at target: UAV-SLOW-1-1
+249: Peak Irradiance (kW/cm^2): 0.0196007
+249: Spot Size (m): 0.261553
+249: Range (m): 11260
+Distance to target: 11279.2
+250: Lost track, restarting firing at target: UAV-SLOW-1-1
+250: Peak Irradiance (kW/cm^2): 0.0189677
+250: Spot Size (m): 0.265704
+250: Range (m): 11327.8
+T = 250.000
+Distance to target: 11345.1
+251: Lost track, restarting firing at target: UAV-SLOW-1-1
+251: Peak Irradiance (kW/cm^2): 0.0185588
+251: Spot Size (m): 0.268487
+251: Range (m): 11399
+Distance to target: 11411
+252: Lost track, restarting firing at target: UAV-SLOW-1-1
+252: Peak Irradiance (kW/cm^2): 0.0181444
+252: Spot Size (m): 0.271401
+252: Range (m): 11469.7
+Distance to target: 11476.9
+253: Lost track, restarting firing at target: UAV-SLOW-1-1
+253: Peak Irradiance (kW/cm^2): 0.0177367
+253: Spot Size (m): 0.274365
+253: Range (m): 11540.7
+Distance to target: 11542.7
+254: Lost track, restarting firing at target: UAV-SLOW-1-1
+254: Peak Irradiance (kW/cm^2): 0.0174176
+254: Spot Size (m): 0.276753
+254: Range (m): 11610.3
+Distance to target: 11608.6
+255: Lost track, restarting firing at target: UAV-SLOW-1-1
+255: Peak Irradiance (kW/cm^2): 0.0170656
+255: Spot Size (m): 0.279463
+255: Range (m): 11683.8
+Distance to target: 11674.5
+256: Lost track, restarting firing at target: UAV-SLOW-1-1
+256: Peak Irradiance (kW/cm^2): 0.0164815
+256: Spot Size (m): 0.284161
+256: Range (m): 11755.1
+Distance to target: 11740.4
+257: Lost track, restarting firing at target: UAV-SLOW-1-1
+257: Peak Irradiance (kW/cm^2): 0.0158534
+257: Spot Size (m): 0.289496
+257: Range (m): 11826.6
+Distance to target: 11806.3
+258: Lost track, restarting firing at target: UAV-SLOW-1-1
+258: Peak Irradiance (kW/cm^2): 0.0153898
+258: Spot Size (m): 0.293632
+258: Range (m): 11897
+Distance to target: 11872.2
+259: Lost track, restarting firing at target: UAV-SLOW-1-1
+259: Peak Irradiance (kW/cm^2): 0.0150452
+259: Spot Size (m): 0.29682
+259: Range (m): 11970.1
+Distance to target: 11938
+260: Lost track, restarting firing at target: UAV-SLOW-1-1
+260: Peak Irradiance (kW/cm^2): 0.0147004
+260: Spot Size (m): 0.300121
+260: Range (m): 12040.6
+T = 260.000
+Distance to target: 12003.9
+261: Lost track, restarting firing at target: UAV-SLOW-1-1
+261: Peak Irradiance (kW/cm^2): 0.0143842
+261: Spot Size (m): 0.303248
+261: Range (m): 12110.9
+Distance to target: 12069.8
+262: Lost track, restarting firing at target: UAV-SLOW-1-1
+262: Peak Irradiance (kW/cm^2): 0.0140987
+262: Spot Size (m): 0.306156
+262: Range (m): 12186.9
+Distance to target: 12135.7
+263: Lost track, restarting firing at target: UAV-SLOW-1-1
+263: Peak Irradiance (kW/cm^2): 0.0138585
+263: Spot Size (m): 0.308669
+263: Range (m): 12257.1
+Distance to target: 12201.6
+264: Lost track, restarting firing at target: UAV-SLOW-1-1
+264: Peak Irradiance (kW/cm^2): 0.013652
+264: Spot Size (m): 0.310878
+264: Range (m): 12331.3
+Distance to target: 12267.4
+265: Lost track, restarting firing at target: UAV-SLOW-1-1
+265: Peak Irradiance (kW/cm^2): 0.013513
+265: Spot Size (m): 0.312388
+265: Range (m): 12402.9
+Distance to target: 12333.3
+266: Lost track, restarting firing at target: UAV-SLOW-1-1
+266: Peak Irradiance (kW/cm^2): 0.0134245
+266: Spot Size (m): 0.313354
+266: Range (m): 12476.1
+Distance to target: 12399.2
+267: Lost track, restarting firing at target: UAV-SLOW-1-1
+267: Peak Irradiance (kW/cm^2): 0.013365
+267: Spot Size (m): 0.314004
+267: Range (m): 12552
+Distance to target: 12465.1
+268: Lost track, restarting firing at target: UAV-SLOW-1-1
+268: Peak Irradiance (kW/cm^2): 0.0133046
+268: Spot Size (m): 0.31467
+268: Range (m): 12624.2
+Distance to target: 12531
+269: Lost track, restarting firing at target: UAV-SLOW-1-1
+269: Peak Irradiance (kW/cm^2): 0.0131848
+269: Spot Size (m): 0.31602
+269: Range (m): 12698.2
+Distance to target: 12596.9
+270: Lost track, restarting firing at target: UAV-SLOW-1-1
+270: Peak Irradiance (kW/cm^2): 0.0130222
+270: Spot Size (m): 0.317888
+270: Range (m): 12770.8
+T = 270.000
+Distance to target: 12662.7
+271: Lost track, restarting firing at target: UAV-SLOW-1-1
+271: Peak Irradiance (kW/cm^2): 0.0128215
+271: Spot Size (m): 0.320244
+271: Range (m): 12847.5
+Distance to target: 12728.6
+272: Lost track, restarting firing at target: UAV-SLOW-1-1
+272: Peak Irradiance (kW/cm^2): 0.012631
+272: Spot Size (m): 0.32253
+272: Range (m): 12921.8
+Distance to target: 12794.5
+273: Lost track, restarting firing at target: UAV-SLOW-1-1
+273: Peak Irradiance (kW/cm^2): 0.0125185
+273: Spot Size (m): 0.323901
+273: Range (m): 12996.4
+Distance to target: 12860.4
+274: Lost track, restarting firing at target: UAV-SLOW-1-1
+274: Peak Irradiance (kW/cm^2): 0.0124249
+274: Spot Size (m): 0.325053
+274: Range (m): 13069.6
+Distance to target: 12926.3
+275: Lost track, restarting firing at target: UAV-SLOW-1-1
+275: Peak Irradiance (kW/cm^2): 0.0123366
+275: Spot Size (m): 0.326152
+275: Range (m): 13144.6
+Distance to target: 12992.1
+276: Lost track, restarting firing at target: UAV-SLOW-1-1
+276: Peak Irradiance (kW/cm^2): 0.0122352
+276: Spot Size (m): 0.32743
+276: Range (m): 13221.2
+Distance to target: 13058
+277: Lost track, restarting firing at target: UAV-SLOW-1-1
+277: Peak Irradiance (kW/cm^2): 0.0120779
+277: Spot Size (m): 0.32945
+277: Range (m): 13295
+Distance to target: 13123.9
+278: Lost track, restarting firing at target: UAV-SLOW-1-1
+278: Peak Irradiance (kW/cm^2): 0.0118772
+278: Spot Size (m): 0.332086
+278: Range (m): 13370.6
+Distance to target: 13189.8
+279: Lost track, restarting firing at target: UAV-SLOW-1-1
+279: Peak Irradiance (kW/cm^2): 0.0116677
+279: Spot Size (m): 0.334909
+279: Range (m): 13445.2
+Distance to target: 13255.7
+280: Lost track, restarting firing at target: UAV-SLOW-1-1
+280: Peak Irradiance (kW/cm^2): 0.0114204
+280: Spot Size (m): 0.338339
+280: Range (m): 13521.1
+T = 280.000
+Distance to target: 13321.5
+281: Lost track, restarting firing at target: UAV-SLOW-1-1
+281: Peak Irradiance (kW/cm^2): 0.0111325
+281: Spot Size (m): 0.342473
+281: Range (m): 13597.2
+Distance to target: 13387.4
+282: Lost track, restarting firing at target: UAV-SLOW-1-1
+282: Peak Irradiance (kW/cm^2): 0.0108412
+282: Spot Size (m): 0.346819
+282: Range (m): 13674.5
+Distance to target: 13453.3
+283: Lost track, restarting firing at target: UAV-SLOW-1-1
+283: Peak Irradiance (kW/cm^2): 0.010607
+283: Spot Size (m): 0.350436
+283: Range (m): 13749.9
+Distance to target: 13519.2
+284: Lost track, restarting firing at target: UAV-SLOW-1-1
+284: Peak Irradiance (kW/cm^2): 0.0105041
+284: Spot Size (m): 0.35206
+284: Range (m): 13829.1
+Distance to target: 13585.1
+285: Lost track, restarting firing at target: UAV-SLOW-1-1
+285: Peak Irradiance (kW/cm^2): 0.0103717
+285: Spot Size (m): 0.354187
+285: Range (m): 13904.5
+Distance to target: 13650.9
+286: Lost track, restarting firing at target: UAV-SLOW-1-1
+286: Peak Irradiance (kW/cm^2): 0.0101444
+286: Spot Size (m): 0.357935
+286: Range (m): 13981.5
+Distance to target: 13716.8
+287: Lost track, restarting firing at target: UAV-SLOW-1-1
+287: Peak Irradiance (kW/cm^2): 0.00986795
+287: Spot Size (m): 0.36266
+287: Range (m): 14058.7
+Distance to target: 13782.7
+288: Lost track, restarting firing at target: UAV-SLOW-1-1
+288: Peak Irradiance (kW/cm^2): 0.00962413
+288: Spot Size (m): 0.366991
+288: Range (m): 14136.1
+Distance to target: 13848.6
+289: Lost track, restarting firing at target: UAV-SLOW-1-1
+289: Peak Irradiance (kW/cm^2): 0.00939174
+289: Spot Size (m): 0.371271
+289: Range (m): 14214.2
+Distance to target: 13914.5
+290: Lost track, restarting firing at target: UAV-SLOW-1-1
+290: Peak Irradiance (kW/cm^2): 0.0091266
+290: Spot Size (m): 0.376346
+290: Range (m): 14293.1
+T = 290.000
+Distance to target: 13980.3
+291: Lost track, restarting firing at target: UAV-SLOW-1-1
+291: Peak Irradiance (kW/cm^2): 0.00888919
+291: Spot Size (m): 0.381076
+291: Range (m): 14369.5
+Distance to target: 14046.2
+292: Lost track, restarting firing at target: UAV-SLOW-1-1
+292: Peak Irradiance (kW/cm^2): 0.00867823
+292: Spot Size (m): 0.385436
+292: Range (m): 14448.1
+Distance to target: 14112.1
+293: Lost track, restarting firing at target: UAV-SLOW-1-1
+293: Peak Irradiance (kW/cm^2): 0.00847076
+293: Spot Size (m): 0.389877
+293: Range (m): 14525.1
+Distance to target: 14178
+294: Lost track, restarting firing at target: UAV-SLOW-1-1
+294: Peak Irradiance (kW/cm^2): 0.00824122
+294: Spot Size (m): 0.394979
+294: Range (m): 14603.6
+Distance to target: 14243.9
+295: Lost track, restarting firing at target: UAV-SLOW-1-1
+295: Peak Irradiance (kW/cm^2): 0.00802811
+295: Spot Size (m): 0.399904
+295: Range (m): 14682.4
+Distance to target: 14309.7
+296: Lost track, restarting firing at target: UAV-SLOW-1-1
+296: Peak Irradiance (kW/cm^2): 0.00782335
+296: Spot Size (m): 0.404819
+296: Range (m): 14761.4
+Distance to target: 14375.6
+297: Lost track, restarting firing at target: UAV-SLOW-1-1
+297: Peak Irradiance (kW/cm^2): 0.00766808
+297: Spot Size (m): 0.408673
+297: Range (m): 14843.1
+Distance to target: 14441.5
+298: Lost track, restarting firing at target: UAV-SLOW-1-1
+298: Peak Irradiance (kW/cm^2): 0.00757718
+298: Spot Size (m): 0.410983
+298: Range (m): 14922.5
+Distance to target: 14507.4
+299: Lost track, restarting firing at target: UAV-SLOW-1-1
+299: Peak Irradiance (kW/cm^2): 0.0075192
+299: Spot Size (m): 0.412478
+299: Range (m): 14998.1
+Distance to target: 14573.2
+300: Lost track, restarting firing at target: UAV-SLOW-1-1
+300: Peak Irradiance (kW/cm^2): 0.00749562
+300: Spot Size (m): 0.413095
+300: Range (m): 15081.7

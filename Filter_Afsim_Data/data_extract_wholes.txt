@@ -1,0 +1,2006 @@
+Plugin Manager, plugin API version:
+Loading simulation input.
+Found sub-directory in terrain directory.
+Loading simulation input complete.
+Log Client Connected to Logging Server
+Initializing simulation.
+Activating DIS connection.
+Created DIS entity.
+Track processor will not report tracks as it has no external communication links.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+0: UAV-SLOW-1-1: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-2: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-3: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-4: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-5: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-6: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-7: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-8: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-9: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-10: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-11: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-12: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-13: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-14: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-15: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-16: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-17: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-18: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-19: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-20: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-21: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-22: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-23: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-24: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-25: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-26: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-27: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-28: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-29: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-30: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-31: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-32: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-33: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-34: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-35: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-36: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-37: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-38: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-39: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-40: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-41: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-42: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-43: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-44: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-45: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-46: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-47: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-48: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-49: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-50: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-51: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-52: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-53: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-54: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-55: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-56: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-57: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-58: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-59: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-60: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-61: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-62: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-63: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-64: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-65: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-66: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-67: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-68: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-69: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-70: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-71: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-72: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-73: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-74: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-75: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-76: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-77: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-78: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-79: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-80: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-81: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-82: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-83: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-84: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-85: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-86: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-87: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-88: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-89: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-90: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-91: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-92: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-93: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-94: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-95: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-96: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-97: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-98: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-99: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-100: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-101: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-102: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-103: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-104: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-105: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-106: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-107: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-108: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-109: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-110: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-111: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-112: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-113: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-114: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-115: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-116: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-117: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-118: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-119: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-120: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-121: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-122: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-123: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-124: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-125: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-126: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-127: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-128: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-129: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-130: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-131: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-132: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-133: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-134: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-135: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-136: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-137: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-138: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-139: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-140: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-141: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-142: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-143: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-144: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-145: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-146: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-147: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-148: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-149: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+0: UAV-SLOW-1-150: VM Count = 1
+0: VM Loaded: library/VM_data/const_1s_dynint.ll
+Initializing simulation complete.
+Starting simulation.
+T = 0
+2: Firing at target: UAV-SLOW-1-1 library/VM_data/const_1s_dynint.ll
+2: Peak Irradiance (W/cm^2): 1.93489e+07
+2: Spot Size (cm): 0.028652
+2: Range (m): 100
+2.5: Peak Irradiance (W/cm^2): 1.93489e+07
+2.5: Spot Size (cm): 0.028652
+2.5: Range (m): 100
+Platform broken.
+Distance to target: 100
+3: Target UAV-SLOW-1-1 destroyed... READY
+4: Firing at target: UAV-SLOW-1-2 library/VM_data/const_1s_dynint.ll
+4: Peak Irradiance (W/cm^2): 4.46716e+06
+4: Spot Size (cm): 0.0595737
+4: Range (m): 200
+4.5: Peak Irradiance (W/cm^2): 4.46716e+06
+4.5: Spot Size (cm): 0.0595737
+4.5: Range (m): 200
+Platform broken.
+Distance to target: 200
+5: Target UAV-SLOW-1-2 destroyed... READY
+6: Firing at target: UAV-SLOW-1-3 library/VM_data/const_1s_dynint.ll
+6: Peak Irradiance (W/cm^2): 1.87149e+06
+6: Spot Size (cm): 0.0919555
+6: Range (m): 300
+6.5: Peak Irradiance (W/cm^2): 1.87149e+06
+6.5: Spot Size (cm): 0.0919555
+6.5: Range (m): 300
+Platform broken.
+Distance to target: 300
+7: Target UAV-SLOW-1-3 destroyed... READY
+8: Firing at target: UAV-SLOW-1-4 library/VM_data/const_1s_dynint.ll
+8: Peak Irradiance (W/cm^2): 1.00096e+06
+8: Spot Size (cm): 0.125625
+8: Range (m): 400
+8.5: Peak Irradiance (W/cm^2): 1.00096e+06
+8.5: Spot Size (cm): 0.125625
+8.5: Range (m): 400
+Platform broken.
+Distance to target: 400
+9: Target UAV-SLOW-1-4 destroyed... READY
+10: Firing at target: UAV-SLOW-1-5 library/VM_data/const_1s_dynint.ll
+10: Peak Irradiance (W/cm^2): 612262
+10: Spot Size (cm): 0.160488
+10: Range (m): 500
+T = 10.000
+10.5: Peak Irradiance (W/cm^2): 612262
+10.5: Spot Size (cm): 0.160488
+10.5: Range (m): 500
+Platform broken.
+Distance to target: 500
+11: Target UAV-SLOW-1-5 destroyed... READY
+12: Firing at target: UAV-SLOW-1-6 library/VM_data/const_1s_dynint.ll
+12: Peak Irradiance (W/cm^2): 407830
+12: Spot Size (cm): 0.196476
+12: Range (m): 600
+12.5: Peak Irradiance (W/cm^2): 407830
+12.5: Spot Size (cm): 0.196476
+12.5: Range (m): 600
+Platform broken.
+Distance to target: 600
+13: Target UAV-SLOW-1-6 destroyed... READY
+[WARNING] toolbox_time_controller was enabled in realtime operation.
+14: Firing at target: UAV-SLOW-1-7 library/VM_data/const_1s_dynint.ll
+14: Peak Irradiance (W/cm^2): 288195
+14: Spot Size (cm): 0.233538
+14: Range (m): 700
+14.5: Peak Irradiance (W/cm^2): 288195
+14.5: Spot Size (cm): 0.233538
+14.5: Range (m): 700
+Platform broken.
+Distance to target: 700
+15: Target UAV-SLOW-1-7 destroyed... READY
+16: Firing at target: UAV-SLOW-1-8 library/VM_data/const_1s_dynint.ll
+16: Peak Irradiance (W/cm^2): 212699
+16: Spot Size (cm): 0.271631
+16: Range (m): 800
+16.5: Peak Irradiance (W/cm^2): 212699
+16.5: Spot Size (cm): 0.271631
+16.5: Range (m): 800
+Platform broken.
+Distance to target: 800
+17: Target UAV-SLOW-1-8 destroyed... READY
+18: Firing at target: UAV-SLOW-1-9 library/VM_data/const_1s_dynint.ll
+18: Peak Irradiance (W/cm^2): 162295
+18: Spot Size (cm): 0.310729
+18: Range (m): 900
+18.5: Peak Irradiance (W/cm^2): 162295
+18.5: Spot Size (cm): 0.310729
+18.5: Range (m): 900
+Platform broken.
+Distance to target: 900
+19: Target UAV-SLOW-1-9 destroyed... READY
+20: Firing at target: UAV-SLOW-1-10 library/VM_data/const_1s_dynint.ll
+20: Peak Irradiance (W/cm^2): 127135
+20: Spot Size (cm): 0.350822
+20: Range (m): 1000
+T = 20.000
+20.5: Peak Irradiance (W/cm^2): 127135
+20.5: Spot Size (cm): 0.350822
+20.5: Range (m): 1000
+Platform broken.
+Distance to target: 1000
+21: Target UAV-SLOW-1-10 destroyed... READY
+22: Firing at target: UAV-SLOW-1-11 library/VM_data/const_1s_dynint.ll
+22: Peak Irradiance (W/cm^2): 101732
+22: Spot Size (cm): 0.391908
+22: Range (m): 1100
+22.5: Peak Irradiance (W/cm^2): 101732
+22.5: Spot Size (cm): 0.391908
+22.5: Range (m): 1100
+Platform broken.
+Distance to target: 1100
+23: Target UAV-SLOW-1-11 destroyed... READY
+24: Firing at target: UAV-SLOW-1-12 library/VM_data/const_1s_dynint.ll
+24: Peak Irradiance (W/cm^2): 82854.1
+24: Spot Size (cm): 0.433971
+24: Range (m): 1200
+24.5: Peak Irradiance (W/cm^2): 82854.1
+24.5: Spot Size (cm): 0.433971
+24.5: Range (m): 1200
+Platform broken.
+Distance to target: 1200
+25: Target UAV-SLOW-1-12 destroyed... READY
+26: Firing at target: UAV-SLOW-1-13 library/VM_data/const_1s_dynint.ll
+26: Peak Irradiance (W/cm^2): 68497.1
+26: Spot Size (cm): 0.476975
+26: Range (m): 1300
+26.5: Peak Irradiance (W/cm^2): 68497.1
+26.5: Spot Size (cm): 0.476975
+26.5: Range (m): 1300
+Platform broken.
+Distance to target: 1300
+27: Target UAV-SLOW-1-13 destroyed... READY
+28: Firing at target: UAV-SLOW-1-14 library/VM_data/const_1s_dynint.ll
+28: Peak Irradiance (W/cm^2): 57364
+28: Spot Size (cm): 0.520877
+28: Range (m): 1400
+28.5: Peak Irradiance (W/cm^2): 57364
+28.5: Spot Size (cm): 0.520877
+28.5: Range (m): 1400
+Platform broken.
+Distance to target: 1400
+29: Target UAV-SLOW-1-14 destroyed... READY
+30: Firing at target: UAV-SLOW-1-15 library/VM_data/const_1s_dynint.ll
+30: Peak Irradiance (W/cm^2): 48585.1
+30: Spot Size (cm): 0.565634
+30: Range (m): 1500
+T = 30.000
+30.5: Peak Irradiance (W/cm^2): 48585.1
+30.5: Spot Size (cm): 0.565634
+30.5: Range (m): 1500
+Platform broken.
+Distance to target: 1500
+31: Target UAV-SLOW-1-15 destroyed... READY
+32: Firing at target: UAV-SLOW-1-16 library/VM_data/const_1s_dynint.ll
+32: Peak Irradiance (W/cm^2): 41560.8
+32: Spot Size (cm): 0.611204
+32: Range (m): 1600
+32.5: Peak Irradiance (W/cm^2): 41560.8
+32.5: Spot Size (cm): 0.611204
+32.5: Range (m): 1600
+Platform broken.
+Distance to target: 1600
+33: Target UAV-SLOW-1-16 destroyed... READY
+34: Firing at target: UAV-SLOW-1-17 library/VM_data/const_1s_dynint.ll
+34: Peak Irradiance (W/cm^2): 35867.6
+34: Spot Size (cm): 0.657546
+34: Range (m): 1700
+34.5: Peak Irradiance (W/cm^2): 35867.6
+34.5: Spot Size (cm): 0.657546
+34.5: Range (m): 1700
+Platform broken.
+Distance to target: 1700
+35: Target UAV-SLOW-1-17 destroyed... READY
+36: Firing at target: UAV-SLOW-1-18 library/VM_data/const_1s_dynint.ll
+36: Peak Irradiance (W/cm^2): 31200.3
+36: Spot Size (cm): 0.704621
+36: Range (m): 1800
+36.5: Peak Irradiance (W/cm^2): 31200.3
+36.5: Spot Size (cm): 0.704621
+36.5: Range (m): 1800
+Platform broken.
+Distance to target: 1800
+37: Target UAV-SLOW-1-18 destroyed... READY
+38: Firing at target: UAV-SLOW-1-19 library/VM_data/const_1s_dynint.ll
+38: Peak Irradiance (W/cm^2): 27334.6
+38: Spot Size (cm): 0.752393
+38: Range (m): 1900
+38.5: Peak Irradiance (W/cm^2): 27334.6
+38.5: Spot Size (cm): 0.752393
+38.5: Range (m): 1900
+Platform broken.
+Distance to target: 1900
+39: Target UAV-SLOW-1-19 destroyed... READY
+40: Firing at target: UAV-SLOW-1-20 library/VM_data/const_1s_dynint.ll
+40: Peak Irradiance (W/cm^2): 24103
+40: Spot Size (cm): 0.800828
+40: Range (m): 2000
+T = 40.000
+40.5: Peak Irradiance (W/cm^2): 24103
+40.5: Spot Size (cm): 0.800828
+40.5: Range (m): 2000
+Platform broken.
+Distance to target: 2000
+41: Target UAV-SLOW-1-20 destroyed... READY
+42: Firing at target: UAV-SLOW-1-21 library/VM_data/const_1s_dynint.ll
+42: Peak Irradiance (W/cm^2): 21378.9
+42: Spot Size (cm): 0.84989
+42: Range (m): 2100
+42.5: Peak Irradiance (W/cm^2): 21378.9
+42.5: Spot Size (cm): 0.84989
+42.5: Range (m): 2100
+Platform broken.
+Distance to target: 2100
+43: Target UAV-SLOW-1-21 destroyed... READY
+44: Firing at target: UAV-SLOW-1-22 library/VM_data/const_1s_dynint.ll
+44: Peak Irradiance (W/cm^2): 19065
+44: Spot Size (cm): 0.899549
+44: Range (m): 2200
+44.5: Peak Irradiance (W/cm^2): 19065
+44.5: Spot Size (cm): 0.899549
+44.5: Range (m): 2200
+Platform broken.
+Distance to target: 2200
+45: Target UAV-SLOW-1-22 destroyed... READY
+46: Firing at target: UAV-SLOW-1-23 library/VM_data/const_1s_dynint.ll
+46: Peak Irradiance (W/cm^2): 17085.7
+46: Spot Size (cm): 0.949778
+46: Range (m): 2300
+46.5: Peak Irradiance (W/cm^2): 17085.7
+46.5: Spot Size (cm): 0.949778
+46.5: Range (m): 2300
+Platform broken.
+Distance to target: 2300
+47: Target UAV-SLOW-1-23 destroyed... READY
+48: Firing at target: UAV-SLOW-1-24 library/VM_data/const_1s_dynint.ll
+48: Peak Irradiance (W/cm^2): 15381.8
+48: Spot Size (cm): 1.00055
+48: Range (m): 2400
+48.5: Peak Irradiance (W/cm^2): 15381.8
+48.5: Spot Size (cm): 1.00055
+48.5: Range (m): 2400
+Platform broken.
+Distance to target: 2400
+49: Target UAV-SLOW-1-24 destroyed... READY
+50: Firing at target: UAV-SLOW-1-25 library/VM_data/const_1s_dynint.ll
+50: Peak Irradiance (W/cm^2): 13906.3
+50: Spot Size (cm): 1.05182
+50: Range (m): 2500
+T = 50.000
+50.5: Peak Irradiance (W/cm^2): 13906.3
+50.5: Spot Size (cm): 1.05182
+50.5: Range (m): 2500
+Platform broken.
+Distance to target: 2500
+51: Target UAV-SLOW-1-25 destroyed... READY
+52: Firing at target: UAV-SLOW-1-26 library/VM_data/const_1s_dynint.ll
+52: Peak Irradiance (W/cm^2): 12621.4
+52: Spot Size (cm): 1.10359
+52: Range (m): 2600
+52.5: Peak Irradiance (W/cm^2): 12621.4
+52.5: Spot Size (cm): 1.10359
+52.5: Range (m): 2600
+Platform broken.
+Distance to target: 2600
+53: Target UAV-SLOW-1-26 destroyed... READY
+54: Firing at target: UAV-SLOW-1-27 library/VM_data/const_1s_dynint.ll
+54: Peak Irradiance (W/cm^2): 11497
+54: Spot Size (cm): 1.15582
+54: Range (m): 2700
+54.5: Peak Irradiance (W/cm^2): 11497
+54.5: Spot Size (cm): 1.15582
+54.5: Range (m): 2700
+Platform broken.
+Distance to target: 2700
+55: Target UAV-SLOW-1-27 destroyed... READY
+56: Firing at target: UAV-SLOW-1-28 library/VM_data/const_1s_dynint.ll
+56: Peak Irradiance (W/cm^2): 10508.3
+56: Spot Size (cm): 1.20849
+56: Range (m): 2800
+56.5: Peak Irradiance (W/cm^2): 10508.3
+56.5: Spot Size (cm): 1.20849
+56.5: Range (m): 2800
+Platform broken.
+Distance to target: 2800
+57: Target UAV-SLOW-1-28 destroyed... READY
+58: Firing at target: UAV-SLOW-1-29 library/VM_data/const_1s_dynint.ll
+58: Peak Irradiance (W/cm^2): 9635.06
+58: Spot Size (cm): 1.26158
+58: Range (m): 2900
+58.5: Peak Irradiance (W/cm^2): 9635.06
+58.5: Spot Size (cm): 1.26158
+58.5: Range (m): 2900
+Platform broken.
+Distance to target: 2900
+59: Target UAV-SLOW-1-29 destroyed... READY
+60: Firing at target: UAV-SLOW-1-30 library/VM_data/const_1s_dynint.ll
+60: Peak Irradiance (W/cm^2): 8860.62
+60: Spot Size (cm): 1.31507
+60: Range (m): 3000
+T = 60.000
+60.5: Peak Irradiance (W/cm^2): 8860.62
+60.5: Spot Size (cm): 1.31507
+60.5: Range (m): 3000
+Platform broken.
+Distance to target: 3000
+61: Target UAV-SLOW-1-30 destroyed... READY
+62: Firing at target: UAV-SLOW-1-31 library/VM_data/const_1s_dynint.ll
+62: Peak Irradiance (W/cm^2): 8171.17
+62: Spot Size (cm): 1.36893
+62: Range (m): 3100
+62.5: Peak Irradiance (W/cm^2): 8171.17
+62.5: Spot Size (cm): 1.36893
+62.5: Range (m): 3100
+Platform broken.
+Distance to target: 3100
+63: Target UAV-SLOW-1-31 destroyed... READY
+64: Firing at target: UAV-SLOW-1-32 library/VM_data/const_1s_dynint.ll
+64: Peak Irradiance (W/cm^2): 7555.16
+64: Spot Size (cm): 1.42314
+64: Range (m): 3200
+64.5: Peak Irradiance (W/cm^2): 7555.16
+64.5: Spot Size (cm): 1.42314
+64.5: Range (m): 3200
+Platform broken.
+Distance to target: 3200
+65: Target UAV-SLOW-1-32 destroyed... READY
+66: Firing at target: UAV-SLOW-1-33 library/VM_data/const_1s_dynint.ll
+66: Peak Irradiance (W/cm^2): 7002.89
+66: Spot Size (cm): 1.4777
+66: Range (m): 3300
+66.5: Peak Irradiance (W/cm^2): 7002.89
+66.5: Spot Size (cm): 1.4777
+66.5: Range (m): 3300
+Platform broken.
+Distance to target: 3300
+67: Target UAV-SLOW-1-33 destroyed... READY
+68: Firing at target: UAV-SLOW-1-34 library/VM_data/const_1s_dynint.ll
+68: Peak Irradiance (W/cm^2): 6506.07
+68: Spot Size (cm): 1.53258
+68: Range (m): 3400
+68.5: Peak Irradiance (W/cm^2): 6506.07
+68.5: Spot Size (cm): 1.53258
+68.5: Range (m): 3400
+Platform broken.
+Distance to target: 3400
+69: Target UAV-SLOW-1-34 destroyed... READY
+70: Firing at target: UAV-SLOW-1-35 library/VM_data/const_1s_dynint.ll
+70: Peak Irradiance (W/cm^2): 6057.89
+70: Spot Size (cm): 1.58776
+70: Range (m): 3500
+T = 70.000
+70.5: Peak Irradiance (W/cm^2): 6057.89
+70.5: Spot Size (cm): 1.58776
+70.5: Range (m): 3500
+Platform broken.
+Distance to target: 3500
+71: Target UAV-SLOW-1-35 destroyed... READY
+72: Firing at target: UAV-SLOW-1-36 library/VM_data/const_1s_dynint.ll
+72: Peak Irradiance (W/cm^2): 5652.42
+72: Spot Size (cm): 1.64321
+72: Range (m): 3600
+72.5: Peak Irradiance (W/cm^2): 5652.42
+72.5: Spot Size (cm): 1.64321
+72.5: Range (m): 3600
+Platform broken.
+Distance to target: 3600
+73: Target UAV-SLOW-1-36 destroyed... READY
+74: Firing at target: UAV-SLOW-1-37 library/VM_data/const_1s_dynint.ll
+74: Peak Irradiance (W/cm^2): 5284.51
+74: Spot Size (cm): 1.69895
+74: Range (m): 3700
+74.5: Peak Irradiance (W/cm^2): 5284.51
+74.5: Spot Size (cm): 1.69895
+74.5: Range (m): 3700
+Platform broken.
+Distance to target: 3700
+75: Target UAV-SLOW-1-37 destroyed... READY
+76: Firing at target: UAV-SLOW-1-38 library/VM_data/const_1s_dynint.ll
+76: Peak Irradiance (W/cm^2): 4949.85
+76: Spot Size (cm): 1.75494
+76: Range (m): 3800
+76.5: Peak Irradiance (W/cm^2): 4949.85
+76.5: Spot Size (cm): 1.75494
+76.5: Range (m): 3800
+Platform broken.
+Distance to target: 3800
+77: Target UAV-SLOW-1-38 destroyed... READY
+78: Firing at target: UAV-SLOW-1-39 library/VM_data/const_1s_dynint.ll
+78: Peak Irradiance (W/cm^2): 4644.7
+78: Spot Size (cm): 1.81117
+78: Range (m): 3900
+78.5: Peak Irradiance (W/cm^2): 4644.7
+78.5: Spot Size (cm): 1.81117
+78.5: Range (m): 3900
+Platform broken.
+Distance to target: 3900
+79: Target UAV-SLOW-1-39 destroyed... READY
+80: Firing at target: UAV-SLOW-1-40 library/VM_data/const_1s_dynint.ll
+80: Peak Irradiance (W/cm^2): 4365.81
+80: Spot Size (cm): 1.86762
+80: Range (m): 4000
+T = 80.000
+80.5: Peak Irradiance (W/cm^2): 4365.81
+80.5: Spot Size (cm): 1.86762
+80.5: Range (m): 4000
+Platform broken.
+Distance to target: 4000
+81: Target UAV-SLOW-1-40 destroyed... READY
+82: Firing at target: UAV-SLOW-1-41 library/VM_data/const_1s_dynint.ll
+82: Peak Irradiance (W/cm^2): 4110.36
+82: Spot Size (cm): 1.92429
+82: Range (m): 4100
+82.5: Peak Irradiance (W/cm^2): 4110.36
+82.5: Spot Size (cm): 1.92429
+82.5: Range (m): 4100
+Platform broken.
+Distance to target: 4100
+83: Target UAV-SLOW-1-41 destroyed... READY
+84: Firing at target: UAV-SLOW-1-42 library/VM_data/const_1s_dynint.ll
+84: Peak Irradiance (W/cm^2): 3875.87
+84: Spot Size (cm): 1.98114
+84: Range (m): 4200
+84.5: Peak Irradiance (W/cm^2): 3875.87
+84.5: Spot Size (cm): 1.98114
+84.5: Range (m): 4200
+Platform broken.
+Distance to target: 4200
+85: Target UAV-SLOW-1-42 destroyed... READY
+86: Firing at target: UAV-SLOW-1-43 library/VM_data/const_1s_dynint.ll
+86: Peak Irradiance (W/cm^2): 3660.16
+86: Spot Size (cm): 2.03819
+86: Range (m): 4300
+86.5: Peak Irradiance (W/cm^2): 3660.16
+86.5: Spot Size (cm): 2.03819
+86.5: Range (m): 4300
+Platform broken.
+Distance to target: 4300
+87: Target UAV-SLOW-1-43 destroyed... READY
+88: Firing at target: UAV-SLOW-1-44 library/VM_data/const_1s_dynint.ll
+88: Peak Irradiance (W/cm^2): 3461.38
+88: Spot Size (cm): 2.09541
+88: Range (m): 4400
+88.5: Peak Irradiance (W/cm^2): 3461.38
+88.5: Spot Size (cm): 2.09541
+88.5: Range (m): 4400
+Platform broken.
+Distance to target: 4400
+89: Target UAV-SLOW-1-44 destroyed... READY
+90: Firing at target: UAV-SLOW-1-45 library/VM_data/const_1s_dynint.ll
+90: Peak Irradiance (W/cm^2): 3277.82
+90: Spot Size (cm): 2.1528
+90: Range (m): 4500
+T = 90.000
+90.5: Peak Irradiance (W/cm^2): 3277.82
+90.5: Spot Size (cm): 2.1528
+90.5: Range (m): 4500
+Platform broken.
+Distance to target: 4500
+91: Target UAV-SLOW-1-45 destroyed... READY
+92: Firing at target: UAV-SLOW-1-46 library/VM_data/const_1s_dynint.ll
+92: Peak Irradiance (W/cm^2): 3108.04
+92: Spot Size (cm): 2.21033
+92: Range (m): 4600
+92.5: Peak Irradiance (W/cm^2): 3108.04
+92.5: Spot Size (cm): 2.21033
+92.5: Range (m): 4600
+Platform broken.
+Distance to target: 4600
+93: Target UAV-SLOW-1-46 destroyed... READY
+94: Firing at target: UAV-SLOW-1-47 library/VM_data/const_1s_dynint.ll
+94: Peak Irradiance (W/cm^2): 2950.72
+94: Spot Size (cm): 2.268
+94: Range (m): 4700
+94.5: Peak Irradiance (W/cm^2): 2950.72
+94.5: Spot Size (cm): 2.268
+94.5: Range (m): 4700
+Platform broken.
+Distance to target: 4700
+95: Target UAV-SLOW-1-47 destroyed... READY
+96: Firing at target: UAV-SLOW-1-48 library/VM_data/const_1s_dynint.ll
+96: Peak Irradiance (W/cm^2): 2804.73
+96: Spot Size (cm): 2.3258
+96: Range (m): 4800
+96.5: Peak Irradiance (W/cm^2): 2804.73
+96.5: Spot Size (cm): 2.3258
+96.5: Range (m): 4800
+Platform broken.
+Distance to target: 4800
+97: Target UAV-SLOW-1-48 destroyed... READY
+98: Firing at target: UAV-SLOW-1-49 library/VM_data/const_1s_dynint.ll
+98: Peak Irradiance (W/cm^2): 2669.05
+98: Spot Size (cm): 2.38371
+98: Range (m): 4900
+98.5: Peak Irradiance (W/cm^2): 2669.05
+98.5: Spot Size (cm): 2.38371
+98.5: Range (m): 4900
+Platform broken.
+Distance to target: 4900
+99: Target UAV-SLOW-1-49 destroyed... READY
+100: Firing at target: UAV-SLOW-1-50 library/VM_data/const_1s_dynint.ll
+100: Peak Irradiance (W/cm^2): 2542.72
+100: Spot Size (cm): 2.44174
+100: Range (m): 5000
+T = 100.000
+100.5: Peak Irradiance (W/cm^2): 2542.72
+100.5: Spot Size (cm): 2.44174
+100.5: Range (m): 5000
+Platform broken.
+Distance to target: 5000
+101: Target UAV-SLOW-1-50 destroyed... READY
+102: Firing at target: UAV-SLOW-1-51 library/VM_data/const_1s_dynint.ll
+102: Peak Irradiance (W/cm^2): 2424.93
+102: Spot Size (cm): 2.49988
+102: Range (m): 5100
+102.5: Peak Irradiance (W/cm^2): 2424.93
+102.5: Spot Size (cm): 2.49988
+102.5: Range (m): 5100
+Platform broken.
+Distance to target: 5100
+103: Target UAV-SLOW-1-51 destroyed... READY
+104: Firing at target: UAV-SLOW-1-52 library/VM_data/const_1s_dynint.ll
+104: Peak Irradiance (W/cm^2): 2314.93
+104: Spot Size (cm): 2.55812
+104: Range (m): 5200
+104.5: Peak Irradiance (W/cm^2): 2314.93
+104.5: Spot Size (cm): 2.55812
+104.5: Range (m): 5200
+Platform broken.
+Distance to target: 5200
+105: Target UAV-SLOW-1-52 destroyed... READY
+106: Firing at target: UAV-SLOW-1-53 library/VM_data/const_1s_dynint.ll
+106: Peak Irradiance (W/cm^2): 2212.12
+106: Spot Size (cm): 2.61644
+106: Range (m): 5300
+106.5: Peak Irradiance (W/cm^2): 2212.12
+106.5: Spot Size (cm): 2.61644
+106.5: Range (m): 5300
+Platform broken.
+Distance to target: 5300
+107: Target UAV-SLOW-1-53 destroyed... READY
+108: Firing at target: UAV-SLOW-1-54 library/VM_data/const_1s_dynint.ll
+108: Peak Irradiance (W/cm^2): 2115.89
+108: Spot Size (cm): 2.67483
+108: Range (m): 5400
+108.5: Peak Irradiance (W/cm^2): 2115.89
+108.5: Spot Size (cm): 2.67483
+108.5: Range (m): 5400
+Platform broken.
+Distance to target: 5400
+109: Target UAV-SLOW-1-54 destroyed... READY
+110: Firing at target: UAV-SLOW-1-55 library/VM_data/const_1s_dynint.ll
+110: Peak Irradiance (W/cm^2): 2025.64
+110: Spot Size (cm): 2.73332
+110: Range (m): 5500
+T = 110.000
+110.5: Peak Irradiance (W/cm^2): 2025.64
+110.5: Spot Size (cm): 2.73332
+110.5: Range (m): 5500
+Platform broken.
+Distance to target: 5500
+111: Target UAV-SLOW-1-55 destroyed... READY
+112: Firing at target: UAV-SLOW-1-56 library/VM_data/const_1s_dynint.ll
+112: Peak Irradiance (W/cm^2): 1940.95
+112: Spot Size (cm): 2.79187
+112: Range (m): 5600
+112.5: Peak Irradiance (W/cm^2): 1940.95
+112.5: Spot Size (cm): 2.79187
+112.5: Range (m): 5600
+Platform broken.
+Distance to target: 5600
+113: Target UAV-SLOW-1-56 destroyed... READY
+114: Firing at target: UAV-SLOW-1-57 library/VM_data/const_1s_dynint.ll
+114: Peak Irradiance (W/cm^2): 1861.37
+114: Spot Size (cm): 2.8505
+114: Range (m): 5700
+114.5: Peak Irradiance (W/cm^2): 1861.37
+114.5: Spot Size (cm): 2.8505
+114.5: Range (m): 5700
+Platform broken.
+Distance to target: 5700
+115: Target UAV-SLOW-1-57 destroyed... READY
+116: Firing at target: UAV-SLOW-1-58 library/VM_data/const_1s_dynint.ll
+116: Peak Irradiance (W/cm^2): 1786.52
+116: Spot Size (cm): 2.90917
+116: Range (m): 5800
+116.5: Peak Irradiance (W/cm^2): 1786.52
+116.5: Spot Size (cm): 2.90917
+116.5: Range (m): 5800
+Platform broken.
+Distance to target: 5800
+117: Target UAV-SLOW-1-58 destroyed... READY
+118: Firing at target: UAV-SLOW-1-59 library/VM_data/const_1s_dynint.ll
+118: Peak Irradiance (W/cm^2): 1715.98
+118: Spot Size (cm): 2.96794
+118: Range (m): 5900
+118.5: Peak Irradiance (W/cm^2): 1715.98
+118.5: Spot Size (cm): 2.96794
+118.5: Range (m): 5900
+Platform broken.
+Distance to target: 5900
+119: Target UAV-SLOW-1-59 destroyed... READY
+120: Firing at target: UAV-SLOW-1-60 library/VM_data/const_1s_dynint.ll
+120: Peak Irradiance (W/cm^2): 1649.5
+120: Spot Size (cm): 3.02675
+120: Range (m): 6000
+T = 120.000
+120.5: Peak Irradiance (W/cm^2): 1649.5
+120.5: Spot Size (cm): 3.02675
+120.5: Range (m): 6000
+Platform broken.
+Distance to target: 6000
+121: Target UAV-SLOW-1-60 destroyed... READY
+122: Firing at target: UAV-SLOW-1-61 library/VM_data/const_1s_dynint.ll
+122: Peak Irradiance (W/cm^2): 1586.77
+122: Spot Size (cm): 3.08559
+122: Range (m): 6100
+122.5: Peak Irradiance (W/cm^2): 1586.77
+122.5: Spot Size (cm): 3.08559
+122.5: Range (m): 6100
+Platform broken.
+Distance to target: 6100
+123: Target UAV-SLOW-1-61 destroyed... READY
+124: Firing at target: UAV-SLOW-1-62 library/VM_data/const_1s_dynint.ll
+124: Peak Irradiance (W/cm^2): 1527.46
+124: Spot Size (cm): 3.14452
+124: Range (m): 6200
+124.5: Peak Irradiance (W/cm^2): 1527.46
+124.5: Spot Size (cm): 3.14452
+124.5: Range (m): 6200
+Platform broken.
+Distance to target: 6200
+125: Target UAV-SLOW-1-62 destroyed... READY
+126: Firing at target: UAV-SLOW-1-63 library/VM_data/const_1s_dynint.ll
+126: Peak Irradiance (W/cm^2): 1471.38
+126: Spot Size (cm): 3.20348
+126: Range (m): 6300
+126.5: Peak Irradiance (W/cm^2): 1471.38
+126.5: Spot Size (cm): 3.20348
+126.5: Range (m): 6300
+Platform broken.
+Distance to target: 6300
+127: Target UAV-SLOW-1-63 destroyed... READY
+128: Firing at target: UAV-SLOW-1-64 library/VM_data/const_1s_dynint.ll
+128: Peak Irradiance (W/cm^2): 1418.26
+128: Spot Size (cm): 3.26253
+128: Range (m): 6400
+128.5: Peak Irradiance (W/cm^2): 1418.26
+128.5: Spot Size (cm): 3.26253
+128.5: Range (m): 6400
+Platform broken.
+Distance to target: 6400
+129: Target UAV-SLOW-1-64 destroyed... READY
+130: Firing at target: UAV-SLOW-1-65 library/VM_data/const_1s_dynint.ll
+130: Peak Irradiance (W/cm^2): 1367.94
+130: Spot Size (cm): 3.32161
+130: Range (m): 6500
+T = 130.000
+130.5: Peak Irradiance (W/cm^2): 1367.94
+130.5: Spot Size (cm): 3.32161
+130.5: Range (m): 6500
+Platform broken.
+Distance to target: 6500
+131: Target UAV-SLOW-1-65 destroyed... READY
+132: Firing at target: UAV-SLOW-1-66 library/VM_data/const_1s_dynint.ll
+132: Peak Irradiance (W/cm^2): 1320.23
+132: Spot Size (cm): 3.38071
+132: Range (m): 6600
+132.5: Peak Irradiance (W/cm^2): 1320.23
+132.5: Spot Size (cm): 3.38071
+132.5: Range (m): 6600
+Platform broken.
+Distance to target: 6600
+133: Target UAV-SLOW-1-66 destroyed... READY
+134: Firing at target: UAV-SLOW-1-67 library/VM_data/const_1s_dynint.ll
+134: Peak Irradiance (W/cm^2): 1274.91
+134: Spot Size (cm): 3.4399
+134: Range (m): 6700
+134.5: Peak Irradiance (W/cm^2): 1274.91
+134.5: Spot Size (cm): 3.4399
+134.5: Range (m): 6700
+Platform broken.
+Distance to target: 6700
+135: Target UAV-SLOW-1-67 destroyed... READY
+136: Firing at target: UAV-SLOW-1-68 library/VM_data/const_1s_dynint.ll
+136: Peak Irradiance (W/cm^2): 1231.84
+136: Spot Size (cm): 3.49916
+136: Range (m): 6800
+136.5: Peak Irradiance (W/cm^2): 1231.84
+136.5: Spot Size (cm): 3.49916
+136.5: Range (m): 6800
+Platform broken.
+Distance to target: 6800
+137: Target UAV-SLOW-1-68 destroyed... READY
+138: Firing at target: UAV-SLOW-1-69 library/VM_data/const_1s_dynint.ll
+138: Peak Irradiance (W/cm^2): 1190.9
+138: Spot Size (cm): 3.55843
+138: Range (m): 6900
+138.5: Peak Irradiance (W/cm^2): 1190.9
+138.5: Spot Size (cm): 3.55843
+138.5: Range (m): 6900
+Platform broken.
+Distance to target: 6900
+139: Target UAV-SLOW-1-69 destroyed... READY
+140: Firing at target: UAV-SLOW-1-70 library/VM_data/const_1s_dynint.ll
+140: Peak Irradiance (W/cm^2): 1151.93
+140: Spot Size (cm): 3.61776
+140: Range (m): 7000
+T = 140.000
+140.5: Peak Irradiance (W/cm^2): 1151.93
+140.5: Spot Size (cm): 3.61776
+140.5: Range (m): 7000
+Platform broken.
+Distance to target: 7000
+141: Target UAV-SLOW-1-70 destroyed... READY
+142: Firing at target: UAV-SLOW-1-71 library/VM_data/const_1s_dynint.ll
+142: Peak Irradiance (W/cm^2): 1114.81
+142: Spot Size (cm): 3.67715
+142: Range (m): 7100
+142.5: Peak Irradiance (W/cm^2): 1114.81
+142.5: Spot Size (cm): 3.67715
+142.5: Range (m): 7100
+Platform broken.
+Distance to target: 7100
+143: Target UAV-SLOW-1-71 destroyed... READY
+144: Firing at target: UAV-SLOW-1-72 library/VM_data/const_1s_dynint.ll
+144: Peak Irradiance (W/cm^2): 1079.41
+144: Spot Size (cm): 3.7366
+144: Range (m): 7200
+144.5: Peak Irradiance (W/cm^2): 1079.41
+144.5: Spot Size (cm): 3.7366
+144.5: Range (m): 7200
+Platform broken.
+Distance to target: 7200
+145: Target UAV-SLOW-1-72 destroyed... READY
+146: Firing at target: UAV-SLOW-1-73 library/VM_data/const_1s_dynint.ll
+146: Peak Irradiance (W/cm^2): 1045.65
+146: Spot Size (cm): 3.79612
+146: Range (m): 7300
+146.5: Peak Irradiance (W/cm^2): 1045.65
+146.5: Spot Size (cm): 3.79612
+146.5: Range (m): 7300
+Platform broken.
+Distance to target: 7300
+147: Target UAV-SLOW-1-73 destroyed... READY
+148: Firing at target: UAV-SLOW-1-74 library/VM_data/const_1s_dynint.ll
+148: Peak Irradiance (W/cm^2): 1013.43
+148: Spot Size (cm): 3.85565
+148: Range (m): 7400
+148.5: Peak Irradiance (W/cm^2): 1013.43
+148.5: Spot Size (cm): 3.85565
+148.5: Range (m): 7400
+Platform broken.
+Distance to target: 7400
+149: Target UAV-SLOW-1-74 destroyed... READY
+150: Firing at target: UAV-SLOW-1-75 library/VM_data/const_1s_dynint.ll
+150: Peak Irradiance (W/cm^2): 982.625
+150: Spot Size (cm): 3.9153
+150: Range (m): 7500
+T = 150.000
+150.5: Peak Irradiance (W/cm^2): 982.625
+150.5: Spot Size (cm): 3.9153
+150.5: Range (m): 7500
+Platform broken.
+Distance to target: 7500
+151: Target UAV-SLOW-1-75 destroyed... READY
+152: Firing at target: UAV-SLOW-1-76 library/VM_data/const_1s_dynint.ll
+152: Peak Irradiance (W/cm^2): 953.195
+152: Spot Size (cm): 3.97496
+152: Range (m): 7600
+152.5: Peak Irradiance (W/cm^2): 953.195
+152.5: Spot Size (cm): 3.97496
+152.5: Range (m): 7600
+Platform broken.
+Distance to target: 7600
+153: Target UAV-SLOW-1-76 destroyed... READY
+154: Firing at target: UAV-SLOW-1-77 library/VM_data/const_1s_dynint.ll
+154: Peak Irradiance (W/cm^2): 925.037
+154: Spot Size (cm): 4.03469
+154: Range (m): 7700
+154.5: Peak Irradiance (W/cm^2): 925.037
+154.5: Spot Size (cm): 4.03469
+154.5: Range (m): 7700
+Platform broken.
+Distance to target: 7700
+155: Target UAV-SLOW-1-77 destroyed... READY
+156: Firing at target: UAV-SLOW-1-78 library/VM_data/const_1s_dynint.ll
+156: Peak Irradiance (W/cm^2): 898.055
+156: Spot Size (cm): 4.09454
+156: Range (m): 7800
+156.5: Peak Irradiance (W/cm^2): 898.055
+156.5: Spot Size (cm): 4.09454
+156.5: Range (m): 7800
+Platform broken.
+Distance to target: 7800
+157: Target UAV-SLOW-1-78 destroyed... READY
+158: Firing at target: UAV-SLOW-1-79 library/VM_data/const_1s_dynint.ll
+158: Peak Irradiance (W/cm^2): 872.23
+158: Spot Size (cm): 4.15441
+158: Range (m): 7900
+158.5: Peak Irradiance (W/cm^2): 872.23
+158.5: Spot Size (cm): 4.15441
+158.5: Range (m): 7900
+Platform broken.
+Distance to target: 7900
+159: Target UAV-SLOW-1-79 destroyed... READY
+160: Firing at target: UAV-SLOW-1-80 library/VM_data/const_1s_dynint.ll
+160: Peak Irradiance (W/cm^2): 847.475
+160: Spot Size (cm): 4.21436
+160: Range (m): 8000
+T = 160.000
+160.5: Peak Irradiance (W/cm^2): 847.475
+160.5: Spot Size (cm): 4.21436
+160.5: Range (m): 8000
+Platform broken.
+Distance to target: 8000
+161: Target UAV-SLOW-1-80 destroyed... READY
+162: Firing at target: UAV-SLOW-1-81 library/VM_data/const_1s_dynint.ll
+162: Peak Irradiance (W/cm^2): 823.754
+162: Spot Size (cm): 4.27431
+162: Range (m): 8100
+162.5: Peak Irradiance (W/cm^2): 823.754
+162.5: Spot Size (cm): 4.27431
+162.5: Range (m): 8100
+Platform broken.
+Distance to target: 8100
+163: Target UAV-SLOW-1-81 destroyed... READY
+164: Firing at target: UAV-SLOW-1-82 library/VM_data/const_1s_dynint.ll
+164: Peak Irradiance (W/cm^2): 800.966
+164: Spot Size (cm): 4.3344
+164: Range (m): 8200
+164.5: Peak Irradiance (W/cm^2): 800.966
+164.5: Spot Size (cm): 4.3344
+164.5: Range (m): 8200
+Platform broken.
+Distance to target: 8200
+165: Target UAV-SLOW-1-82 destroyed... READY
+166: Firing at target: UAV-SLOW-1-83 library/VM_data/const_1s_dynint.ll
+166: Peak Irradiance (W/cm^2): 779.083
+166: Spot Size (cm): 4.39457
+166: Range (m): 8300
+166.5: Peak Irradiance (W/cm^2): 779.083
+166.5: Spot Size (cm): 4.39457
+166.5: Range (m): 8300
+Platform broken.
+Distance to target: 8300
+167: Target UAV-SLOW-1-83 destroyed... READY
+168: Firing at target: UAV-SLOW-1-84 library/VM_data/const_1s_dynint.ll
+168: Peak Irradiance (W/cm^2): 758.081
+168: Spot Size (cm): 4.45476
+168: Range (m): 8400
+168.5: Peak Irradiance (W/cm^2): 758.081
+168.5: Spot Size (cm): 4.45476
+168.5: Range (m): 8400
+Platform broken.
+Distance to target: 8400
+169: Target UAV-SLOW-1-84 destroyed... READY
+170: Firing at target: UAV-SLOW-1-85 library/VM_data/const_1s_dynint.ll
+170: Peak Irradiance (W/cm^2): 737.869
+170: Spot Size (cm): 4.51509
+170: Range (m): 8500
+T = 170.000
+170.5: Peak Irradiance (W/cm^2): 737.869
+170.5: Spot Size (cm): 4.51509
+170.5: Range (m): 8500
+Platform broken.
+Distance to target: 8500
+171: Target UAV-SLOW-1-85 destroyed... READY
+172: Firing at target: UAV-SLOW-1-86 library/VM_data/const_1s_dynint.ll
+172: Peak Irradiance (W/cm^2): 718.451
+172: Spot Size (cm): 4.57543
+172: Range (m): 8600
+172.5: Peak Irradiance (W/cm^2): 718.451
+172.5: Spot Size (cm): 4.57543
+172.5: Range (m): 8600
+Platform broken.
+Distance to target: 8600
+173: Target UAV-SLOW-1-86 destroyed... READY
+174: Firing at target: UAV-SLOW-1-87 library/VM_data/const_1s_dynint.ll
+174: Peak Irradiance (W/cm^2): 699.743
+174: Spot Size (cm): 4.63593
+174: Range (m): 8700
+174.5: Peak Irradiance (W/cm^2): 699.743
+174.5: Spot Size (cm): 4.63593
+174.5: Range (m): 8700
+Platform broken.
+Distance to target: 8700
+175: Target UAV-SLOW-1-87 destroyed... READY
+176: Firing at target: UAV-SLOW-1-88 library/VM_data/const_1s_dynint.ll
+176: Peak Irradiance (W/cm^2): 681.753
+176: Spot Size (cm): 4.69645
+176: Range (m): 8800
+176.5: Peak Irradiance (W/cm^2): 681.753
+176.5: Spot Size (cm): 4.69645
+176.5: Range (m): 8800
+Platform broken.
+Distance to target: 8800
+177: Target UAV-SLOW-1-88 destroyed... READY
+178: Firing at target: UAV-SLOW-1-89 library/VM_data/const_1s_dynint.ll
+178: Peak Irradiance (W/cm^2): 664.425
+178: Spot Size (cm): 4.75704
+178: Range (m): 8900
+178.5: Peak Irradiance (W/cm^2): 664.425
+178.5: Spot Size (cm): 4.75704
+178.5: Range (m): 8900
+Platform broken.
+Distance to target: 8900
+179: Target UAV-SLOW-1-89 destroyed... READY
+180: Firing at target: UAV-SLOW-1-90 library/VM_data/const_1s_dynint.ll
+180: Peak Irradiance (W/cm^2): 647.725
+180: Spot Size (cm): 4.81773
+180: Range (m): 9000
+T = 180.000
+180.5: Peak Irradiance (W/cm^2): 647.725
+180.5: Spot Size (cm): 4.81773
+180.5: Range (m): 9000
+Platform broken.
+Distance to target: 9000
+181: Target UAV-SLOW-1-90 destroyed... READY
+182: Firing at target: UAV-SLOW-1-91 library/VM_data/const_1s_dynint.ll
+182: Peak Irradiance (W/cm^2): 631.625
+182: Spot Size (cm): 4.87851
+182: Range (m): 9100
+182.5: Peak Irradiance (W/cm^2): 631.625
+182.5: Spot Size (cm): 4.87851
+182.5: Range (m): 9100
+Platform broken.
+Distance to target: 9100
+183: Target UAV-SLOW-1-91 destroyed... READY
+184: Firing at target: UAV-SLOW-1-92 library/VM_data/const_1s_dynint.ll
+184: Peak Irradiance (W/cm^2): 616.095
+184: Spot Size (cm): 4.93938
+184: Range (m): 9200
+184.5: Peak Irradiance (W/cm^2): 616.095
+184.5: Spot Size (cm): 4.93938
+184.5: Range (m): 9200
+Platform broken.
+Distance to target: 9200
+185: Target UAV-SLOW-1-92 destroyed... READY
+186: Firing at target: UAV-SLOW-1-93 library/VM_data/const_1s_dynint.ll
+186: Peak Irradiance (W/cm^2): 601.109
+186: Spot Size (cm): 5.00034
+186: Range (m): 9300
+186.5: Peak Irradiance (W/cm^2): 601.109
+186.5: Spot Size (cm): 5.00034
+186.5: Range (m): 9300
+Platform broken.
+Distance to target: 9300
+187: Target UAV-SLOW-1-93 destroyed... READY
+188: Firing at target: UAV-SLOW-1-94 library/VM_data/const_1s_dynint.ll
+188: Peak Irradiance (W/cm^2): 586.642
+188: Spot Size (cm): 5.0614
+188: Range (m): 9400
+188.5: Peak Irradiance (W/cm^2): 586.642
+188.5: Spot Size (cm): 5.0614
+188.5: Range (m): 9400
+Platform broken.
+Distance to target: 9400
+189: Target UAV-SLOW-1-94 destroyed... READY
+190: Firing at target: UAV-SLOW-1-95 library/VM_data/const_1s_dynint.ll
+190: Peak Irradiance (W/cm^2): 572.669
+190: Spot Size (cm): 5.12256
+190: Range (m): 9500
+T = 190.000
+190.5: Peak Irradiance (W/cm^2): 572.669
+190.5: Spot Size (cm): 5.12256
+190.5: Range (m): 9500
+Platform broken.
+Distance to target: 9500
+191: Target UAV-SLOW-1-95 destroyed... READY
+192: Firing at target: UAV-SLOW-1-96 library/VM_data/const_1s_dynint.ll
+192: Peak Irradiance (W/cm^2): 559.169
+192: Spot Size (cm): 5.18381
+192: Range (m): 9600
+192.5: Peak Irradiance (W/cm^2): 559.169
+192.5: Spot Size (cm): 5.18381
+192.5: Range (m): 9600
+Platform broken.
+Distance to target: 9600
+193: Target UAV-SLOW-1-96 destroyed... READY
+194: Firing at target: UAV-SLOW-1-97 library/VM_data/const_1s_dynint.ll
+194: Peak Irradiance (W/cm^2): 546.14
+194: Spot Size (cm): 5.24507
+194: Range (m): 9700
+194.5: Peak Irradiance (W/cm^2): 546.14
+194.5: Spot Size (cm): 5.24507
+194.5: Range (m): 9700
+Platform broken.
+Distance to target: 9700
+195: Target UAV-SLOW-1-97 destroyed... READY
+196: Firing at target: UAV-SLOW-1-98 library/VM_data/const_1s_dynint.ll
+196: Peak Irradiance (W/cm^2): 533.523
+196: Spot Size (cm): 5.30652
+196: Range (m): 9800
+196.5: Peak Irradiance (W/cm^2): 533.523
+196.5: Spot Size (cm): 5.30652
+196.5: Range (m): 9800
+Platform broken.
+Distance to target: 9800
+197: Target UAV-SLOW-1-98 destroyed... READY
+198: Firing at target: UAV-SLOW-1-99 library/VM_data/const_1s_dynint.ll
+198: Peak Irradiance (W/cm^2): 521.337
+198: Spot Size (cm): 5.36798
+198: Range (m): 9900
+198.5: Peak Irradiance (W/cm^2): 521.337
+198.5: Spot Size (cm): 5.36798
+198.5: Range (m): 9900
+Platform broken.
+Distance to target: 9900
+199: Target UAV-SLOW-1-99 destroyed... READY
+200: Firing at target: UAV-SLOW-1-100 library/VM_data/const_1s_dynint.ll
+200: Peak Irradiance (W/cm^2): 509.527
+200: Spot Size (cm): 5.42964
+200: Range (m): 10000
+T = 200.000
+200.5: Peak Irradiance (W/cm^2): 509.527
+200.5: Spot Size (cm): 5.42964
+200.5: Range (m): 10000
+Platform broken.
+Distance to target: 10000
+201: Target UAV-SLOW-1-100 destroyed... READY
+202: Firing at target: UAV-SLOW-1-101 library/VM_data/const_1s_dynint.ll
+202: Peak Irradiance (W/cm^2): 498.113
+202: Spot Size (cm): 5.4913
+202: Range (m): 10100
+202.5: Peak Irradiance (W/cm^2): 498.113
+202.5: Spot Size (cm): 5.4913
+202.5: Range (m): 10100
+Platform broken.
+Distance to target: 10100
+203: Target UAV-SLOW-1-101 destroyed... READY
+204: Firing at target: UAV-SLOW-1-102 library/VM_data/const_1s_dynint.ll
+204: Peak Irradiance (W/cm^2): 487.043
+204: Spot Size (cm): 5.55317
+204: Range (m): 10200
+204.5: Peak Irradiance (W/cm^2): 487.043
+204.5: Spot Size (cm): 5.55317
+204.5: Range (m): 10200
+Platform broken.
+Distance to target: 10200
+205: Target UAV-SLOW-1-102 destroyed... READY
+206: Firing at target: UAV-SLOW-1-103 library/VM_data/const_1s_dynint.ll
+206: Peak Irradiance (W/cm^2): 476.337
+206: Spot Size (cm): 5.61504
+206: Range (m): 10300
+206.5: Peak Irradiance (W/cm^2): 476.337
+206.5: Spot Size (cm): 5.61504
+206.5: Range (m): 10300
+Platform broken.
+Distance to target: 10300
+207: Target UAV-SLOW-1-103 destroyed... READY
+208: Firing at target: UAV-SLOW-1-104 library/VM_data/const_1s_dynint.ll
+208: Peak Irradiance (W/cm^2): 465.944
+208: Spot Size (cm): 5.67714
+208: Range (m): 10400
+208.5: Peak Irradiance (W/cm^2): 465.944
+208.5: Spot Size (cm): 5.67714
+208.5: Range (m): 10400
+Platform broken.
+Distance to target: 10400
+209: Target UAV-SLOW-1-104 destroyed... READY
+210: Firing at target: UAV-SLOW-1-105 library/VM_data/const_1s_dynint.ll
+210: Peak Irradiance (W/cm^2): 455.89
+210: Spot Size (cm): 5.73922
+210: Range (m): 10500
+T = 210.000
+210.5: Peak Irradiance (W/cm^2): 455.89
+210.5: Spot Size (cm): 5.73922
+210.5: Range (m): 10500
+Platform broken.
+Distance to target: 10500
+211: Target UAV-SLOW-1-105 destroyed... READY
+212: Firing at target: UAV-SLOW-1-106 library/VM_data/const_1s_dynint.ll
+212: Peak Irradiance (W/cm^2): 446.141
+212: Spot Size (cm): 5.80142
+212: Range (m): 10600
+212.5: Peak Irradiance (W/cm^2): 446.141
+212.5: Spot Size (cm): 5.80142
+212.5: Range (m): 10600
+Platform broken.
+Distance to target: 10600
+213: Target UAV-SLOW-1-106 destroyed... READY
+214: Firing at target: UAV-SLOW-1-107 library/VM_data/const_1s_dynint.ll
+214: Peak Irradiance (W/cm^2): 436.685
+214: Spot Size (cm): 5.86372
+214: Range (m): 10700
+214.5: Peak Irradiance (W/cm^2): 436.685
+214.5: Spot Size (cm): 5.86372
+214.5: Range (m): 10700
+Platform broken.
+Distance to target: 10700
+215: Target UAV-SLOW-1-107 destroyed... READY
+216: Firing at target: UAV-SLOW-1-108 library/VM_data/const_1s_dynint.ll
+216: Peak Irradiance (W/cm^2): 427.51
+216: Spot Size (cm): 5.92615
+216: Range (m): 10800
+216.5: Peak Irradiance (W/cm^2): 427.51
+216.5: Spot Size (cm): 5.92615
+216.5: Range (m): 10800
+Platform broken.
+Distance to target: 10800
+217: Target UAV-SLOW-1-108 destroyed... READY
+218: Firing at target: UAV-SLOW-1-109 library/VM_data/const_1s_dynint.ll
+218: Peak Irradiance (W/cm^2): 418.589
+218: Spot Size (cm): 5.9888
+218: Range (m): 10900
+218.5: Peak Irradiance (W/cm^2): 418.589
+218.5: Spot Size (cm): 5.9888
+218.5: Range (m): 10900
+Platform broken.
+Distance to target: 10900
+219: Target UAV-SLOW-1-109 destroyed... READY
+220: Firing at target: UAV-SLOW-1-110 library/VM_data/const_1s_dynint.ll
+220: Peak Irradiance (W/cm^2): 409.946
+220: Spot Size (cm): 6.05145
+220: Range (m): 11000
+T = 220.000
+220.5: Peak Irradiance (W/cm^2): 409.946
+220.5: Spot Size (cm): 6.05145
+220.5: Range (m): 11000
+Platform broken.
+Distance to target: 11000
+221: Target UAV-SLOW-1-110 destroyed... READY
+222: Firing at target: UAV-SLOW-1-111 library/VM_data/const_1s_dynint.ll
+222: Peak Irradiance (W/cm^2): 401.553
+222: Spot Size (cm): 6.11421
+222: Range (m): 11100
+222.5: Peak Irradiance (W/cm^2): 401.553
+222.5: Spot Size (cm): 6.11421
+222.5: Range (m): 11100
+Platform broken.
+Distance to target: 11100
+223: Target UAV-SLOW-1-111 destroyed... READY
+224: Firing at target: UAV-SLOW-1-112 library/VM_data/const_1s_dynint.ll
+224: Peak Irradiance (W/cm^2): 393.4
+224: Spot Size (cm): 6.17709
+224: Range (m): 11200
+224.5: Peak Irradiance (W/cm^2): 393.4
+224.5: Spot Size (cm): 6.17709
+224.5: Range (m): 11200
+Platform broken.
+Distance to target: 11200
+225: Target UAV-SLOW-1-112 destroyed... READY
+226: Firing at target: UAV-SLOW-1-113 library/VM_data/const_1s_dynint.ll
+226: Peak Irradiance (W/cm^2): 385.479
+226: Spot Size (cm): 6.24009
+226: Range (m): 11300
+226.5: Peak Irradiance (W/cm^2): 385.479
+226.5: Spot Size (cm): 6.24009
+226.5: Range (m): 11300
+Platform broken.
+Distance to target: 11300
+227: Target UAV-SLOW-1-113 destroyed... READY
+228: Firing at target: UAV-SLOW-1-114 library/VM_data/const_1s_dynint.ll
+228: Peak Irradiance (W/cm^2): 377.78
+228: Spot Size (cm): 6.3032
+228: Range (m): 11400
+228.5: Peak Irradiance (W/cm^2): 377.78
+228.5: Spot Size (cm): 6.3032
+228.5: Range (m): 11400
+Platform broken.
+Distance to target: 11400
+229: Target UAV-SLOW-1-114 destroyed... READY
+230: Firing at target: UAV-SLOW-1-115 library/VM_data/const_1s_dynint.ll
+230: Peak Irradiance (W/cm^2): 370.296
+230: Spot Size (cm): 6.36645
+230: Range (m): 11500
+T = 230.000
+230.5: Peak Irradiance (W/cm^2): 370.296
+230.5: Spot Size (cm): 6.36645
+230.5: Range (m): 11500
+Platform broken.
+Distance to target: 11500
+231: Target UAV-SLOW-1-115 destroyed... READY
+232: Firing at target: UAV-SLOW-1-116 library/VM_data/const_1s_dynint.ll
+232: Peak Irradiance (W/cm^2): 363.036
+232: Spot Size (cm): 6.42965
+232: Range (m): 11600
+232.5: Peak Irradiance (W/cm^2): 363.036
+232.5: Spot Size (cm): 6.42965
+232.5: Range (m): 11600
+Platform broken.
+Distance to target: 11600
+233: Target UAV-SLOW-1-116 destroyed... READY
+234: Firing at target: UAV-SLOW-1-117 library/VM_data/const_1s_dynint.ll
+234: Peak Irradiance (W/cm^2): 355.958
+234: Spot Size (cm): 6.49313
+234: Range (m): 11700
+234.5: Peak Irradiance (W/cm^2): 355.958
+234.5: Spot Size (cm): 6.49313
+234.5: Range (m): 11700
+Platform broken.
+Distance to target: 11700
+235: Target UAV-SLOW-1-117 destroyed... READY
+236: Firing at target: UAV-SLOW-1-118 library/VM_data/const_1s_dynint.ll
+236: Peak Irradiance (W/cm^2): 349.073
+236: Spot Size (cm): 6.55672
+236: Range (m): 11800
+236.5: Peak Irradiance (W/cm^2): 349.073
+236.5: Spot Size (cm): 6.55672
+236.5: Range (m): 11800
+Platform broken.
+Distance to target: 11800
+237: Target UAV-SLOW-1-118 destroyed... READY
+238: Firing at target: UAV-SLOW-1-119 library/VM_data/const_1s_dynint.ll
+238: Peak Irradiance (W/cm^2): 342.371
+238: Spot Size (cm): 6.62045
+238: Range (m): 11900
+238.5: Peak Irradiance (W/cm^2): 342.371
+238.5: Spot Size (cm): 6.62045
+238.5: Range (m): 11900
+Platform broken.
+Distance to target: 11900
+239: Target UAV-SLOW-1-119 destroyed... READY
+240: Firing at target: UAV-SLOW-1-120 library/VM_data/const_1s_dynint.ll
+240: Peak Irradiance (W/cm^2): 335.849
+240: Spot Size (cm): 6.68431
+240: Range (m): 12000
+T = 240.000
+240.5: Peak Irradiance (W/cm^2): 335.849
+240.5: Spot Size (cm): 6.68431
+240.5: Range (m): 12000
+Platform broken.
+Distance to target: 12000
+241: Target UAV-SLOW-1-120 destroyed... READY
+242: Firing at target: UAV-SLOW-1-121 library/VM_data/const_1s_dynint.ll
+242: Peak Irradiance (W/cm^2): 329.515
+242: Spot Size (cm): 6.74812
+242: Range (m): 12100
+242.5: Peak Irradiance (W/cm^2): 329.515
+242.5: Spot Size (cm): 6.74812
+242.5: Range (m): 12100
+Platform broken.
+Distance to target: 12100
+243: Target UAV-SLOW-1-121 destroyed... READY
+244: Firing at target: UAV-SLOW-1-122 library/VM_data/const_1s_dynint.ll
+244: Peak Irradiance (W/cm^2): 323.332
+244: Spot Size (cm): 6.81222
+244: Range (m): 12200
+244.5: Peak Irradiance (W/cm^2): 323.332
+244.5: Spot Size (cm): 6.81222
+244.5: Range (m): 12200
+Platform broken.
+Distance to target: 12200
+245: Target UAV-SLOW-1-122 destroyed... READY
+246: Firing at target: UAV-SLOW-1-123 library/VM_data/const_1s_dynint.ll
+246: Peak Irradiance (W/cm^2): 317.309
+246: Spot Size (cm): 6.87646
+246: Range (m): 12300
+246.5: Peak Irradiance (W/cm^2): 317.309
+246.5: Spot Size (cm): 6.87646
+246.5: Range (m): 12300
+Platform broken.
+Distance to target: 12300
+247: Target UAV-SLOW-1-123 destroyed... READY
+248: Firing at target: UAV-SLOW-1-124 library/VM_data/const_1s_dynint.ll
+248: Peak Irradiance (W/cm^2): 311.457
+248: Spot Size (cm): 6.94064
+248: Range (m): 12400
+248.5: Peak Irradiance (W/cm^2): 311.457
+248.5: Spot Size (cm): 6.94064
+248.5: Range (m): 12400
+Platform broken.
+Distance to target: 12400
+249: Target UAV-SLOW-1-124 destroyed... READY
+250: Firing at target: UAV-SLOW-1-125 library/VM_data/const_1s_dynint.ll
+250: Peak Irradiance (W/cm^2): 305.739
+250: Spot Size (cm): 7.00513
+250: Range (m): 12500
+T = 250.000
+250.5: Peak Irradiance (W/cm^2): 305.739
+250.5: Spot Size (cm): 7.00513
+250.5: Range (m): 12500
+Platform broken.
+Distance to target: 12500
+251: Target UAV-SLOW-1-125 destroyed... READY
+252: Firing at target: UAV-SLOW-1-126 library/VM_data/const_1s_dynint.ll
+252: Peak Irradiance (W/cm^2): 300.181
+252: Spot Size (cm): 7.06958
+252: Range (m): 12600
+252.5: Peak Irradiance (W/cm^2): 300.181
+252.5: Spot Size (cm): 7.06958
+252.5: Range (m): 12600
+Platform broken.
+Distance to target: 12600
+253: Target UAV-SLOW-1-126 destroyed... READY
+254: Firing at target: UAV-SLOW-1-127 library/VM_data/const_1s_dynint.ll
+254: Peak Irradiance (W/cm^2): 294.749
+254: Spot Size (cm): 7.13432
+254: Range (m): 12700
+254.5: Peak Irradiance (W/cm^2): 294.749
+254.5: Spot Size (cm): 7.13432
+254.5: Range (m): 12700
+Platform broken.
+Distance to target: 12700
+255: Target UAV-SLOW-1-127 destroyed... READY
+256: Firing at target: UAV-SLOW-1-128 library/VM_data/const_1s_dynint.ll
+256: Peak Irradiance (W/cm^2): 289.451
+256: Spot Size (cm): 7.19921
+256: Range (m): 12800
+256.5: Peak Irradiance (W/cm^2): 289.451
+256.5: Spot Size (cm): 7.19921
+256.5: Range (m): 12800
+Platform broken.
+Distance to target: 12800
+257: Target UAV-SLOW-1-128 destroyed... READY
+258: Firing at target: UAV-SLOW-1-129 library/VM_data/const_1s_dynint.ll
+258: Peak Irradiance (W/cm^2): 284.3
+258: Spot Size (cm): 7.26403
+258: Range (m): 12900
+258.5: Peak Irradiance (W/cm^2): 284.3
+258.5: Spot Size (cm): 7.26403
+258.5: Range (m): 12900
+Platform broken.
+Distance to target: 12900
+259: Target UAV-SLOW-1-129 destroyed... READY
+260: Firing at target: UAV-SLOW-1-130 library/VM_data/const_1s_dynint.ll
+260: Peak Irradiance (W/cm^2): 279.26
+260: Spot Size (cm): 7.3292
+260: Range (m): 13000
+T = 260.000
+260.5: Peak Irradiance (W/cm^2): 279.26
+260.5: Spot Size (cm): 7.3292
+260.5: Range (m): 13000
+Platform broken.
+Distance to target: 13000
+261: Target UAV-SLOW-1-130 destroyed... READY
+262: Firing at target: UAV-SLOW-1-131 library/VM_data/const_1s_dynint.ll
+262: Peak Irradiance (W/cm^2): 274.359
+262: Spot Size (cm): 7.39428
+262: Range (m): 13100
+262.5: Peak Irradiance (W/cm^2): 274.359
+262.5: Spot Size (cm): 7.39428
+262.5: Range (m): 13100
+Platform broken.
+Distance to target: 13100
+263: Target UAV-SLOW-1-131 destroyed... READY
+264: Firing at target: UAV-SLOW-1-132 library/VM_data/const_1s_dynint.ll
+264: Peak Irradiance (W/cm^2): 269.575
+264: Spot Size (cm): 7.45951
+264: Range (m): 13200
+264.5: Peak Irradiance (W/cm^2): 269.575
+264.5: Spot Size (cm): 7.45951
+264.5: Range (m): 13200
+Platform broken.
+Distance to target: 13200
+265: Target UAV-SLOW-1-132 destroyed... READY
+266: Firing at target: UAV-SLOW-1-133 library/VM_data/const_1s_dynint.ll
+266: Peak Irradiance (W/cm^2): 264.892
+266: Spot Size (cm): 7.52506
+266: Range (m): 13300
+266.5: Peak Irradiance (W/cm^2): 264.892
+266.5: Spot Size (cm): 7.52506
+266.5: Range (m): 13300
+Platform broken.
+Distance to target: 13300
+267: Target UAV-SLOW-1-133 destroyed... READY
+268: Firing at target: UAV-SLOW-1-134 library/VM_data/const_1s_dynint.ll
+268: Peak Irradiance (W/cm^2): 260.335
+268: Spot Size (cm): 7.59055
+268: Range (m): 13400
+268.5: Peak Irradiance (W/cm^2): 260.335
+268.5: Spot Size (cm): 7.59055
+268.5: Range (m): 13400
+Platform broken.
+Distance to target: 13400
+269: Target UAV-SLOW-1-134 destroyed... READY
+270: Firing at target: UAV-SLOW-1-135 library/VM_data/const_1s_dynint.ll
+270: Peak Irradiance (W/cm^2): 255.871
+270: Spot Size (cm): 7.65639
+270: Range (m): 13500
+T = 270.000
+270.5: Peak Irradiance (W/cm^2): 255.871
+270.5: Spot Size (cm): 7.65639
+270.5: Range (m): 13500
+Platform broken.
+Distance to target: 13500
+271: Target UAV-SLOW-1-135 destroyed... READY
+272: Firing at target: UAV-SLOW-1-136 library/VM_data/const_1s_dynint.ll
+272: Peak Irradiance (W/cm^2): 251.527
+272: Spot Size (cm): 7.72214
+272: Range (m): 13600
+272.5: Peak Irradiance (W/cm^2): 251.527
+272.5: Spot Size (cm): 7.72214
+272.5: Range (m): 13600
+Platform broken.
+Distance to target: 13600
+273: Target UAV-SLOW-1-136 destroyed... READY
+274: Firing at target: UAV-SLOW-1-137 library/VM_data/const_1s_dynint.ll
+274: Peak Irradiance (W/cm^2): 247.283
+274: Spot Size (cm): 7.78804
+274: Range (m): 13700
+274.5: Peak Irradiance (W/cm^2): 247.283
+274.5: Spot Size (cm): 7.78804
+274.5: Range (m): 13700
+Platform broken.
+Distance to target: 13700
+275: Target UAV-SLOW-1-137 destroyed... READY
+276: Firing at target: UAV-SLOW-1-138 library/VM_data/const_1s_dynint.ll
+276: Peak Irradiance (W/cm^2): 243.123
+276: Spot Size (cm): 7.8543
+276: Range (m): 13800
+276.5: Peak Irradiance (W/cm^2): 243.123
+276.5: Spot Size (cm): 7.8543
+276.5: Range (m): 13800
+Platform broken.
+Distance to target: 13800
+277: Target UAV-SLOW-1-138 destroyed... READY
+278: Firing at target: UAV-SLOW-1-139 library/VM_data/const_1s_dynint.ll
+278: Peak Irradiance (W/cm^2): 239.074
+278: Spot Size (cm): 7.92046
+278: Range (m): 13900
+278.5: Peak Irradiance (W/cm^2): 239.074
+278.5: Spot Size (cm): 7.92046
+278.5: Range (m): 13900
+Platform broken.
+Distance to target: 13900
+279: Target UAV-SLOW-1-139 destroyed... READY
+280: Firing at target: UAV-SLOW-1-140 library/VM_data/const_1s_dynint.ll
+280: Peak Irradiance (W/cm^2): 235.116
+280: Spot Size (cm): 7.98677
+280: Range (m): 14000
+T = 280.000
+280.5: Peak Irradiance (W/cm^2): 235.116
+280.5: Spot Size (cm): 7.98677
+280.5: Range (m): 14000
+Platform broken.
+Distance to target: 14000
+281: Target UAV-SLOW-1-140 destroyed... READY
+282: Firing at target: UAV-SLOW-1-141 library/VM_data/const_1s_dynint.ll
+282: Peak Irradiance (W/cm^2): 231.234
+282: Spot Size (cm): 8.05347
+282: Range (m): 14100
+282.5: Peak Irradiance (W/cm^2): 231.234
+282.5: Spot Size (cm): 8.05347
+282.5: Range (m): 14100
+Platform broken.
+Distance to target: 14100
+283: Target UAV-SLOW-1-141 destroyed... READY
+284: Firing at target: UAV-SLOW-1-142 library/VM_data/const_1s_dynint.ll
+284: Peak Irradiance (W/cm^2): 227.453
+284: Spot Size (cm): 8.12004
+284: Range (m): 14200
+284.5: Peak Irradiance (W/cm^2): 227.453
+284.5: Spot Size (cm): 8.12004
+284.5: Range (m): 14200
+Platform broken.
+Distance to target: 14200
+285: Target UAV-SLOW-1-142 destroyed... READY
+286: Firing at target: UAV-SLOW-1-143 library/VM_data/const_1s_dynint.ll
+286: Peak Irradiance (W/cm^2): 223.757
+286: Spot Size (cm): 8.18676
+286: Range (m): 14300
+286.5: Peak Irradiance (W/cm^2): 223.757
+286.5: Spot Size (cm): 8.18676
+286.5: Range (m): 14300
+Platform broken.
+Distance to target: 14300
+287: Target UAV-SLOW-1-143 destroyed... READY
+288: Firing at target: UAV-SLOW-1-144 library/VM_data/const_1s_dynint.ll
+288: Peak Irradiance (W/cm^2): 220.142
+288: Spot Size (cm): 8.25364
+288: Range (m): 14400
+288.5: Peak Irradiance (W/cm^2): 220.142
+288.5: Spot Size (cm): 8.25364
+288.5: Range (m): 14400
+Platform broken.
+Distance to target: 14400
+289: Target UAV-SLOW-1-144 destroyed... READY
+290: Firing at target: UAV-SLOW-1-145 library/VM_data/const_1s_dynint.ll
+290: Peak Irradiance (W/cm^2): 216.607
+290: Spot Size (cm): 8.32066
+290: Range (m): 14500
+T = 290.000
+290.5: Peak Irradiance (W/cm^2): 216.607
+290.5: Spot Size (cm): 8.32066
+290.5: Range (m): 14500
+Platform broken.
+Distance to target: 14500
+291: Target UAV-SLOW-1-145 destroyed... READY
+292: Firing at target: UAV-SLOW-1-146 library/VM_data/const_1s_dynint.ll
+292: Peak Irradiance (W/cm^2): 213.136
+292: Spot Size (cm): 8.38807
+292: Range (m): 14600
+292.5: Peak Irradiance (W/cm^2): 213.136
+292.5: Spot Size (cm): 8.38807
+292.5: Range (m): 14600
+Platform broken.
+Distance to target: 14600
+293: Target UAV-SLOW-1-146 destroyed... READY
+294: Firing at target: UAV-SLOW-1-147 library/VM_data/const_1s_dynint.ll
+294: Peak Irradiance (W/cm^2): 209.754
+294: Spot Size (cm): 8.45536
+294: Range (m): 14700
+294.5: Peak Irradiance (W/cm^2): 209.754
+294.5: Spot Size (cm): 8.45536
+294.5: Range (m): 14700
+Platform broken.
+Distance to target: 14700
+295: Target UAV-SLOW-1-147 destroyed... READY
+296: Firing at target: UAV-SLOW-1-148 library/VM_data/const_1s_dynint.ll
+296: Peak Irradiance (W/cm^2): 206.445
+296: Spot Size (cm): 8.52279
+296: Range (m): 14800
+296.5: Peak Irradiance (W/cm^2): 206.445
+296.5: Spot Size (cm): 8.52279
+296.5: Range (m): 14800
+Platform broken.
+Distance to target: 14800
+297: Target UAV-SLOW-1-148 destroyed... READY
+298: Firing at target: UAV-SLOW-1-149 library/VM_data/const_1s_dynint.ll
+298: Peak Irradiance (W/cm^2): 203.206
+298: Spot Size (cm): 8.59038
+298: Range (m): 14900
+298.5: Peak Irradiance (W/cm^2): 203.206
+298.5: Spot Size (cm): 8.59038
+298.5: Range (m): 14900
+Platform broken.
+Distance to target: 14900
+299: Target UAV-SLOW-1-149 destroyed... READY
+300: Firing at target: UAV-SLOW-1-150 library/VM_data/const_1s_dynint.ll
+300: Peak Irradiance (W/cm^2): 200.037
+300: Spot Size (cm): 8.65811
+300: Range (m): 15000
+T = 300.000
+300.5: Peak Irradiance (W/cm^2): 200.037
+300.5: Spot Size (cm): 8.65811
+300.5: Range (m): 15000
+Platform broken.
+Distance to target: 15000
+301: Target UAV-SLOW-1-150 destroyed... READY
+T = 310.000
+T = 320.000
+T = 330.000
+T = 340.000
+T = 350.000
+T = 360.000
+T = 370.000
+T = 380.000
+T = 390.000
+T = 400.000
+T = 410.000
+T = 420.000
+T = 430.000
