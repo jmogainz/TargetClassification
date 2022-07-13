@@ -42,7 +42,6 @@ def convert_to_df(csv_file, df_container):
 
     df_container.append(df)
 
-
 def sep_data(df, class_container):
     # filter dataframe by class
     class_frames = {}
@@ -54,7 +53,6 @@ def sep_data(df, class_container):
         class_frames[label] = df_class
 
     return class_frames
-
 
 def slice_x(container):
     # verify container is dataframe
@@ -69,7 +67,6 @@ def slice_x(container):
         x_rCov_np = container[:, 43:52]
         return x_num_np, x_sCov_np, x_rCov_np
 
-
 def remove_outliers(df):
     # loop through only the columns that are not the class
     for col in df.columns[:-4]:
@@ -82,7 +79,6 @@ def remove_outliers(df):
             df = df[(df[col] >= mean-(4*sd))] #removes bottom 1% of data
 
     return df
-
 
 def clean_data(df):
     """
@@ -109,7 +105,6 @@ def clean_data(df):
 
     return df_clean
 
-
 def one_hot_encode(df):
     """
     One hot encode the dataframe
@@ -130,7 +125,6 @@ def one_hot_encode(df):
     
     return df_one_hot
 
-
 def retrieve(data_dir, df_container):
     if data_dir:
         remove_version_1_and_3(data_dir)
@@ -144,24 +138,18 @@ def create_train_sets(general_data='', specific_data='', specific_data_type=[],
                       specific_data_amount=[], x_train_path=[], y_train_path='',
                       complete_csv=''):
     """
-    Create training sets
-        General data and specific data directories can be used to create training set df's
-        
-        Complete ds csv files can also be used to generate training set df's
-            complete_csv is the path to a previously generated csv with
-            both x and y together
-
-        If more than one (general dir, specific dir, or complete csv) is provided,
-        they will be combined into a single df
+    Create ML/DL training/testing sets
+        All data sources (general_data, specific_data(can be altered using spec data params), and complete_csv)
+        are cleaned and combined into single dataframe that is returned 
+            Must provide at least one of these data sources
 
     Params:
-        general_data: directory containing x and y combined data
-        specific_data: directory containing extra specific data
-        specific_data_type: type of specific data to use
-        specific_data_amount: amount of specific data to use
-        x_train: list of training set x files (only runs in main)
-        y_train: training set y file (only runs in main)
-                             combine with main data
+        general_data: data directory from Guardian Batch run
+        specific_data: data directory from Guardian Batch run
+        specific_data_type: data type to extract from specific data; can be list (ie. [5200, 2200])
+        specific_data_amount: amount of data type to extract from specific data; can be list (ie. [100000, 25000])
+        x_train: list of output paths to store data features (only runs in main, and is strictly used for optional viewing/analysis)
+        y_train: singe output path to store data labels (only runs in main, and is strictly used for optional viewing/analysis)
         complete_csv: path to csv containing previous output of guardpreprocessing.py
     Returns:
         x_df: dataframe of x data
@@ -238,7 +226,6 @@ def main():
         sys.exit(1)
 
     valid_data = False
-    passed = False
     if args.specific_data_dir:
         if not os.path.exists(args.specific_data_dir):
             print("\nSpecific Data Directory does not exist")

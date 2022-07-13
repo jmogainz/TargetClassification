@@ -1,5 +1,5 @@
 """
-targetClassification.py
+GuardClassification.py
 -----------------------
     Driver for target classification model training
 """
@@ -30,7 +30,9 @@ import datetime
 import random
 import numpy as np
 
+
 global model_type, scaler, gs, acc
+
 
 def dataset(ds):
     # check if dataset exists
@@ -42,34 +44,39 @@ def dataset(ds):
 
     return x_df, y_df
 
-
 def preprocessor(x_df, y_df):
     global scaler
 
-    # classic data preprocessing procedure
+    train = {}; dev = {}; test = {}
+
+    # classic data preprocessing procedure, 3 way split
     (x_train, x_temp, y_train, y_temp) = train_test_split(x_df, y_df, train_size=0.7, 
                                                       test_size=0.3, random_state=42)
     (x_dev, x_test, y_dev, y_test) = train_test_split(x_temp, y_temp, train_size=0.01,
                                                     test_size=.99, random_state=42)
 
-    # one-hot encode the labels for all models
-    y_train_oh = one_hot_encode(y_train)
-    y_dev_oh = one_hot_encode(y_dev)
-    y_test_oh = one_hot_encode(y_test)
+    # if ML algo, do not one-hot encode; else, NN, do one-hot encode
+    if model_type == 'knn' or model_type == 'gb' or model_type == 'rf':
+        y_train = y_train.apply(lambda x: ''.join(x.values.astype(str)), axis=1)
+        y_dev = y_dev.apply(lambda x: ''.join(x.values.astype(str)), axis=1)
+        y_test = y_test.apply(lambda x: ''.join(x.values.astype(str)), axis=1)
+    else:
+        y_train = one_hot_encode(y_train)
+        y_dev = one_hot_encode(y_dev)
+        y_test = one_hot_encode(y_test)
 
     # slice data up into optional subsets 
     (x_train_num, x_train_scov, x_train_rcov) = slice_x(x_train)
     (x_dev_num, x_dev_scov, x_dev_rcov) = slice_x(x_dev)
     (x_test_num, x_test_scov, x_test_rcov) = slice_x(x_test)
 
-    # join num and scov
+    # join num and scov for num+scov subset
     x_train_num_scov = np.concatenate((x_train_num, x_train_scov), axis=1)
     x_dev_num_scov = np.concatenate((x_dev_num, x_dev_scov), axis=1)
     x_test_num_scov = np.concatenate((x_test_num, x_test_scov), axis=1)
 
-    # scaler has been imported, scale desired subset and return
+    # scaler has been imported, scale desired subset and return; we are only predicting
     if scaler:
-        train = {}; dev = {}; test = {}
         scaler_names = scaler['imported'].feature_names_in
         possible_dfs = {'num_scov': x_train_num_scov, 
                         'scov': x_train_scov,
@@ -82,10 +89,14 @@ def preprocessor(x_df, y_df):
             train[f'x_train_{df}'] = scaler['imported'].transform(possible_dfs[f'x_train_{df}'])
             dev[f'x_dev_{df}'] = scaler['imported'].transform(possible_dfs[f'x_dev_{df}'])
             test[f'x_test_{df}'] = scaler['imported'].transform(possible_dfs[f'x_test_{df}'])
+            train['y_train'] = y_train
+            dev['y_dev'] = y_dev
+            test['y_test'] = y_test
             break
 
         return train, dev, test
 
+    # building subsets for training models and predicting
     scaler['all'] = MinMaxScaler()
     x_train_all = scaler['all'].fit_transform(x_train)
     x_dev_all = scaler['all'].transform(x_dev)
@@ -123,11 +134,11 @@ def preprocessor(x_df, y_df):
 
         # dict of all data
         train = {'x_train_all': x_train_all, 'x_train_num': x_train_num, 'x_train_scov': x_train_scov,
-                'x_train_rcov': x_train_rcov, 'y_train': y_train_oh}
+                'x_train_rcov': x_train_rcov, 'y_train': y_train}
         dev = {'x_dev_all': x_dev_all, 'x_dev_num': x_dev_num, 'x_dev_scov': x_dev_scov, 'x_dev_rcov': 
-                x_dev_rcov, 'y_dev': y_dev_oh}
+                x_dev_rcov, 'y_dev': y_dev}
         test = {'x_test_all': x_test_all, 'x_test_num': x_test_num, 'x_test_scov': x_test_scov, 
-                'x_test_rcov': x_test_rcov, 'y_test': y_test_oh}
+                'x_test_rcov': x_test_rcov, 'y_test': y_test}
 
     else:
         scaler['num_scov'] = MinMaxScaler()
@@ -146,20 +157,14 @@ def preprocessor(x_df, y_df):
         x_test_rcov = scaler['rcov'].transform(x_test_rcov)
 
         train = {'x_train_num': x_train_num, 'x_train_scov': x_train_scov, 
-                'x_train_rcov': x_train_rcov, 'y_train': y_train_oh, 
+                'x_train_rcov': x_train_rcov, 'y_train': y_train, 
                 'x_train_num_scov': x_train_num_scov, 'x_train_all': x_train_all}
         dev = {'x_dev_num': x_dev_num, 'x_dev_scov': x_dev_scov, 'x_dev_rcov': x_dev_rcov, 
-               'y_dev': y_dev_oh, 'x_dev_num_scov': x_dev_num_scov, 'x_dev_all': x_dev_all}
+               'y_dev': y_dev, 'x_dev_num_scov': x_dev_num_scov, 'x_dev_all': x_dev_all}
         test = {'x_test_num': x_test_num, 'x_test_scov': x_test_scov, 'x_test_rcov': x_test_rcov,
-                'y_test': y_test_oh, 'x_test_num_scov': x_test_num_scov, 'x_test_all': x_test_all}
-
-        if model_type == 'knn' or model_type == 'gb' or model_type == 'rf':
-            train['y_train'] = y_train.apply(lambda x: ''.join(x.values.astype(str)), axis=1)
-            dev['y_dev'] = y_dev.apply(lambda x: ''.join(x.values.astype(str)), axis=1)
-            test['y_test'] = y_test.apply(lambda x: ''.join(x.values.astype(str)), axis=1)
+                'y_test': y_test, 'x_test_num_scov': x_test_num_scov, 'x_test_all': x_test_all}
 
     return train, dev, test
-
 
 def trainer(train, dev):
     print("\n[INFO] training model...")
@@ -267,38 +272,6 @@ def trainer(train, dev):
                    validation_data=([dev['x_dev_all'], dev['x_dev_scov']], dev['y_dev']), 
                    epochs=1000, batch_size=128, callbacks=[es, es_2])
 
-        """Dense Model on X NUM"""
-        # model = dense_model(7)
-        # opt = Adam(learning_rate=0.001)
-        # es = EarlyStopping(monitor='val_accuracy', mode='max', patience=30)
-        # model.compile(loss="categorical_crossentropy", optimizer=opt, metrics=["accuracy"])
-        # x_train_num = train['x_train_num']
-        # x_dev_num = dev['x_dev_num']
-        
-        # # convert 2d array to dataframe
-        # history = model.fit(x_train_num, train['y_train'], validation_data=(x_dev_num, dev['y_dev']),
-        #             epochs=50, batch_size=128, callbacks=[es])
-
-        """CNN on X SCOV and RCOV"""
-        # model = cnn2D_model(6, 6)
-        # opt = Adam(learning_rate=0.001)
-        # es = EarlyStopping(monitor='val_accuracy', mode='max', patience=30)
-        # model.compile(loss="categorical_crossentropy", optimizer=opt, metrics=["accuracy"])
-        # history = model.fit(train['x_train_scov'], train['y_train'], validation_data=(dev['x_dev_scov'], dev['y_dev']),
-                    # epochs=50, batch_size=128, callbacks=[es])
-
-        """Dense on X NUM and X SCOV"""
-        # model = dense_model(9)
-        # opt = Adam(learning_rate=0.001)
-        # es = EarlyStopping(monitor='val_accuracy', mode='max', patience=30)
-        # model.compile(loss="categorical_crossentropy", optimizer=opt, metrics=["accuracy"])
-        # # concat x_train_scov and x_train_rcov
-        # # x_train_cov = np.concatenate((train['x_train_rcov'], train['x_train_scov']), axis=1)
-        # # x_dev_cov = np.concatenate((dev['x_dev_rcov'], dev['x_dev_scov']), axis=1)
-
-        # history = model.fit(train['x_train_rcov'], train['y_train'], validation_data=(dev['x_dev_rcov'], dev['y_dev']),
-        #             epochs=50, batch_size=128, callbacks=[es])
-
     print(history.history.keys())
     # plot loss and accuracy for train and validation set on same graph
     plt.plot(history.history['accuracy'])
@@ -318,40 +291,26 @@ def trainer(train, dev):
         
     return model
 
-
 def predictor(model, test):
     global acc
     print("[INFO] predicting...")
 
-    if model_type == 'knn':
+    # ML algos
+    if model_type == 'knn' or model_type == 'gb' or model_type == 'rf':
         pred = model.predict(test['x_test_num_scov'])
         print(confusion_matrix(test['y_test'], pred))
-        acc = np.mean(pred == test['y_test'])
-        class_report = classification_report(test['y_test'], pred)
-        print("[INFO] classification accuracy: ", acc)
-        print("[INFO] classification report: ", class_report)
-
-        return
-    if model_type == 'gb':
-        pred = model.predict(test['x_test_num_scov'])
         acc = accuracy_score(test['y_test'], pred)
         class_report = classification_report(test['y_test'], pred)
         print("[INFO] classification accuracy: ", acc)
         print("[INFO] classification report: ", class_report)
 
         return
-    if model_type == 'rf':
-        pred = model.predict(test['x_test_num_scov'])
-        acc = accuracy_score(test['y_test'], pred)
-        class_report = classification_report(test['y_test'], pred)
-        print("[INFO] classification accuracy: ", acc)
-        print("[INFO] classification report: ", class_report)
-
-        return
+    
+    # Neural Networks
     if model_type == 'dense':
         pred = model.predict(test['x_test_all'])
     if model_type == 'merge':
-        pred = model.predict([test['x_test_num'], test['x_test_scov'], test['x_test_rcov']])
+        pred = model.predict([test['x_test_num'], test['x_test_scov']])
 
     y_test_np = test['y_test'].values
 
@@ -367,20 +326,10 @@ def predictor(model, test):
     print("[INFO] classification accuracy: {:.2f}%".format(
         (acc) * 100.0))
 
-
 def measure(model, test):
     prediction_performance = 0
     
-    if model_type == 'knn':
-        sample = random.randint(0, len(test['x_test_num_scov']))
-        x_test_num_scov_one = test['x_test_num_scov'][sample][0:].reshape(1, -1)
-        y_test_one = test['y_test'].values[sample]
-
-        start = time.perf_counter()
-        pred = model.predict(x_test_num_scov_one)
-        prediction_performance = time.perf_counter() - start
-
-    if model_type == 'gb':
+    if model_type == 'knn' or model_type == 'gb' or model_type == 'rf':
         sample = random.randint(0, len(test['x_test_num_scov']))
         x_test_num_scov_one = test['x_test_num_scov'][sample][0:].reshape(1, -1)
         y_test_one = test['y_test'].values[sample]
@@ -391,15 +340,6 @@ def measure(model, test):
 
         if isinstance(pred, np.ndarray):
             pred = int(pred)
-
-    if model_type == 'rf':
-        sample = random.randint(0, len(test['x_test_num_scov']))
-        x_test_num_scov_one = test['x_test_num_scov'][sample][0:].reshape(1, -1)
-        y_test_one = test['y_test'].values[sample]
-
-        start = time.perf_counter()
-        pred = model.predict(x_test_num_scov_one)
-        prediction_performance = time.perf_counter() - start
 
     if model_type == 'dense':
         # predict random sample
@@ -423,21 +363,20 @@ def measure(model, test):
         sample = random.randint(0, len(test['x_test_all']))
         x_test_num_one = test['x_test_num'][sample][0:].reshape(1, -1)
         x_test_scov_one = test['x_test_scov'][sample][0:].reshape(1, -1)
-        x_test_rcov_one = test['x_test_rcov'][sample][0:].reshape(1, -1)
         y_test_one = test['y_test'].values[sample][0:]
 
         start = time.perf_counter()
-        pred = model.predict([x_test_num_one, x_test_scov_one, x_test_rcov_one])
+        pred = model.predict([x_test_num_one, x_test_scov_one])
         prediction_performance = time.perf_counter() - start
     
     print("prediction performance:", prediction_performance)
     print("prediction:", pred)
     print("truth:", y_test_one)
 
-
 def saver(model, ds, test):
     global acc
     print("[INFO] serializing network...")
+    scaler_used = ''
 
     current_dt = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
     # round accuracy to 2 decimal places
@@ -446,14 +385,18 @@ def saver(model, ds, test):
     model_path = f"Models/{model_type}_model_{acc}_{current_dt}_{len(ds)}_{len(test['y_test'])}.h5"
     scaler_path = f"Models/{model_type}_scaler_{acc}_{current_dt}_{len(ds)}_{len(test['y_test'])}.save"
 
-    # save scaler model 
-    joblib.dump(scaler, scaler_path)
-
     if model_type == 'knn' or model_type == 'gb' or model_type == 'rf':
         joblib.dump(model, model_path)
-
-    if model_type == 'dense' or model_type == 'merge':
+        scaler_used = 'num_scov'
+    if model_type == 'dense':
         model.save(model_path)
+        scaler_used = 'all'
+    if model_type == 'merge':
+        model.save(model_path)
+        scaler_used = 'num'
+
+    # save scaler model 
+    joblib.dump(scaler[scaler_used], scaler_path)
 
 
 def main():
@@ -522,7 +465,6 @@ def main():
         predictor(model, test)
     else:
         measure(model, test)
-
 
 
 if __name__ == "__main__":
