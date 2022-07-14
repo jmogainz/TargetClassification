@@ -38,7 +38,9 @@ Models
 # Imports
 import os
 from tensorflow.keras.models import Sequential, Model
-from tensorflow.keras.layers import Dense, Dropout, Flatten, Conv2D, Conv1D, MaxPooling2D, MaxPooling1D, Input, concatenate, Activation, BatchNormalization
+from tensorflow.keras.layers import (Dense, Dropout, Flatten, Conv2D, Conv1D, MaxPooling2D, 
+                                     MaxPooling1D, Input, concatenate, Activation, 
+                                     BatchNormalization, LSTM)
 import tensorflow.keras.optimizers as opts
 import numpy as np
 
@@ -82,7 +84,6 @@ def dense_model(size):
 
     return model
     
-
 def GS_model(final_activ='softmax', activ='relu', hl_size=38, hl_depth=5, drop_rate=0.0, optimizer='Adam', weight_init='glorot_uniform',
              decay=.0005, momentum=0, learn_rate=.001, input_dim=52):
     input = Input(shape=(input_dim,))
@@ -111,7 +112,6 @@ def GS_model(final_activ='softmax', activ='relu', hl_size=38, hl_depth=5, drop_r
     model.compile(loss='categorical_crossentropy', optimizer=opt, metrics=['accuracy'])
 
     return model
-
 
 # 2D CNN model for 36 or 9 inputs 
 # possibly add batch norm if overfitting
@@ -148,7 +148,6 @@ def cnn2D_model(width, height, kernal_size=(3, 3)):
 
     return model
 
-
 # batch norm if overfitting
 # use for time series
 def cnn1D_model():
@@ -170,7 +169,6 @@ def cnn1D_model():
     model.add(Dense(units=5, activation='softmax'))
 
     return model
-
 
 # possibly add batch norm if overfitting
 # functional model
@@ -199,3 +197,17 @@ def merge_model():
     model3 = Model(inputs=[model1.input, model2.input], outputs=output_tensor)
 
     return model3
+
+def time_series_model(time_steps, features):
+    input = Input(shape=(time_steps, features))
+
+    hidden1 = LSTM(units=32, return_sequences=True)(input)
+    hidden2 = Dropout(0.2)(hidden1)
+    hidden3 = LSTM(units=32, return_sequences=False)(hidden2)
+    hidden4 = Dropout(0.2)(hidden3)
+    
+    output = Dense(units=5, activation='softmax')(hidden4)
+
+    model = Model(inputs=input, outputs=output)
+
+    return model

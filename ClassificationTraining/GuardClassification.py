@@ -6,11 +6,12 @@ GuardClassification.py
 
 # Imports
 from guardpreprocessing import * 
-from models import dense_model, merge_model, cnn2D_model, GS_model 
+from models import dense_model, merge_model, cnn2D_model, GS_model, time_series_model 
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.naive_bayes import GaussianNB
 from xgboost import XGBClassifier
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
 from tensorflow.keras.wrappers.scikit_learn import KerasClassifier
@@ -46,17 +47,17 @@ def dataset(ds):
 
 def preprocessor(x_df, y_df):
     global scaler
-
     train = {}; dev = {}; test = {}
 
     # classic data preprocessing procedure, 3 way split
     (x_train, x_temp, y_train, y_temp) = train_test_split(x_df, y_df, train_size=0.7, 
                                                       test_size=0.3, random_state=42)
-    (x_dev, x_test, y_dev, y_test) = train_test_split(x_temp, y_temp, train_size=0.01,
-                                                    test_size=.99, random_state=42)
+    (x_dev, x_test, y_dev, y_test) = train_test_split(x_temp, y_temp, train_size=0.99,
+                                                    test_size=.01, random_state=42)
 
     # if ML algo, do not one-hot encode; else, NN, do one-hot encode
-    if model_type == 'knn' or model_type == 'gb' or model_type == 'rf':
+    if (model_type == 'knn' or model_type == 'gb' or model_type == 'rf' or
+        model_type == 'nb'):
         y_train = y_train.apply(lambda x: ''.join(x.values.astype(str)), axis=1)
         y_dev = y_dev.apply(lambda x: ''.join(x.values.astype(str)), axis=1)
         y_test = y_test.apply(lambda x: ''.join(x.values.astype(str)), axis=1)
@@ -86,10 +87,8 @@ def preprocessor(x_df, y_df):
             for col in scaler_names:
                 if col not in possible_dfs[df].columns:
                     break
-            train[f'x_train_{df}'] = scaler['imported'].transform(possible_dfs[f'x_train_{df}'])
             dev[f'x_dev_{df}'] = scaler['imported'].transform(possible_dfs[f'x_dev_{df}'])
             test[f'x_test_{df}'] = scaler['imported'].transform(possible_dfs[f'x_test_{df}'])
-            train['y_train'] = y_train
             dev['y_dev'] = y_dev
             test['y_test'] = y_test
             break
@@ -175,6 +174,12 @@ def trainer(train, dev):
 
         return model
 
+    if model_type == 'nb':
+        model = GaussianNB()
+        model.fit(train['x_train_num_scov'], train['y_train'])
+
+        return model
+
     if model_type == 'gb':
         if gs:
             model = XGBClassifier(n_jobs=6)
@@ -253,10 +258,9 @@ def trainer(train, dev):
             es = EarlyStopping(monitor='val_accuracy', mode='max', patience=100)
             es_2 = EarlyStopping(monitor='val_loss', mode='min', patience=100)
             model.compile(loss="categorical_crossentropy", optimizer=opt, metrics=["accuracy"])
-            x_train_all = train['x_train_all']
-            x_dev_all = dev['x_dev_all']
-            history = model.fit(x_train_all, train['y_train'], validation_data=(x_dev_all, dev['y_dev']), 
-                epochs=1000, batch_size=128, callbacks=[es, es_2])
+            history = model.fit(train['x_train_all'], train['y_train'], 
+                                validation_data=(dev['x_dev_all'], dev['y_dev']), 
+                                epochs=1000, batch_size=256, callbacks=[es, es_2])
 
     if model_type == 'merge':
         ##### for testing purposes #####
@@ -271,6 +275,16 @@ def trainer(train, dev):
         history = model.fit([train['x_train_all'], train['x_train_scov']], train['y_train'], 
                    validation_data=([dev['x_dev_all'], dev['x_dev_scov']], dev['y_dev']), 
                    epochs=1000, batch_size=128, callbacks=[es, es_2])
+
+    if model_type == 'ts':
+        model = time_series_model(8, 52) # placeholder for time series model
+        opt = Adam(learning_rate=0.001)
+        es = EarlyStopping(monitor='val_accuracy', mode='max', patience=20)
+        es_2 = EarlyStopping(monitor='val_loss', mode='min', patience=20)
+        model.compile(loss="categorical_crossentropy", optimizer=opt, metrics=["accuracy"])
+        history = model.fit(train['x_train_all'], train['y_train'],
+                     validation_data=(dev['x_dev_all'], dev['y_dev']),
+                        epochs=1000, batch_size=128, callbacks=[es, es_2])
 
     print(history.history.keys())
     # plot loss and accuracy for train and validation set on same graph
@@ -296,7 +310,8 @@ def predictor(model, test):
     print("[INFO] predicting...")
 
     # ML algos
-    if model_type == 'knn' or model_type == 'gb' or model_type == 'rf':
+    if (model_type == 'knn' or model_type == 'gb' or model_type == 'rf' or
+        model_type == 'nb'):
         pred = model.predict(test['x_test_num_scov'])
         print(confusion_matrix(test['y_test'], pred))
         acc = accuracy_score(test['y_test'], pred)
@@ -329,7 +344,8 @@ def predictor(model, test):
 def measure(model, test):
     prediction_performance = 0
     
-    if model_type == 'knn' or model_type == 'gb' or model_type == 'rf':
+    if (model_type == 'knn' or model_type == 'gb' or model_type == 'rf'
+        or model_type == 'nb'):
         sample = random.randint(0, len(test['x_test_num_scov']))
         x_test_num_scov_one = test['x_test_num_scov'][sample][0:].reshape(1, -1)
         y_test_one = test['y_test'].values[sample]
@@ -376,16 +392,16 @@ def measure(model, test):
 def saver(model, ds, test):
     global acc
     print("[INFO] serializing network...")
+
     scaler_used = ''
-
     current_dt = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
-    # round accuracy to 2 decimal places
-    acc = round(acc, 4) * 100
+    acc = round(acc, 4) * 100 # round accuracy to 2 decimal places
 
-    model_path = f"Models/{model_type}_model_{acc}_{current_dt}_{len(ds)}_{len(test['y_test'])}.h5"
-    scaler_path = f"Models/{model_type}_scaler_{acc}_{current_dt}_{len(ds)}_{len(test['y_test'])}.save"
+    model_path = f"Models/{model_type}_model_{acc}_{current_dt}_ds_size_{len(ds)}_tested_with_{len(test['y_test'])}.h5"
+    scaler_path = f"Models/{model_type}_scaler_{acc}_{current_dt}_{len(ds)}_.save"
 
-    if model_type == 'knn' or model_type == 'gb' or model_type == 'rf':
+    if (model_type == 'knn' or model_type == 'gb' or model_type == 'rf' or 
+        model_type == 'nb'):
         joblib.dump(model, model_path)
         scaler_used = 'num_scov'
     if model_type == 'dense':
@@ -407,7 +423,7 @@ def main():
     ap.add_argument("-d", "--dataset", type=str, required=True,
         help="path to input dataset from guardian")
     ap.add_argument("-m", "--model", type=str, default="dense",
-        help="type of model to train (merge, dense, knn, gb, rb)")
+        help="type of model to train (merge, dense, knn, gb, rf, nb)")
     ap.add_argument("-lm", "--load_model", type=str, default="",
         help="path to load model from")
     ap.add_argument("-ls", "--load_scaler", type=str, default="",
@@ -435,6 +451,11 @@ def main():
                 scaler['imported'] = joblib.load(loaded_scaler)
                 model_loaded = True
                 model_type = 'knn'
+            if 'nb' in loaded_model:
+                model = joblib.load(loaded_model)
+                scaler['imported'] = joblib.load(loaded_scaler)
+                model_loaded = True
+                model_type = 'nb'
             if 'gb' in loaded_model:
                 model = joblib.load(loaded_model)
                 scaler['imported'] = joblib.load(loaded_scaler)
