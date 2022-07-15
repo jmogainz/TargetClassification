@@ -163,6 +163,19 @@ def preprocessor(x_df, y_df):
         test = {'x_test_num': x_test_num, 'x_test_scov': x_test_scov, 'x_test_rcov': x_test_rcov,
                 'y_test': y_test, 'x_test_num_scov': x_test_num_scov, 'x_test_all': x_test_all}
 
+        if model_type == 'ts':
+            steps = 4
+            print(train['x_train_all'].shape)
+            train['x_train_all'] = train['x_train_all'].reshape(-1, 4, 52, 1)
+            print(train['x_train_all'].shape)
+            sys.exit(1)
+            dev['x_dev_all'] = np.array([x_dev_all[i:i+steps] for i in range(0, len(x_dev_all), steps)])
+            test['x_test_all'] = np.array([x_test_all[i:i+steps] for i in range(0, len(x_test_all), steps)])
+            train['y_train'] = y_train.iloc[::steps]
+            dev['y_dev'] = y_dev.iloc[::steps]
+            test['y_test'] = y_test.iloc[::steps]
+            
+
     return train, dev, test
 
 def trainer(train, dev):
@@ -277,7 +290,7 @@ def trainer(train, dev):
                    epochs=1000, batch_size=128, callbacks=[es, es_2])
 
     if model_type == 'ts':
-        model = time_series_model(8, 52) # placeholder for time series model
+        model = time_series_model(4, 52) # placeholder for time series model
         opt = Adam(learning_rate=0.001)
         es = EarlyStopping(monitor='val_accuracy', mode='max', patience=20)
         es_2 = EarlyStopping(monitor='val_loss', mode='min', patience=20)

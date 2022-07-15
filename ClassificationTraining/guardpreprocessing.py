@@ -16,7 +16,7 @@ from helpers import *
 from scipy import stats
 import threading
 import multiprocessing
-from multiprocessing import Process, Manager, Pool
+from multiprocessing.pool import ThreadPool
 import queue as q
 import matplotlib.pyplot as plt
 from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
@@ -39,16 +39,16 @@ dict_specific_data = {"2200": [2,2,0,0], "5200": [5,2,0,0], "1122": [1,1,2,2],
 "1112": [1,1,1,2], "1111": [1,1,1,1]}
 
 # multiprocessing variables
-lock = multiprocessing.Lock()
+procs = multiprocessing.cpu_count() * 2 // 3
 ###############################################################################
 
 
-def combine_data(csv_file, time_series, queue):
+def combine_data(csv_file, data_dir, time_series):
     """
     Create labels for data
     """
     # reads it in so that first row gets read in as header and then replaced with labels (first row is convoluted)
-    df = pd.read_csv(csv_file, delimiter=",")
+    df = pd.read_csv(data_dir + "/" + csv_file, delimiter=",")
     df.columns = features_combined
 
     # if total samples is not a multiple of the time series step, remove the last few samples
@@ -58,116 +58,130 @@ def combine_data(csv_file, time_series, queue):
 
     # lock.acquire()
     # append to file shared across processes
-    queue.put(df)
+    return df
     # queue.append(df)
     # lock.release()
 
-def threaded_time_series_clean(df):
-    None
+def sep_data(df, class_container):
+    # separate data into dataframes based on classes specified in class_container
+    class_frames = {}
+    for label in class_container:
+        df_class = df[df["Class"] == dict_specific_data[label][0]]
+        df_class = df_class[df_class["Subclass"] == dict_specific_data[label][1]]
+        df_class = df_class[df_class["Type"] == dict_specific_data[label][2]]
+        df_class = df_class[df_class["Subtype"] == dict_specific_data[label][3]]
+        class_frames[label] = df_class
+
+    return class_frames
+
+def slice_x(container):
+    # if dataframe, use pandas slice; else, use numpy slice
+    if isinstance(container, pd.DataFrame):
+        x_num_df = container[features_combined[0:7]].copy(deep=True)
+        x_sCov_df = container[features_combined[7:43]].copy(deep=True)
+        x_rCov_df = container[features_combined[43:52]].copy(deep=True)
+        return x_num_df, x_sCov_df, x_rCov_df
+    else:
+        x_num_np = container[:, 0:7]
+        x_sCov_np = container[:, 7:43]
+        x_rCov_np = container[:, 43:52]
+        return x_num_np, x_sCov_np, x_rCov_np
+
+def remove_outliers(df):
+    # loop through only the columns that are not the class
+    for col in df.columns[:-4]:
+        mean = df[col].mean()
+        sd = df[col].std()
+        if col == "range":
+            df = df[df[col] >= 300]
+        else:
+            df = df[(df[col] <= mean+(4*sd))] #removes top 1% of data
+            df = df[(df[col] >= mean-(4*sd))] #removes bottom 1% of data
+
+    return df
+
+def one_hot_encode(df):
+    """
+    One hot encode the dataframe
+    """
+    df_one_hot = df.copy(deep=True)
+
+    # join each column of each row 
+    df_one_hot = df_one_hot.apply(lambda x: ''.join(x.values.astype(str)), axis=1)
+
+    # reshape for single feature
+    df_one_hot = df_one_hot.values.reshape(-1, 1)
+
+    # one hot encode the data
+    enc = OneHotEncoder(sparse=False)
+    enc.fit(df_one_hot)
+    df_one_hot = enc.transform(df_one_hot)
+    df_one_hot = pd.DataFrame(df_one_hot, columns=enc.categories_)
+    
+    return df_one_hot
+
+def clean_time_series(df_slice, features_subset, time_series):
+    df_slice = df_slice[df_slice["verticalSpeed"] != 0]
+    df_slice = df_slice[df_slice["signalToNoiseRatio"] != 0]
+    df_slice = df_slice[df_slice["range"] >= 300]
+    df_slice = df_slice.drop_duplicates(inplace=False, keep='first', subset=features_subset)
+    if len(df_slice) < time_series:
+        return pd.DataFrame()
+    else:
+        return df_slice
 
 def clean_data(df, time_series):
     """
     Clean data
     """
-    df_clean = pd.DataFrame()
     features_subset = features_combined[:2] + features_combined[3:]
 
     # time series dataframes must handles differently
     if time_series:
-        # loop through dataframe in increments of time series
-        cnt = 0
+        df_slices_list = []
         for i in range(0, len(df), time_series):
-            # slice dataframe into rows of size time_series
-            df_slice = df.iloc[i:i+time_series]
-            df_slice = df_slice[df_slice["verticalSpeed"] != 0]
-            df_slice = df_slice[df_slice["signalToNoiseRatio"] != 0]
-            df_slice = df_slice[df_slice["range"] >= 300]
-            df_slice = df_slice.drop_duplicates(inplace=False, keep='first', subset=features_subset)
-            if len(df_slice) < time_series:
-                continue # this series is corrupted, so skip it
-            else:
-                # concat this slice onto the clean dataframe
-                df_clean = pd.concat([df_clean, df_slice], ignore_index=True)
-            cnt += 1
-            print("df_clean: ", len(df_clean), " df_slices: ", cnt)
-        return df_clean
+            df_slices_list.append(df.iloc[i:i+time_series])
+
+        st = time.perf_counter()
+        print(f"[INFO] Launching {procs} processes to clean each time series...")
+        with multiprocessing.Pool(processes=procs) as pool:
+            result = pool.map(partial(clean_time_series, features_subset=features_subset, 
+                              time_series=time_series), df_slices_list)
+            print("[INFO] Cleaning time series took (s):", time.perf_counter() - st)
+            df_clean = pd.concat(result)
+
+            return df_clean
 
     # exclude vertical velocity from the data, it is falsy calculated when afsim reports duplicates
     df_clean = df.drop_duplicates(inplace=False, keep='first', subset=features_subset)
 
+    # outlier removal
     df_clean = df_clean[df_clean["verticalSpeed"] != 0]
     df_clean = df_clean[df_clean["signalToNoiseRatio"] != 0]
+    separated_df = sep_data(df_clean, dict_specific_data)
+    for label in separated_df:
+        print(separated_df[label].describe(percentiles=[0.01, 0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 0.95, 0.99, 0.999, 0.9999]))
+        separated_df[label] = remove_outliers(separated_df[label])
+        print(separated_df[label].describe(percentiles=[0.01, 0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 0.95, 0.99, 0.999, 0.9999]))
+    df_clean = pd.concat(separated_df)
 
-    # removing outliers and shuffling changes dataset every time, only use during dataset creation
-    if __name__ == "__main__":
-        # outlier removal
-        separated_df = sep_data(df_clean, dict_specific_data)
-        for label in separated_df:
-            print(separated_df[label].describe(percentiles=[0.01, 0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 0.95, 0.99, 0.999, 0.9999]))
-            separated_df[label] = remove_outliers(separated_df[label])
-            print(separated_df[label].describe(percentiles=[0.01, 0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 0.95, 0.99, 0.999, 0.9999]))
-        df_clean = pd.concat(separated_df)
-
-        # shuffle the data
-        df_clean = df_clean.sample(frac=1).reset_index(drop=True)
+    # shuffle the data
+    df_clean = df_clean.sample(frac=1).reset_index(drop=True)
 
     return df_clean
-
-def list_worker(files, queue, data_dir, time_series, finished):
-    for file in files:
-        if file.endswith(".csv"):
-            combine_data(data_dir + "/" + file, time_series, queue)
-    finished.value += 1
 
 def retrieve(data_dir, time_series):
     if data_dir:
         remove_version_1_and_3(data_dir)
-
         files = os.listdir(data_dir)
-        df_list = []
 
-        proc_cnt = 5
-        files_list_len = len(files) // proc_cnt
-        last_list_len = len(files) % proc_cnt
-        files_list = [files[i:i+files_list_len] for i in range(0, len(files), files_list_len)]
-        if last_list_len != 0:
-            files_list.append(files[-last_list_len:])
-            proc_cnt += 1
-
+        print(f"[INFO] Launching {procs} processes to load data into memory...")
         st = time.perf_counter()
-        jobs = []
-        queue = multiprocessing.Queue()
-        finished = multiprocessing.Value('i', 0)
-        for i in range(proc_cnt):
-            p = multiprocessing.Process(target=list_worker, args=(files_list[i], queue, data_dir, time_series, finished))
-            jobs.append(p)
-            p.start()
+        with multiprocessing.Pool(processes=procs) as pool:
+            results = pool.map(partial(combine_data, data_dir=data_dir, time_series=time_series), files)                
+            print("[INFO] Loading data into memory took (s):", time.perf_counter() - st)
 
-        print("Process start: ", time.perf_counter() - st)
-
-        while True:
-            try:
-                _item = queue.get_nowait() # do not block; empty function is not reliable
-                if not isinstance(_item, pd.DataFrame):
-                    break
-                else:
-                    df_list.append(_item)
-                if finished.value == proc_cnt:
-                    queue.put(0)
-            except q.Empty:
-                pass
-
-        for proc in jobs:
-            proc.join()
-
-        # for file in os.listdir(data_dir):
-        #     if file.endswith(".csv"):
-        #         combine_data(data_dir + "/" + file, time_series, df_list)
-                
-        print("total: ", time.perf_counter() - st)
-
-        # combine all dataframes
-        return df_list
+            return results
     
     return [pd.DataFrame()]
 
@@ -197,7 +211,7 @@ def create_train_sets(general_data='', specific_data='', specific_data_type=[],
     
     gen_df = retrieve(general_data, time_series)
     spec_df = retrieve(specific_data, time_series)
-    spec_df = pd.concat(spec_df); gen_df = pd.concat(gen_df)
+    spec_df = pd.concat(spec_df, ignore_index=True); gen_df = pd.concat(gen_df, ignore_index=True)
 
     if specific_data:
         separated_df = sep_data(spec_df, specific_data_type)
@@ -205,46 +219,49 @@ def create_train_sets(general_data='', specific_data='', specific_data_type=[],
         for label in separated_df:
             try:
                 if time_series:
-                    print(f"Extracting {specific_data_amount[pos] // time_series} time series from {label}")
+                    print(f"[INFO] Extracting {specific_data_amount[pos] // time_series} time series from {label}")
                     separated_df[label] = separated_df[label].iloc[:(specific_data_amount[pos] // time_series * time_series)]
                 else:
-                    print(f"Extracting {specific_data_amount[pos]} data samples from {label}") 
+                    print(f"[INFO] Extracting {specific_data_amount[pos]} data samples from {label}") 
                     separated_df[label] = separated_df[label].sample(n=specific_data_amount[pos])
             except:
-                print(f"\nError: specific data amount for {label} is too large or not provided, taking as much as possible\n")
+                print(f"\n[ERROR] Specific data amount for {label} is too large or not provided, taking as much as possible\n")
             pos += 1
-        spec_df = pd.concat(separated_df)
+        spec_df = pd.concat(separated_df, ignore_index=True)
 
-    df = pd.concat([gen_df, spec_df])
+    df = pd.concat([gen_df, spec_df], ignore_index=True)
 
+    # if preprocessing, combine with new data and clean
+    # else, combine with new data and return (do not want to clean if potentially time series)
     if complete_csv:
         df_complete = pd.read_csv(complete_csv, delimiter=",")
         df_complete.columns = features_combined
         df = pd.concat([df, df_complete])
+        if not __name__ == "__main__":
+            x_df = df.loc[:, 'speed':'rCov9']
+            y_df = df.loc[:, 'Class':'Subtype']
+            return x_df, y_df
 
-    print("Size of df before cleaning: " + str(df.shape)) 
+    print("[INFO] Size of df before cleaning: " + str(df.shape)) 
     df = clean_data(df, time_series)
-    print("Size of df after necessary cleaning: " + str(df.shape))
+    print("[INFO] Size of df after necessary cleaning: " + str(df.shape))
 
     # slice dataset into its respective parts
     x_num_df, x_sCov_df, x_rCov_df = slice_x(df)
     x_df = df.loc[:, 'speed':'rCov9']
     y_df = df.loc[:, 'Class':'Subtype']
+        
+    # display the amount of training examples in each class
+    one_hot_df = one_hot_encode(y_df)
+    print("\nAmount of training examples in each class:")
+    for col in one_hot_df.columns:
+        print(f"{col[0]}: {one_hot_df[col].sum()}")
 
-    if __name__ == "__main__":
-        # display the amount of training examples in each class
-        one_hot_df = one_hot_encode(y_df)
-        print("\nAmount of training examples in each class:")
-        for col in one_hot_df.columns:
-            print(f"{col[0]}: {one_hot_df[col].sum()}")
-
-        df.to_csv(f"current_complete.csv", index=False)
-        x_num_df.to_csv(x_train_path[0], index=False)
-        x_sCov_df.to_csv(x_train_path[1], index=False)
-        x_rCov_df.to_csv(x_train_path[2], index=False)
-        y_df.to_csv(y_train_path, index=False)
-
-    return x_df, y_df
+    df.to_csv("current_complete.csv", index=False)
+    x_num_df.to_csv(x_train_path[0], index=False)
+    x_sCov_df.to_csv(x_train_path[1], index=False)
+    x_rCov_df.to_csv(x_train_path[2], index=False)
+    y_df.to_csv(y_train_path, index=False)
 
 
 def main():
@@ -306,9 +323,9 @@ def main():
         valid_data = True
 
     # output file names
-    y_train_path = "train_y_set.csv"
-    x_train_path = ["train_x_set_num.csv", "train_x_set_sCov.csv", "train_x_set_rCov.csv"]
-    print("[INFO] Input args processed...\n")
+    y_train_path = "prepared_y_set.csv"
+    x_train_path = ["prepared_x_set_num.csv", "prepared_x_set_sCov.csv", "prepared_x_set_rCov.csv"]
+    print("[INFO] Input args processed...")
     # create training sets
     if valid_data:
         create_train_sets(args.general_data_dir, args.specific_data_dir, args.specific_data_type, 
