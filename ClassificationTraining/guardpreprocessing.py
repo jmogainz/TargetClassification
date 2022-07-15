@@ -13,16 +13,15 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import OneHotEncoder
 from helpers import *
-from SharedPandasDF import SharedDF, SharedNumpyArray
 from scipy import stats
 import threading
 import multiprocessing
 from multiprocessing import Process, Manager, Pool
+import queue as q
 import matplotlib.pyplot as plt
 from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
 from functools import partial
 import time
-from tqdm import tqdm
 
 
 ############################## Global Variables ###############################
@@ -44,15 +43,12 @@ lock = multiprocessing.Lock()
 ###############################################################################
 
 
-def convert_to_df(args, csv_dir, time_series):
+def combine_data(csv_file, time_series, queue):
     """
     Create labels for data
     """
-    shared_df, file = args
-    local_df = shared_df.read()
-
     # reads it in so that first row gets read in as header and then replaced with labels (first row is convoluted)
-    df = pd.read_csv(f"{csv_dir}/{file}", delimiter=",")
+    df = pd.read_csv(csv_file, delimiter=",")
     df.columns = features_combined
 
     # if total samples is not a multiple of the time series step, remove the last few samples
@@ -60,11 +56,11 @@ def convert_to_df(args, csv_dir, time_series):
         if len(df) % time_series != 0:
             df = df[:-(len(df) % time_series)]
 
-    local_df = pd.concat([local_df, df], ignore_index=True)
-
-    return SharedDF(local_df)
-
-
+    # lock.acquire()
+    # append to file shared across processes
+    queue.put(df)
+    # queue.append(df)
+    # lock.release()
 
 def threaded_time_series_clean(df):
     None
@@ -117,25 +113,61 @@ def clean_data(df, time_series):
 
     return df_clean
 
+def list_worker(files, queue, data_dir, time_series, finished):
+    for file in files:
+        if file.endswith(".csv"):
+            combine_data(data_dir + "/" + file, time_series, queue)
+    finished.value += 1
+
 def retrieve(data_dir, time_series):
     if data_dir:
         remove_version_1_and_3(data_dir)
+
         files = os.listdir(data_dir)
-        # initialize dataframe with 1s
-        temp_df = pd.DataFrame(np.ones((1, len(features_combined))))
-        shared_df = SharedDF(temp_df)
+        df_list = []
+
+        proc_cnt = 5
+        files_list_len = len(files) // proc_cnt
+        last_list_len = len(files) % proc_cnt
+        files_list = [files[i:i+files_list_len] for i in range(0, len(files), files_list_len)]
+        if last_list_len != 0:
+            files_list.append(files[-last_list_len:])
+            proc_cnt += 1
+
         st = time.perf_counter()
-        with ProcessPoolExecutor() as executor:
-            tasks = ((shared_df, file) for file in (files))
-            result = executor.map(partial(convert_to_df, csv_dir=data_dir, time_series=time_series), tasks)
-            for res in tqdm(result, total=len(files)):
-                res.unlink()
-            shared_df.unlink()
-        print(time.perf_counter() - st)
+        jobs = []
+        queue = multiprocessing.Queue()
+        finished = multiprocessing.Value('i', 0)
+        for i in range(proc_cnt):
+            p = multiprocessing.Process(target=list_worker, args=(files_list[i], queue, data_dir, time_series, finished))
+            jobs.append(p)
+            p.start()
+
+        print("Process start: ", time.perf_counter() - st)
+
+        while True:
+            try:
+                _item = queue.get_nowait() # do not block; empty function is not reliable
+                if not isinstance(_item, pd.DataFrame):
+                    break
+                else:
+                    df_list.append(_item)
+                if finished.value == proc_cnt:
+                    queue.put(0)
+            except q.Empty:
+                pass
+
+        for proc in jobs:
+            proc.join()
+
         # for file in os.listdir(data_dir):
-            # if file.endswith(".csv"):
-                # convert_to_df(data_dir + "/" + file, df_container, time_series)
-        return shared_df.copy()
+        #     if file.endswith(".csv"):
+        #         combine_data(data_dir + "/" + file, time_series, df_list)
+                
+        print("total: ", time.perf_counter() - st)
+
+        # combine all dataframes
+        return df_list
     
     return [pd.DataFrame()]
 
