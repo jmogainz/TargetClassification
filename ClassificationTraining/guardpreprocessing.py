@@ -56,11 +56,7 @@ def combine_data(csv_file, data_dir, time_series):
         if len(df) % time_series != 0:
             df = df[:-(len(df) % time_series)]
 
-    # lock.acquire()
-    # append to file shared across processes
     return df
-    # queue.append(df)
-    # lock.release()
 
 def sep_data(df, class_container):
     # separate data into dataframes based on classes specified in class_container
@@ -119,6 +115,41 @@ def one_hot_encode(df):
     df_one_hot = pd.DataFrame(df_one_hot, columns=enc.categories_)
     
     return df_one_hot
+
+def time_series_split(x_df, y_df, train_size, ts_steps):
+    """
+
+    Params
+    train_size: percentage of data to be used for training (test size is whatever is remaining)
+    ts_steps: number of time steps to be used for each sample
+
+    Returns
+    x_train, y_train, x_test, y_test    
+    """
+    separated_y_df = sep_data(y_df, dict_specific_data)
+    separated_x_df_train = {}
+    separated_x_df_test = {}
+    separated_y_df_train = {}
+    separated_y_df_test = {}
+    for label in separated_y_df:
+        total_class_size = len(separated_y_df[label])
+        train_class_size = int(total_class_size * train_size)
+        train_class_size = train_class_size // ts_steps * ts_steps
+
+        # cut x and y dataframe
+        starting_index = separated_y_df[label].index[0]
+        ending_index = separated_y_df[label].index[total_class_size-1] + 1
+        separated_x_df_train[label] = x_df[starting_index:starting_index+train_class_size]
+        separated_y_df_train[label] = y_df[starting_index:starting_index+train_class_size]
+        separated_x_df_test[label] = x_df[starting_index+train_class_size:ending_index]
+        separated_y_df_test[label] = y_df[starting_index+train_class_size:ending_index]
+
+    x_train = pd.concat(separated_x_df_train, ignore_index=True)
+    x_test = pd.concat(separated_x_df_test, ignore_index=True)
+    y_train = pd.concat(separated_y_df_train, ignore_index=True)
+    y_test = pd.concat(separated_y_df_test, ignore_index=True)
+
+    return x_train, x_test, y_train, y_test
 
 def clean_time_series(df_slice, features_subset, time_series):
     df_slice = df_slice[df_slice["verticalSpeed"] != 0]

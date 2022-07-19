@@ -32,7 +32,7 @@ import random
 import numpy as np
 
 
-global model_type, scaler, gs, acc
+global model_type, scaler, gs, acc, ts_steps
 
 
 def dataset(ds):
@@ -50,10 +50,16 @@ def preprocessor(x_df, y_df):
     train = {}; dev = {}; test = {}
 
     # classic data preprocessing procedure, 3 way split
-    (x_train, x_temp, y_train, y_temp) = train_test_split(x_df, y_df, train_size=0.7, 
-                                                      test_size=0.3, random_state=42)
-    (x_dev, x_test, y_dev, y_test) = train_test_split(x_temp, y_temp, train_size=0.99,
-                                                    test_size=.01, random_state=42)
+    if model_type == 'ts':
+        (x_train, x_temp, y_train, y_temp) = time_series_split(x_df, y_df, train_size=.7, 
+                                                            ts_steps=ts_steps)
+        (x_dev, x_test, y_dev, y_test) = time_series_split(x_temp, y_temp, train_size=.99,
+                                                        ts_steps=ts_steps)
+    else:
+        (x_train, x_temp, y_train, y_temp) = train_test_split(x_df, y_df, train_size=0.7, 
+                                                          test_size=0.3, random_state=42)
+        (x_dev, x_test, y_dev, y_test) = train_test_split(x_temp, y_temp, train_size=0.99,
+                                                        test_size=.01, random_state=42)
 
     # if ML algo, do not one-hot encode; else, NN, do one-hot encode
     if (model_type == 'knn' or model_type == 'gb' or model_type == 'rf' or
@@ -164,17 +170,16 @@ def preprocessor(x_df, y_df):
                 'y_test': y_test, 'x_test_num_scov': x_test_num_scov, 'x_test_all': x_test_all}
 
         if model_type == 'ts':
-            steps = 4
-            print(train['x_train_all'].shape)
-            train['x_train_all'] = train['x_train_all'].reshape(-1, 4, 52, 1)
-            print(train['x_train_all'].shape)
-            sys.exit(1)
-            dev['x_dev_all'] = np.array([x_dev_all[i:i+steps] for i in range(0, len(x_dev_all), steps)])
-            test['x_test_all'] = np.array([x_test_all[i:i+steps] for i in range(0, len(x_test_all), steps)])
-            train['y_train'] = y_train.iloc[::steps]
-            dev['y_dev'] = y_dev.iloc[::steps]
-            test['y_test'] = y_test.iloc[::steps]
-            
+            train['x_train_all'] = train['x_train_all'].reshape(-1, ts_steps, 52)
+            dev['x_dev_all'] = dev['x_dev_all'].reshape(-1, ts_steps, 52)
+            test['x_test_all'] = test['x_test_all'].reshape(-1, ts_steps, 52)
+            train['x_train_num_scov'] = train['x_train_num_scov'].reshape(-1, ts_steps, 43)
+            dev['x_dev_num_scov'] = dev['x_dev_num_scov'].reshape(-1, ts_steps, 43)
+            test['x_test_num_scov'] = test['x_test_num_scov'].reshape(-1, ts_steps, 43)
+            train['y_train'] = y_train.iloc[::ts_steps]
+            dev['y_dev'] = y_dev.iloc[::ts_steps]
+            test['y_test'] = y_test.iloc[::ts_steps]
+
 
     return train, dev, test
 
@@ -290,13 +295,13 @@ def trainer(train, dev):
                    epochs=1000, batch_size=128, callbacks=[es, es_2])
 
     if model_type == 'ts':
-        model = time_series_model(4, 52) # placeholder for time series model
+        model = time_series_model(ts_steps, 43) 
         opt = Adam(learning_rate=0.001)
         es = EarlyStopping(monitor='val_accuracy', mode='max', patience=20)
         es_2 = EarlyStopping(monitor='val_loss', mode='min', patience=20)
         model.compile(loss="categorical_crossentropy", optimizer=opt, metrics=["accuracy"])
-        history = model.fit(train['x_train_all'], train['y_train'],
-                     validation_data=(dev['x_dev_all'], dev['y_dev']),
+        history = model.fit(train['x_train_num_scov'], train['y_train'],
+                     validation_data=(dev['x_dev_num_scov'], dev['y_dev']),
                         epochs=1000, batch_size=128, callbacks=[es, es_2])
 
     print(history.history.keys())
@@ -339,6 +344,8 @@ def predictor(model, test):
         pred = model.predict(test['x_test_all'])
     if model_type == 'merge':
         pred = model.predict([test['x_test_num'], test['x_test_scov']])
+    if model_type == 'ts':
+        pred = model.predict(test['x_test_num_scov'])
 
     y_test_np = test['y_test'].values
 
@@ -397,6 +404,16 @@ def measure(model, test):
         start = time.perf_counter()
         pred = model.predict([x_test_num_one, x_test_scov_one])
         prediction_performance = time.perf_counter() - start
+
+    if model_type == 'ts':
+        # predict random sample
+        sample = random.randint(0, len(test['x_test_num_scov']))
+        x_test_num_scov_one = test['x_test_num_scov'][sample][0:].reshape(1, -1)
+        y_test_one = test['y_test'].values[sample][0:]
+        
+        start = time.perf_counter()
+        pred = model.predict(x_test_num_scov_one)
+        prediction_performance = time.perf_counter() - start
     
     print("prediction performance:", prediction_performance)
     print("prediction:", pred)
@@ -423,13 +440,15 @@ def saver(model, ds, test):
     if model_type == 'merge':
         model.save(model_path)
         scaler_used = 'num'
+    if model_type == 'ts':
+        model.save(model_path)
+        scaler_used = 'num_scov'
 
     # save scaler model 
     joblib.dump(scaler[scaler_used], scaler_path)
 
-
 def main():
-    global model_type, gs, scaler
+    global model_type, gs, scaler, ts_steps
 
     # construct the argument parser and parse the arguments
     ap = argparse.ArgumentParser()
@@ -445,14 +464,22 @@ def main():
         help="make prediction only (true or false)")
     ap.add_argument("-gs", "--grid_search", type=bool, default=False,
         help="grid search (true or false)") 
+    ap.add_argument("-tss", "--ts_steps", type=int, default=0,
+        help="number of time steps per series to use on ts data")
     args = ap.parse_args()
 
+    ts_steps = args.ts_steps
     gs = args.grid_search
     model_type = args.model
     loaded_model = args.load_model
     loaded_scaler = args.load_scaler
     perf_check = args.perf_check
     print(args.dataset)
+
+    if model_type == 'ts':
+        if ts_steps <= 0:
+            print("[ERROR] ts_steps must be greater than 0, if using ts data")
+            sys.exit(1)
 
     model_loaded = False
     scaler = {}
