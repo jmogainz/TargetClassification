@@ -165,7 +165,7 @@ def clean_data(df, time_series):
     """
     Clean data
     """
-    features_subset = features_combined[:2] + features_combined[3:]
+    features_subset = features_combined[:2] + features_combined[3:] # verticalSpeed ignored
 
     # time series dataframes must handles differently
     if time_series:
