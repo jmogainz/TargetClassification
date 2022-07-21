@@ -5,7 +5,8 @@ GuardClassification.py
 """
 
 # Imports
-from guardpreprocessing import * 
+from GuardPreprocessing import create_train_sets, one_hot_encode, slice_x
+from helpers import time_series_split, parse_args_classification
 from models import dense_model, merge_model, cnn2D_model, GS_model, time_series_model 
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score
@@ -38,7 +39,7 @@ global model_type, scaler, gs, acc, ts_steps
 def dataset(ds):
     # check if dataset exists
     if os.path.exists(ds):
-        x_df, y_df = create_train_sets(complete_csv=ds)
+        x_df, y_df = create_train_sets(dataset=ds)
     else:
         print("\nDataset does not exist")
         sys.exit(1)
@@ -48,6 +49,7 @@ def dataset(ds):
 def preprocessor(x_df, y_df):
     global scaler
     train = {}; dev = {}; test = {}
+    print("[INFO] Preprocessing data...")
 
     # classic data preprocessing procedure, 3 way split
     if model_type == 'ts':
@@ -56,8 +58,8 @@ def preprocessor(x_df, y_df):
         (x_dev, x_test, y_dev, y_test) = time_series_split(x_temp, y_temp, train_size=.99,
                                                         ts_steps=ts_steps)
     else:
-        (x_train, x_temp, y_train, y_temp) = train_test_split(x_df, y_df, train_size=0.7, 
-                                                          test_size=0.3, random_state=42)
+        (x_train, x_temp, y_train, y_temp) = train_test_split(x_df, y_df, train_size=0.85, 
+                                                          test_size=0.15, random_state=42)
         (x_dev, x_test, y_dev, y_test) = train_test_split(x_temp, y_temp, train_size=0.99,
                                                         test_size=.01, random_state=42)
 
@@ -184,7 +186,7 @@ def preprocessor(x_df, y_df):
     return train, dev, test
 
 def trainer(train, dev):
-    print("\n[INFO] training model...")
+    print("[INFO] Training model...")
 
     if model_type == 'knn':
         model = KNeighborsClassifier(n_neighbors=1)
@@ -214,7 +216,7 @@ def trainer(train, dev):
             for mean, stdev, param in zip(means, stds, params):
                 print("%f (%f) with: %r" % (mean, stdev, param))
         else:
-            model = XGBClassifier(n_estimators=100, max_depth=6, learning_rate=0.3, n_jobs=12)
+            model = XGBClassifier(n_estimators=5000, max_depth=6, learning_rate=0.3, n_jobs=12)
             model.fit(train['x_train_num_scov'], train['y_train'])
             print(model)
 
@@ -238,7 +240,7 @@ def trainer(train, dev):
             for mean, stdev, param in zip(means, stds, params):
                 print("%f (%f) with: %r" % (mean, stdev, param))
         else:
-            model = RandomForestClassifier(criterion='entropy', max_depth=32, min_samples_split=2, max_features=.2, n_estimators=1000, n_jobs=6)
+            model = RandomForestClassifier(criterion='entropy', max_depth=32, min_samples_split=2, max_features=.2, n_estimators=1000, n_jobs=12)
             model.fit(train['x_train_num_scov'], train['y_train'])
 
         return model
@@ -325,7 +327,7 @@ def trainer(train, dev):
 
 def predictor(model, test):
     global acc
-    print("[INFO] predicting...")
+    print("[INFO] Predicting...")
 
     # ML algos
     if (model_type == 'knn' or model_type == 'gb' or model_type == 'rf' or
@@ -362,6 +364,7 @@ def predictor(model, test):
         (acc) * 100.0))
 
 def measure(model, test):
+    print("[INFO] Measuring prediction performance...")
     prediction_performance = 0
     
     if (model_type == 'knn' or model_type == 'gb' or model_type == 'rf'
@@ -421,14 +424,14 @@ def measure(model, test):
 
 def saver(model, ds, test):
     global acc
-    print("[INFO] serializing network...")
+    print("[INFO] Serializing Model...")
 
     scaler_used = ''
     current_dt = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
     acc = round(acc, 4) * 100 # round accuracy to 2 decimal places
 
     model_path = f"Models/{model_type}_model_{acc}_{current_dt}_ds_size_{len(ds)}_tested_with_{len(test['y_test'])}.h5"
-    scaler_path = f"Models/{model_type}_scaler_{acc}_{current_dt}_{len(ds)}_.save"
+    scaler_path = f"Models/{model_type}_scaler_{acc}_{current_dt}_ds_size_{len(ds)}_tested_with_{len(test['y_test'])}.save"
 
     if (model_type == 'knn' or model_type == 'gb' or model_type == 'rf' or 
         model_type == 'nb'):
@@ -450,23 +453,7 @@ def saver(model, ds, test):
 def main():
     global model_type, gs, scaler, ts_steps
 
-    # construct the argument parser and parse the arguments
-    ap = argparse.ArgumentParser()
-    ap.add_argument("-d", "--dataset", type=str, required=True,
-        help="path to input dataset from guardian")
-    ap.add_argument("-m", "--model", type=str, default="dense",
-        help="type of model to train (merge, dense, knn, gb, rf, nb)")
-    ap.add_argument("-lm", "--load_model", type=str, default="",
-        help="path to load model from")
-    ap.add_argument("-ls", "--load_scaler", type=str, default="",
-        help="path to load scaler from")
-    ap.add_argument("-p", "--perf_check", type=bool, default=False,
-        help="make prediction only (true or false)")
-    ap.add_argument("-gs", "--grid_search", type=bool, default=False,
-        help="grid search (true or false)") 
-    ap.add_argument("-tss", "--ts_steps", type=int, default=0,
-        help="number of time steps per series to use on ts data")
-    args = ap.parse_args()
+    args = parse_args_classification()
 
     ts_steps = args.ts_steps
     gs = args.grid_search
@@ -474,7 +461,6 @@ def main():
     loaded_model = args.load_model
     loaded_scaler = args.load_scaler
     perf_check = args.perf_check
-    print(args.dataset)
 
     if model_type == 'ts':
         if ts_steps <= 0:
@@ -511,6 +497,11 @@ def main():
                 scaler['imported'] = joblib.load(loaded_scaler)
                 model_loaded = True
                 model_type = 'merge'
+            if 'ts' in loaded_model:
+                model = joblib.load(loaded_model)
+                scaler['imported'] = joblib.load(loaded_scaler)
+                model_loaded = True
+                model_type = 'ts'
     except:
         print("\nError loading either model or scaler")
         sys.exit(0)

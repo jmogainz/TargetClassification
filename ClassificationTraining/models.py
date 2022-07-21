@@ -47,7 +47,7 @@ import numpy as np
 
 def dense_model(size):
     inputs = Input(shape=(size,))
-    output = 5
+    output = 6
     hl_size = (size + output) // 2
 
     model = Sequential()
@@ -91,7 +91,7 @@ def GS_model(final_activ='softmax', activ='relu', hl_size=38, hl_depth=5, drop_r
     for i in range(hl_depth):
         x = Dense(hl_size, activation=activ, kernel_initializer=weight_init)(x)
         x = Dropout(drop_rate)(x)
-    output = Dense(5, activation=final_activ, kernel_initializer=weight_init)(x)
+    output = Dense(6, activation=final_activ, kernel_initializer=weight_init)(x)
     model = Model(inputs=input, outputs=output)
 
     if optimizer == 'Adam':
@@ -140,7 +140,7 @@ def cnn2D_model(width, height, kernal_size=(3, 3)):
 
 	# apply another FC layer, this one to match the number of nodes
 	# coming out of the MLP
-    x = Dense(5)(x)
+    x = Dense(6)(x)
     x = Activation("softmax")(x)
 
 	# construct the CNN
@@ -166,7 +166,7 @@ def cnn1D_model():
     model.add(Flatten())
     model.add(Dense(units=512, activation='relu'))
     model.add(Dropout(0.5))
-    model.add(Dense(units=5, activation='softmax'))
+    model.add(Dense(units=6, activation='softmax'))
 
     return model
 
@@ -191,7 +191,7 @@ def merge_model():
     # output layer (functional) (dense)
     output_tensor = Dense(units=16, activation='relu')(combined)
     output_tensor = Dropout(0.5)(output_tensor)
-    output_tensor = Dense(units=5, activation='softmax')(output_tensor)
+    output_tensor = Dense(units=6, activation='softmax')(output_tensor)
 
     # create model
     model3 = Model(inputs=[model1.input, model2.input], outputs=output_tensor)
@@ -208,7 +208,7 @@ def time_series_model(time_steps, features):
     hidden5 = Dense(units=24, activation='relu')(hidden4)
     hidden6 = Dense(units=16, activation='relu')(hidden5)
     
-    output = Dense(units=5, activation='softmax')(hidden6)
+    output = Dense(units=6, activation='softmax')(hidden6)
 
     model = Model(inputs=input, outputs=output)
 
