@@ -5,8 +5,8 @@ GuardClassification.py
 """
 
 # Imports
-from GuardPreprocessing import create_train_sets, one_hot_encode, slice_x
-from helpers import time_series_split, parse_args_classification
+from GuardPreprocessing import create_train_sets, one_hot_encode, slice_x, time_series_split
+from helpers import parse_args_classification
 from models import dense_model, merge_model, cnn2D_model, GS_model, time_series_model 
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score
@@ -22,7 +22,6 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.callbacks import EarlyStopping
 import matplotlib.pyplot as plt
 import joblib
-import argparse
 import os
 import sys
 import seaborn as sns
@@ -58,10 +57,10 @@ def preprocessor(x_df, y_df):
         (x_dev, x_test, y_dev, y_test) = time_series_split(x_temp, y_temp, train_size=.99,
                                                         ts_steps=ts_steps)
     else:
-        (x_train, x_temp, y_train, y_temp) = train_test_split(x_df, y_df, train_size=0.85, 
-                                                          test_size=0.15, random_state=42)
-        (x_dev, x_test, y_dev, y_test) = train_test_split(x_temp, y_temp, train_size=0.99,
-                                                        test_size=.01, random_state=42)
+        (x_train, x_temp, y_train, y_temp) = train_test_split(x_df, y_df, 
+                                                          test_size=0.99, random_state=42)
+        (x_dev, x_test, y_dev, y_test) = train_test_split(x_temp, y_temp,
+                                                        test_size=.99, random_state=42)
 
     # if ML algo, do not one-hot encode; else, NN, do one-hot encode
     if (model_type == 'knn' or model_type == 'gb' or model_type == 'rf' or
@@ -79,27 +78,30 @@ def preprocessor(x_df, y_df):
     (x_dev_num, x_dev_scov, x_dev_rcov) = slice_x(x_dev)
     (x_test_num, x_test_scov, x_test_rcov) = slice_x(x_test)
 
-    # join num and scov for num+scov subset
-    x_train_num_scov = np.concatenate((x_train_num, x_train_scov), axis=1)
-    x_dev_num_scov = np.concatenate((x_dev_num, x_dev_scov), axis=1)
-    x_test_num_scov = np.concatenate((x_test_num, x_test_scov), axis=1)
+    # join num and scov for num+scov subset dataframe
+    x_train_num_scov = pd.concat([x_train_num, x_train_scov], axis=1)
+    x_dev_num_scov = pd.concat([x_dev_num, x_dev_scov], axis=1)
+    x_test_num_scov = pd.concat([x_test_num, x_test_scov], axis=1)
 
     # scaler has been imported, scale desired subset and return; we are only predicting
     if scaler:
-        scaler_names = scaler['imported'].feature_names_in
-        possible_dfs = {'num_scov': x_train_num_scov, 
-                        'scov': x_train_scov,
-                        'all': x_train_all, 
-                        'rcov': x_train_rcov}
-        for df in possible_dfs:
-            for col in scaler_names:
-                if col not in possible_dfs[df].columns:
-                    break
-            dev[f'x_dev_{df}'] = scaler['imported'].transform(possible_dfs[f'x_dev_{df}'])
-            test[f'x_test_{df}'] = scaler['imported'].transform(possible_dfs[f'x_test_{df}'])
-            dev['y_dev'] = y_dev
-            test['y_test'] = y_test
-            break
+        # scaler_names = scaler['imported'].feature_names_in_
+        # possible_dfs = {'num_scov': x_test_num_scov, 
+        #                 'scov': x_test_scov,
+        #                 'all': x_test, 
+        #                 'rcov': x_test_rcov}
+        # for df in possible_dfs:
+        #     df_found = True
+        #     for col in scaler_names:
+        #         if col not in possible_dfs[df].columns:
+        #             df_found = False
+        #             break
+        #     if df_found:
+        #         test[f'x_test_{df}'] = scaler['imported'].transform(possible_dfs[df])
+        #         test['y_test'] = y_test
+        #         break
+        test['x_test_num_scov'] = scaler['imported'].transform(x_test_num_scov)
+        test['y_test'] = y_test
 
         return train, dev, test
 
@@ -216,7 +218,7 @@ def trainer(train, dev):
             for mean, stdev, param in zip(means, stds, params):
                 print("%f (%f) with: %r" % (mean, stdev, param))
         else:
-            model = XGBClassifier(n_estimators=5000, max_depth=6, learning_rate=0.3, n_jobs=12)
+            model = XGBClassifier(n_estimators=3500, max_depth=6, learning_rate=0.3, n_jobs=12)
             model.fit(train['x_train_num_scov'], train['y_train'])
             print(model)
 
@@ -275,12 +277,12 @@ def trainer(train, dev):
         else:
             model = dense_model(52)
             opt = Adam(learning_rate=0.001)
-            es = EarlyStopping(monitor='val_accuracy', mode='max', patience=100)
-            es_2 = EarlyStopping(monitor='val_loss', mode='min', patience=100)
+            es = EarlyStopping(monitor='val_accuracy', mode='max', patience=20)
+            es_2 = EarlyStopping(monitor='val_loss', mode='min', patience=20)
             model.compile(loss="categorical_crossentropy", optimizer=opt, metrics=["accuracy"])
             history = model.fit(train['x_train_all'], train['y_train'], 
                                 validation_data=(dev['x_dev_all'], dev['y_dev']), 
-                                epochs=1000, batch_size=256, callbacks=[es, es_2])
+                                epochs=1000, batch_size=512, callbacks=[es, es_2])
 
     if model_type == 'merge':
         ##### for testing purposes #####
@@ -389,7 +391,8 @@ def measure(model, test):
         start = time.perf_counter()
         pred = model.predict(x_test_all_one)[0]
         prediction_performance = time.perf_counter() - start
-
+        # print the type of pred
+        print(type(pred))
         largest = np.argmax(pred)
         for idx in range(len(pred)):
             if idx == largest:
@@ -471,7 +474,7 @@ def main():
     scaler = {}
     try:
         if os.path.exists(loaded_model) and os.path.exists(loaded_scaler):
-            print("[INFO] loading network...")
+            print("[INFO] Loading trained model...")
             if 'knn' in loaded_model:
                 model = joblib.load(loaded_model)
                 scaler['imported'] = joblib.load(loaded_scaler)

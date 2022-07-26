@@ -117,6 +117,40 @@ def one_hot_encode(df):
     
     return df_one_hot
 
+def time_series_split(x_df, y_df, train_size, ts_steps):
+    """
+    Params
+    train_size: percentage of data to be used for training (test size is whatever is remaining)
+    ts_steps: number of time steps to be used for each sample
+
+    Returns
+    x_train, y_train, x_test, y_test    
+    """
+    separated_y_df = sep_data(y_df, specific_data_dict)
+    separated_x_df_train = {}
+    separated_x_df_test = {}
+    separated_y_df_train = {}
+    separated_y_df_test = {}
+    for label in separated_y_df:
+        total_class_size = len(separated_y_df[label])
+        train_class_size = int(total_class_size * train_size)
+        train_class_size = train_class_size // ts_steps * ts_steps
+
+        # cut x and y dataframe
+        starting_index = separated_y_df[label].index[0]
+        ending_index = separated_y_df[label].index[total_class_size-1] + 1
+        separated_x_df_train[label] = x_df[starting_index:starting_index+train_class_size]
+        separated_y_df_train[label] = y_df[starting_index:starting_index+train_class_size]
+        separated_x_df_test[label] = x_df[starting_index+train_class_size:ending_index]
+        separated_y_df_test[label] = y_df[starting_index+train_class_size:ending_index]
+
+    x_train = pd.concat(separated_x_df_train, ignore_index=True)
+    x_test = pd.concat(separated_x_df_test, ignore_index=True)
+    y_train = pd.concat(separated_y_df_train, ignore_index=True)
+    y_test = pd.concat(separated_y_df_test, ignore_index=True)
+
+    return x_train, x_test, y_train, y_test
+
 def clean_time_series(df_slice, features_subset, time_series):
     df_slice = df_slice[df_slice["verticalSpeed"] != 0]
     df_slice = df_slice[df_slice["signalToNoiseRatio"] != 0]
@@ -208,16 +242,6 @@ def create_train_sets(data_dir='', dataset='', add=False, erase=False, specific_
         print(f"[INFO] Concatenating data returned from each processor...", end="")
         df = pd.concat(df, ignore_index=True); 
         print("done")
-    if dataset:
-        print(f"[INFO] Loading data from dataset...")
-        df_complete = pd.read_csv(dataset, delimiter=",")
-        df_complete.columns = features_combined
-        print(f"[INFO] Shape of dataset:", df_complete.shape)
-        df = pd.concat([df, df_complete]) # concat if this is main process, else just split and return
-        if not __name__ == "__main__":
-            x_df = df.loc[:, 'speed':'rCov9']
-            y_df = df.loc[:, 'Class':'Subtype']
-            return x_df, y_df
 
     if add:
         separated_df = sep_data(df, specific_data_type)
@@ -234,6 +258,18 @@ def create_train_sets(data_dir='', dataset='', add=False, erase=False, specific_
                 print(f"\n[WARNING] Specific data amount for {label} is too large or not provided, taking as much as possible\n")
             pos += 1
         df = pd.concat(separated_df, ignore_index=True) # indices become ("class", index)
+
+    if dataset:
+        print(f"[INFO] Loading data from dataset...")
+        df_complete = pd.read_csv(dataset, delimiter=",")
+        df_complete.columns = features_combined
+        print(f"[INFO] Shape of dataset:", df_complete.shape)
+        df = pd.concat([df, df_complete]) # concat if this is main process, else just split and return
+        if not __name__ == "__main__":
+            x_df = df.loc[:, 'speed':'rCov9']
+            y_df = df.loc[:, 'Class':'Subtype']
+            return x_df, y_df
+
     elif erase:
         #### TODO: implement time series erasure
         separated_df = sep_data(df, specific_data_dict)
@@ -245,7 +281,7 @@ def create_train_sets(data_dir='', dataset='', add=False, erase=False, specific_
                 separated_df[label] = separated_df[label].drop(random_indices)
             except:
                 print(f"\n[WARNING] Specific data amount for {label} is too large or not provided, erasing all\n")
-                separated_df[label] = pd.DataFrame()
+                separated_df.pop(label)
             pos += 1
         df = pd.concat(separated_df, ignore_index=True) # indices become ("class", index)
 
@@ -264,7 +300,7 @@ def create_train_sets(data_dir='', dataset='', add=False, erase=False, specific_
     for col in one_hot_df.columns:
         print(f"{col[0]}: {one_hot_df[col].sum()}")
 
-    df.to_csv("current_dataset.csv", index=False)
+    df.to_csv("current_dataset_DEMO.csv", index=False)
     x_num_df.to_csv(x_train_path[0], index=False)
     x_sCov_df.to_csv(x_train_path[1], index=False)
     x_rCov_df.to_csv(x_train_path[2], index=False)

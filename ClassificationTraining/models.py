@@ -74,6 +74,7 @@ def dense_model(size):
     model.add(Dense(units=hl_size + 5, activation='relu'))
     # add batch normalization
     # model.add(BatchNormalization())
+    model.add(Dropout(0.1))
     model.add(Dense(units=hl_size + 5, activation='relu'))
     model.add(Dense(units=hl_size + 5, activation='relu'))
     if hl_size // 2 > 1:
