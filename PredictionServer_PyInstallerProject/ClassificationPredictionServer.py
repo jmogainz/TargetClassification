@@ -9,7 +9,7 @@ ClassificationPredictionServer.py
         1112 - Slow UAV
         1122 - SRecon UAV
         1111 - Fast UAV
-        1113 - MQ9R UAV - Not currently trained for
+        1113 - MQ9R UAV
 
     Executable: ClassificationPredictionServer.exe
 """
@@ -30,6 +30,7 @@ from os.path import exists, join, abspath
 import sys
 from tkinter import Tk
 from tkinter import filedialog as fd
+import pandas as pd
 
 
 # simple class to convert yaml and json files to pythonic objects
@@ -72,6 +73,7 @@ class ClassificationPredictionServer:
         self.__routing_key_prediction_server = 'classificationpredictionserver.cmd.primary'
         self.__routing_key_requestor = 'classification.cmd.primary'
         self.__communication_type = COMMS_TYPE.UDP
+        self.__classification_by_index = {0: 5200, 1: 2200, 2: 1112, 3: 1122, 4: 1111, 5: 1113}
 
         self.__debugging = False
         self.__track_TimeToPredict = False
@@ -147,18 +149,20 @@ class ClassificationPredictionServer:
                     return None
 
     def __extractFeatures(self, received_message_decoded):
-        features = np.empty([0, 0])
+        features = pd.DataFrame() # ensures that the features are in the same order as the training data
         for feature in self.__feature_list:
             if feature in received_message_decoded['Parameters']:
-                features = np.append(features, received_message_decoded['Parameters'][feature])
+                features.loc[0, feature] = received_message_decoded['Parameters'][feature]
         return features
 
     def __predict(self, features):
         from copy import deepcopy
         features_predict = deepcopy(features)
-        features_predict = features_predict.reshape(1, -1)
         if self.__normalize_model is not None:
             features_predict = self.__normalize_model.transform(features_predict)
+            features_predict = features_predict.reshape(1, -1)
+        else:
+            features_predict = features_predict.values.reshape(1, -1) # still a dataframe
         if self.__dimensionality_reduction_model is not None:
             features_predict = self.__dimensionality_reduction_model.transform(features_predict)
         if self.__prediction_model is not None:
@@ -191,7 +195,9 @@ class ClassificationPredictionServer:
                 return float(n).is_integer()
 
         if isinstance(value, np.ndarray):
-            if isInteger(value[0]):
+            if value.size > 1:
+                return self.__classification_by_index(np.argmax(value))
+            elif isInteger(value[0]):
                 return int(value)
             else:
                 try:

@@ -2,12 +2,13 @@
 @REM https://www.anaconda.com/download/win-x86_64/
 @REM run this bat file to setup environment
 
-conda create -n tf_gpu python=3.9.12 tensorflow_gpu=2.6.0
-conda install -c conda-forge pandas=1.4.2
-conda install -c anaconda scikit-learn=1.0.2
-conda install -c conda-forge seaborn=0.11.2
-conda install -c conda-forge xgboost=1.5.1
-conda install -c conda-forge pika=1.2.0
-conda install -c conda-forge pyyaml=6.0
-conda install -c conda-forge pyinstaller=4.8
-conda activate tf_gpu
+call conda create -n tf_gpu python=3.9.12 tensorflow-gpu -y
+call conda activate tf_gpu
+call conda install -c anaconda tensorflow-gpu -y
+call conda install -c conda-forge pandas -y
+call conda install -c anaconda scikit-learn -y
+call conda install -c conda-forge seaborn -y
+call conda install -c conda-forge xgboost -y
+call conda install -c conda-forge pika -y
+call conda install -c conda-forge pyyaml -y
+call conda install -c conda-forge pyinstaller -y

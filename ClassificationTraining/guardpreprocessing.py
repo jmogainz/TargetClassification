@@ -189,7 +189,7 @@ def clean_data(df, time_series):
     # outlier removal
     df_clean = df_clean[df_clean["verticalSpeed"] != 0]
     df_clean = df_clean[df_clean["signalToNoiseRatio"] != 0]
-    separated_df = sep_data(df_clean, specific_data_dict)
+    # separated_df = sep_data(df_clean, specific_data_dict)
     # for label in separated_df:
     #     print(separated_df[label].describe(percentiles=[0.01, 0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 0.95, 0.99, 0.999, 0.9999]))
     #     separated_df[label] = remove_outliers(separated_df[label])
@@ -239,7 +239,7 @@ def create_train_sets(data_dir='', dataset='', add=False, erase=False, specific_
     
     if data_dir:
         df = retrieve(data_dir, time_series)
-        print(f"[INFO] Concatenating data returned from each processor...", end="")
+        print(f"[INFO] Concatenating data returned from each processor...", end="", flush=True)
         df = pd.concat(df, ignore_index=True); 
         print("done")
 
@@ -255,7 +255,7 @@ def create_train_sets(data_dir='', dataset='', add=False, erase=False, specific_
                     print(f"[INFO] Extracting {specific_data_amount[pos]} data samples from {label}") 
                     separated_df[label] = separated_df[label].sample(n=specific_data_amount[pos])
             except:
-                print(f"\n[WARNING] Specific data amount for {label} is too large or not provided, taking as much as possible\n")
+                print(f"[WARNING] Specific data amount for {label} is too large or not provided, taking as much as possible")
             pos += 1
         df = pd.concat(separated_df, ignore_index=True) # indices become ("class", index)
 
@@ -270,7 +270,7 @@ def create_train_sets(data_dir='', dataset='', add=False, erase=False, specific_
             y_df = df.loc[:, 'Class':'Subtype']
             return x_df, y_df
 
-    elif erase:
+    if erase:
         #### TODO: implement time series erasure
         separated_df = sep_data(df, specific_data_dict)
         pos = 0
@@ -280,7 +280,7 @@ def create_train_sets(data_dir='', dataset='', add=False, erase=False, specific_
                 random_indices = separated_df[label].sample(n=specific_data_amount[pos]).index
                 separated_df[label] = separated_df[label].drop(random_indices)
             except:
-                print(f"\n[WARNING] Specific data amount for {label} is too large or not provided, erasing all\n")
+                print(f"[WARNING] Specific data amount for {label} is too large or not provided, erasing all")
                 separated_df.pop(label)
             pos += 1
         df = pd.concat(separated_df, ignore_index=True) # indices become ("class", index)
@@ -300,7 +300,7 @@ def create_train_sets(data_dir='', dataset='', add=False, erase=False, specific_
     for col in one_hot_df.columns:
         print(f"{col[0]}: {one_hot_df[col].sum()}")
 
-    df.to_csv("current_dataset_DEMO.csv", index=False)
+    df.to_csv("current_dataset.csv", index=False)
     x_num_df.to_csv(x_train_path[0], index=False)
     x_sCov_df.to_csv(x_train_path[1], index=False)
     x_rCov_df.to_csv(x_train_path[2], index=False)

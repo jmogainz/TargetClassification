@@ -58,9 +58,9 @@ def preprocessor(x_df, y_df):
                                                         ts_steps=ts_steps)
     else:
         (x_train, x_temp, y_train, y_temp) = train_test_split(x_df, y_df, 
-                                                          test_size=0.99, random_state=42)
+                                                          test_size=0.1, random_state=42)
         (x_dev, x_test, y_dev, y_test) = train_test_split(x_temp, y_temp,
-                                                        test_size=.99, random_state=42)
+                                                        test_size=.5, random_state=42)
 
     # if ML algo, do not one-hot encode; else, NN, do one-hot encode
     if (model_type == 'knn' or model_type == 'gb' or model_type == 'rf' or
@@ -85,23 +85,21 @@ def preprocessor(x_df, y_df):
 
     # scaler has been imported, scale desired subset and return; we are only predicting
     if scaler:
-        # scaler_names = scaler['imported'].feature_names_in_
-        # possible_dfs = {'num_scov': x_test_num_scov, 
-        #                 'scov': x_test_scov,
-        #                 'all': x_test, 
-        #                 'rcov': x_test_rcov}
-        # for df in possible_dfs:
-        #     df_found = True
-        #     for col in scaler_names:
-        #         if col not in possible_dfs[df].columns:
-        #             df_found = False
-        #             break
-        #     if df_found:
-        #         test[f'x_test_{df}'] = scaler['imported'].transform(possible_dfs[df])
-        #         test['y_test'] = y_test
-        #         break
-        test['x_test_num_scov'] = scaler['imported'].transform(x_test_num_scov)
-        test['y_test'] = y_test
+        scaler_names = scaler['imported'].feature_names_in_
+        possible_dfs = {'num_scov': x_test_num_scov, 
+                        'scov': x_test_scov,
+                        'all': x_test, 
+                        'rcov': x_test_rcov}
+        for df in possible_dfs:
+            df_found = True
+            for col in scaler_names:
+                if col not in possible_dfs[df].columns:
+                    df_found = False
+                    break
+            if df_found:
+                test[f'x_test_{df}'] = scaler['imported'].transform(possible_dfs[df])
+                test['y_test'] = y_test
+                break
 
         return train, dev, test
 

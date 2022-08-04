@@ -18,13 +18,13 @@ def parse_args_preprocessing():
     parser = argparse.ArgumentParser(description="Preprocessing data")
     parser.add_argument("-dir","--data_dir", type=str, default='',
                         help="directory for collecting all data returned from guardian <dir>")
-    parser.add_argument("-e", "--erase", type=bool, default=False,
+    parser.add_argument("-e", "--erase", action="store_true",
                         help="erase type and amount from complete_csv")
-    parser.add_argument("-a", "--add", type=bool, default=False,
+    parser.add_argument("-a", "--add", action="store_true",
                         help="add type and amount to complete_csv")
-    parser.add_argument("-type","--specific_data_type", nargs='+', default=[],
+    parser.add_argument("-t","--specific_data_type", nargs='+', default=[],
                         help="list of types of data to extract from specific_data_dir <class (i.e. 5200)>")
-    parser.add_argument("-amount", "--specific_data_amount", nargs='+', default=[],
+    parser.add_argument("-amt", "--specific_data_amount", nargs='+', default=[],
                         help=("list of amounts of data to extract from specific_data_dir of specific_data_type>(correlates with type)." 
                         "If time series is set, this number must be multiple of time series steps." 
                         "If not, it will be rounded down to the closest multiple of time series steps."))
@@ -32,7 +32,6 @@ def parse_args_preprocessing():
                         help="path to previous csv file output from this application")
     parser.add_argument("-ts", "--time_series", type=int, default=0,
                         help="number of time series steps; if set, it will enable time series data construction.")
-    
     args = parser.parse_args()
     return args
 
@@ -47,9 +46,9 @@ def parse_args_classification():
         help="path to load model from")
     ap.add_argument("-ls", "--load_scaler", type=str, default="",
         help="path to load scaler from")
-    ap.add_argument("-p", "--perf_check", type=bool, default=False,
+    ap.add_argument("-p", "--perf_check", action="store_true",
         help="make prediction only (true or false)")
-    ap.add_argument("-gs", "--grid_search", type=bool, default=False,
+    ap.add_argument("-gs", "--grid_search", action="store_true",
         help="grid search (true or false)") 
     ap.add_argument("-tss", "--ts_steps", type=int, default=0,
         help="number of time steps per series to use on ts data")

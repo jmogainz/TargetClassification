@@ -1,14 +1,15 @@
 #!/bin/bash
-# install anaconda for , version 4.10.1
-# https://www.anaconda.com/download/win-x86_64/
-# run this bat file to setup environment
+# install anaconda for Linux, version 4.10.1
+# https://www.anaconda.com/download/linux-x86_64/
+# run this shell script to setup environment
 
-conda create -n tf_gpu python=3.9.12 tensorflow_gpu=2.6.0
-conda install -c conda-forge pandas=1.4.2
-conda install -c anaconda scikit-learn=1.0.2
-conda install -c conda-forge seaborn=0.11.2
-conda install -c conda-forge xgboost=1.5.1
-conda install -c conda-forge pika=1.2.0
-conda install -c conda-forge pyyaml=6.0
-conda install -c conda-forge pyinstaller=4.8
+conda create -n tf_gpu python=3.9.12 tensorflow-gpu -y
 conda activate tf_gpu
+conda install -c anaconda tensorflow-gpu -y
+conda install -c conda-forge pandas -y
+conda install -c anaconda scikit-learn -y
+conda install -c conda-forge seaborn -y
+conda install -c conda-forge xgboost -y
+conda install -c conda-forge pika -y
+conda install -c conda-forge pyyaml -y
+conda install -c conda-forge pyinstaller -y

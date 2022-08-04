@@ -15,8 +15,8 @@
     "machine_learning_configuration": {
       "normalize_model_loading": {
           "load_normalization_model_flag": true,
-          "input_path": "D:/Daniel_ML/machinelearning/MLPython/data/Models/classification/",
-          "input_file_name": "C:/Users/jmoore2/imperium-dei/Torch_Classification/scaler_num_scov.pkl"
+          "input_path": "blah",
+          "input_file_name": "dense_scaler_92.14_2022-07-22_11-29-57_ds_size_1433888_tested_with_2151.save"
       },
       "dimensionality_reduction_model_loading": {
           "load_dimensionality_reduced_model_flag": false,
@@ -25,12 +25,12 @@
       },
       "prediction_model_loading": {
           "load_prediction_model_flag": true,
-          "input_path": "D:/Daniel_ML/machinelearning/MLPython/data/Models/classification/",
-          "input_file_name": "gb_model_98.59_2022-07-06_13-37-34_690869.h5"
+          "input_path": "blah",
+          "input_file_name": "dense_model_92.14_2022-07-22_11-29-57_ds_size_1433888_tested_with_2151.h5"
       },
       "feature_names_list": [
           "speed", "altitude", "verticalSpeed", "range", "bearing", 
-          "rangeRate", "sCov1", "sCov2", "sCov3", "sCov4", "sCov5",
+          "rangeRate", "signalToNoiseRatio", "sCov1", "sCov2", "sCov3", "sCov4", "sCov5",
           "sCov6", "sCov7", "sCov8", "sCov9", "sCov10", "sCov11", "sCov12", "sCov13", "sCov14", 
           "sCov15", "sCov16", "sCov17", "sCov18", "sCov19", "sCov20", "sCov21", "sCov22", "sCov23", 
           "sCov24", "sCov25", "sCov26", "sCov27", "sCov28", "sCov29", "sCov30", "sCov31", "sCov32", 

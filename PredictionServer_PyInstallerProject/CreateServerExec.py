@@ -5,6 +5,7 @@ CreateServerExec.py
 Before you run
 ---------------
     - Conda environment must be setup and activated using CondaEnvSetup.bat
+    - Put the name of the python file you want to install as the first arg in PyInstaller.__main__.run
 """
 
 import os
@@ -116,7 +117,6 @@ src_xgboost_binary = f'{env_path}/Library/mingw-w64/bin/xgboost.dll;Library/ming
 
 # calls pyinstaller to build executable in dist folder
 PyInstaller.__main__.run(['PrioritizationPredictionServer.py', '--noconfirm',
-                          '--runtime-hook', 'runtime_hook.py',
                           '--onefile', '--console',
                           '--add-data', src_tensorflow,
                           '--add-data', src_joblib,

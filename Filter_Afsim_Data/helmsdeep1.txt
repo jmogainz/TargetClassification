@@ -1,0 +1,751 @@
+Initializing simulation.
+Activating DIS connection.
+[DEBUG] toolbox_time_controller Set up UDP connection.
+[DEBUG] toolbox_time_controller Write Message: PluginInitialized;1
+[DEBUG] toolbox_time_controller Receive Message: EnablePlugin;0
+[DEBUG] toolbox_time_controller Write Message: EnablePlugin;0
+[DEBUG] toolbox_time_controller DISABLED
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Created DIS entity.
+Track processor will not report tracks as it has no external communication links.
+Track processor will not report tracks as it has no external communication links.
+Track processor will not report tracks as it has no external communication links.
+0: MQ9Reaper-asset-1: VM Count = 2
+0: VM Loaded: library/VM_data/const_3s_dynint.ll
+0: VM Loaded: library/VM_data/const_3s_dynint_B.ll
+0: uav-slow-1: VM Count = 5
+0: VM Loaded: library/VM_data/const_15s_dynint.ll
+0: VM Loaded: library/VM_data/const_5s_dynint.ll
+0: VM Loaded: library/VM_data/const_5s_dynint_B.ll
+0: VM Loaded: library/VM_data/const_5s_dynint_C.ll
+0: VM Loaded: library/VM_data/const_5s_dynint_D.ll
+0: uav-slow-2: VM Count = 5
+0: VM Loaded: library/VM_data/const_15s_dynint.ll
+0: VM Loaded: library/VM_data/const_5s_dynint.ll
+0: VM Loaded: library/VM_data/const_5s_dynint_B.ll
+0: VM Loaded: library/VM_data/const_5s_dynint_C.ll
+0: VM Loaded: library/VM_data/const_5s_dynint_D.ll
+0: uav-fast-1: VM Count = 5
+0: VM Loaded: library/VM_data/const_15s_dynint.ll
+0: VM Loaded: library/VM_data/const_5s_dynint.ll
+0: VM Loaded: library/VM_data/const_5s_dynint_B.ll
+0: VM Loaded: library/VM_data/const_5s_dynint_C.ll
+0: VM Loaded: library/VM_data/const_5s_dynint_D.ll
+0: uav-fast-2: VM Count = 5
+0: VM Loaded: library/VM_data/const_15s_dynint.ll
+0: VM Loaded: library/VM_data/const_5s_dynint.ll
+0: VM Loaded: library/VM_data/const_5s_dynint_B.ll
+0: VM Loaded: library/VM_data/const_5s_dynint_C.ll
+0: VM Loaded: library/VM_data/const_5s_dynint_D.ll
+0: uav-fast-3: VM Count = 5
+0: VM Loaded: library/VM_data/const_15s_dynint.ll
+0: VM Loaded: library/VM_data/const_5s_dynint.ll
+0: VM Loaded: library/VM_data/const_5s_dynint_B.ll
+0: VM Loaded: library/VM_data/const_5s_dynint_C.ll
+0: VM Loaded: library/VM_data/const_5s_dynint_D.ll
+0: uav-recon-1: VM Count = 2
+0: VM Loaded: library/VM_data/const_15s_dynint.ll
+0: VM Loaded: library/VM_data/const_5s_dynint.ll
+Initializing simulation complete.
+Starting simulation.
+T = 0
+Undefined radar signature.
+T = 10.000
+Platform's Inherent Contrast not defined. Using Default.
+T = 20.000
+Range to target is 2192.53
+mortar-launcher-1: Time of flight for mortar round is expected to be 41.0121
+mortar-launcher-1 21: Launching Mortar Round
+Success Launched Mortar Round at time 21 for target mortar-launcher-1.1
+Created DIS entity.
+21: mortar-launcher-1_fires_120mm_mortar_m934_he_1: VM Count = 1
+21: VM Loaded: library/VM_data/const_3s_dynint.ll
+Platform's Inherent Contrast not defined. Using Default.
+26.0165: Peak Irradiance (W/cm^2): 141.797
+26.0165: Spot Size (cm): 6.3538
+26.0165: Range (m): 8871.94
+26.5165: Peak Irradiance (W/cm^2): 142.719
+26.5165: Spot Size (cm): 6.33375
+26.5165: Range (m): 8855.34
+27.0165: Peak Irradiance (W/cm^2): 143.639
+27.0165: Spot Size (cm): 6.31394
+27.0165: Range (m): 8838.76
+27.5165: Peak Irradiance (W/cm^2): 144.582
+27.5165: Spot Size (cm): 6.29384
+27.5165: Range (m): 8822.18
+28.0165: Peak Irradiance (W/cm^2): 145.579
+28.0165: Spot Size (cm): 6.27279
+28.0165: Range (m): 8805.22
+28.5165: Peak Irradiance (W/cm^2): 146.602
+28.5165: Spot Size (cm): 6.2514
+28.5165: Range (m): 8788.12
+29.0165: Peak Irradiance (W/cm^2): 147.552
+29.0165: Spot Size (cm): 6.23176
+29.0165: Range (m): 8772.53
+29.5165: Peak Irradiance (W/cm^2): 148.576
+29.5165: Spot Size (cm): 6.21079
+29.5165: Range (m): 8756
+T = 30.000
+30.0165: Peak Irradiance (W/cm^2): 149.619
+30.0165: Spot Size (cm): 6.18964
+30.0165: Range (m): 8739.45
+30.5165: Peak Irradiance (W/cm^2): 150.733
+30.5165: Spot Size (cm): 6.1673
+30.5165: Range (m): 8722.05
+Optical signature not defined. Using default.
+Platform's Inherent Contrast not defined. Using Default.
+37.0233: Peak Irradiance (W/cm^2): 823.44
+37.0233: Spot Size (cm): 2.6839
+37.0233: Range (m): 4832.19
+37.5233: Peak Irradiance (W/cm^2): 839.567
+37.5233: Spot Size (cm): 2.65859
+37.5233: Range (m): 4815.73
+38.0233: Peak Irradiance (W/cm^2): 855.149
+38.0233: Spot Size (cm): 2.63483
+38.0233: Range (m): 4798.04
+38.5233: Peak Irradiance (W/cm^2): 868.793
+38.5233: Spot Size (cm): 2.61458
+38.5233: Range (m): 4780.41
+39.0233: Peak Irradiance (W/cm^2): 881.638
+39.0233: Spot Size (cm): 2.59597
+39.0233: Range (m): 4761.06
+39.5233: Peak Irradiance (W/cm^2): 893.424
+39.5233: Spot Size (cm): 2.57929
+39.5233: Range (m): 4740.6
+T = 40.000
+40.0233: Peak Irradiance (W/cm^2): 903.337
+40.0233: Spot Size (cm): 2.56554
+40.0233: Range (m): 4720.71
+40.5233: Peak Irradiance (W/cm^2): 912.786
+40.5233: Spot Size (cm): 2.55266
+40.5233: Range (m): 4699.68
+Platform broken.
+Platform's Inherent Contrast not defined. Using Default.
+T = 50.000
+51.0021: Peak Irradiance (W/cm^2): 199.549
+51.0021: Spot Size (cm): 5.37838
+51.0021: Range (m): 8056.81
+51.5021: Peak Irradiance (W/cm^2): 200.9
+51.5021: Spot Size (cm): 5.36068
+51.5021: Range (m): 8040.78
+52.0021: Peak Irradiance (W/cm^2): 202.247
+52.0021: Spot Size (cm): 5.34322
+52.0021: Range (m): 8024.84
+52.5021: Peak Irradiance (W/cm^2): 203.609
+52.5021: Spot Size (cm): 5.32573
+52.5021: Range (m): 8008.87
+53.0021: Peak Irradiance (W/cm^2): 204.994
+53.0021: Spot Size (cm): 5.30813
+53.0021: Range (m): 7992.92
+53.5021: Peak Irradiance (W/cm^2): 206.424
+53.5021: Spot Size (cm): 5.29014
+53.5021: Range (m): 7976.53
+54.0021: Peak Irradiance (W/cm^2): 207.789
+54.0021: Spot Size (cm): 5.27314
+54.0021: Range (m): 7961.06
+54.5021: Peak Irradiance (W/cm^2): 209.213
+54.5021: Spot Size (cm): 5.25559
+54.5021: Range (m): 7945.1
+55.0021: Peak Irradiance (W/cm^2): 210.679
+55.0021: Spot Size (cm): 5.23769
+55.0021: Range (m): 7928.85
+55.5021: Peak Irradiance (W/cm^2): 212.137
+55.5021: Spot Size (cm): 5.22008
+55.5021: Range (m): 7912.89
+Platform's Inherent Contrast not defined. Using Default.
+56.0021: Peak Irradiance (W/cm^2): 213.607
+56.0021: Spot Size (cm): 5.20251
+56.0021: Range (m): 7897.45
+56.5021: Peak Irradiance (W/cm^2): 215.175
+56.5021: Spot Size (cm): 5.18396
+56.5021: Range (m): 7881.16
+57.0021: Peak Irradiance (W/cm^2): 216.705
+57.0021: Spot Size (cm): 5.16605
+57.0021: Range (m): 7865.37
+57.5021: Peak Irradiance (W/cm^2): 218.251
+57.5021: Spot Size (cm): 5.14815
+57.5021: Range (m): 7849.47
+58.0021: Peak Irradiance (W/cm^2): 219.752
+58.0021: Spot Size (cm): 5.13095
+58.0021: Range (m): 7834.03
+58.5021: Peak Irradiance (W/cm^2): 221.328
+58.5021: Spot Size (cm): 5.11306
+58.5021: Range (m): 7817.83
+59.0021: Peak Irradiance (W/cm^2): 222.866
+59.0021: Spot Size (cm): 5.09581
+59.0021: Range (m): 7802.48
+59.5021: Peak Irradiance (W/cm^2): 224.596
+59.5021: Spot Size (cm): 5.0766
+59.5021: Range (m): 7786.24
+T = 60.000
+60.0021: Peak Irradiance (W/cm^2): 226.257
+60.0021: Spot Size (cm): 5.05837
+60.0021: Range (m): 7770.88
+60.5021: Peak Irradiance (W/cm^2): 228.045
+60.5021: Spot Size (cm): 5.03896
+60.5021: Range (m): 7754.71
+61.0021: Peak Irradiance (W/cm^2): 229.845
+61.0021: Spot Size (cm): 5.01966
+61.0021: Range (m): 7739.41
+61.5021: Peak Irradiance (W/cm^2): 231.683
+61.5021: Spot Size (cm): 5.00018
+61.5021: Range (m): 7723.65
+62.0021: Peak Irradiance (W/cm^2): 233.496
+62.0021: Spot Size (cm): 4.98118
+62.0021: Range (m): 7707.95
+62.5021: Peak Irradiance (W/cm^2): 235.387
+62.5021: Spot Size (cm): 4.9616
+62.5021: Range (m): 7691.79
+63.0021: Peak Irradiance (W/cm^2): 237.215
+63.0021: Spot Size (cm): 4.94289
+63.0021: Range (m): 7676.16
+63.5021: Peak Irradiance (W/cm^2): 239.003
+63.5021: Spot Size (cm): 4.9248
+63.5021: Range (m): 7660.8
+64.0021: Peak Irradiance (W/cm^2): 240.814
+64.0021: Spot Size (cm): 4.90667
+64.0021: Range (m): 7645.15
+64.5021: Peak Irradiance (W/cm^2): 242.61
+64.5021: Spot Size (cm): 4.8889
+64.5021: Range (m): 7629.53
+65.0021: Peak Irradiance (W/cm^2): 244.412
+65.0021: Spot Size (cm): 4.87125
+65.0021: Range (m): 7613.88
+65.5021: Peak Irradiance (W/cm^2): 246.273
+65.5021: Spot Size (cm): 4.85323
+65.5021: Range (m): 7597.8
+66.0021: Peak Irradiance (W/cm^2): 248.028
+66.0021: Spot Size (cm): 4.83643
+66.0021: Range (m): 7582.63
+66.5021: Peak Irradiance (W/cm^2): 249.85
+66.5021: Spot Size (cm): 4.81916
+66.5021: Range (m): 7566.98
+Platform's Inherent Contrast not defined. Using Default.
+67.0021: Peak Irradiance (W/cm^2): 251.717
+67.0021: Spot Size (cm): 4.80166
+67.0021: Range (m): 7551.05
+67.5021: Peak Irradiance (W/cm^2): 253.51
+67.5021: Spot Size (cm): 4.78503
+67.5021: Range (m): 7535.85
+68.0021: Peak Irradiance (W/cm^2): 255.358
+68.0021: Spot Size (cm): 4.76808
+68.0021: Range (m): 7520.29
+68.5021: Peak Irradiance (W/cm^2): 257.253
+68.5021: Spot Size (cm): 4.75088
+68.5021: Range (m): 7504.29
+69.0021: Peak Irradiance (W/cm^2): 259.08
+69.0021: Spot Size (cm): 4.73447
+69.0021: Range (m): 7489.15
+69.5021: Peak Irradiance (W/cm^2): 260.983
+69.5021: Spot Size (cm): 4.71758
+69.5021: Range (m): 7473.61
+T = 70.000
+70.0021: Peak Irradiance (W/cm^2): 262.9
+70.0021: Spot Size (cm): 4.70073
+70.0021: Range (m): 7458.13
+70.5021: Peak Irradiance (W/cm^2): 264.895
+70.5021: Spot Size (cm): 4.6834
+70.5021: Range (m): 7442.21
+71.0021: Peak Irradiance (W/cm^2): 266.808
+71.0021: Spot Size (cm): 4.66695
+71.0021: Range (m): 7427.12
+71.5021: Peak Irradiance (W/cm^2): 268.844
+71.5021: Spot Size (cm): 4.64964
+71.5021: Range (m): 7411.25
+72.0021: Peak Irradiance (W/cm^2): 270.78
+72.0021: Spot Size (cm): 4.63336
+72.0021: Range (m): 7396.19
+72.5021: Peak Irradiance (W/cm^2): 272.81
+72.5021: Spot Size (cm): 4.61648
+72.5021: Range (m): 7380.34
+73.0021: Peak Irradiance (W/cm^2): 274.761
+73.0021: Spot Size (cm): 4.60043
+73.0021: Range (m): 7365.29
+73.5021: Peak Irradiance (W/cm^2): 276.776
+73.5021: Spot Size (cm): 4.58402
+73.5021: Range (m): 7349.93
+74.0021: Peak Irradiance (W/cm^2): 278.826
+74.0021: Spot Size (cm): 4.56751
+74.0021: Range (m): 7334.47
+74.5021: Peak Irradiance (W/cm^2): 280.887
+74.5021: Spot Size (cm): 4.5511
+74.5021: Range (m): 7319.12
+75.0021: Peak Irradiance (W/cm^2): 283.025
+75.0021: Spot Size (cm): 4.53426
+75.0021: Range (m): 7303.37
+75.5021: Peak Irradiance (W/cm^2): 285.125
+75.5021: Spot Size (cm): 4.5179
+75.5021: Range (m): 7287.94
+76.0021: Peak Irradiance (W/cm^2): 287.157
+76.0021: Spot Size (cm): 4.50224
+76.0021: Range (m): 7273.03
+76.5021: Peak Irradiance (W/cm^2): 289.327
+76.5021: Spot Size (cm): 4.4857
+76.5021: Range (m): 7257.25
+77.0021: Peak Irradiance (W/cm^2): 291.444
+77.0021: Spot Size (cm): 4.46974
+77.0021: Range (m): 7241.99
+77.5021: Peak Irradiance (W/cm^2): 293.598
+77.5021: Spot Size (cm): 4.45367
+77.5021: Range (m): 7226.61
+78.0021: Peak Irradiance (W/cm^2): 295.705
+78.0021: Spot Size (cm): 4.43813
+78.0021: Range (m): 7211.71
+78.5021: Peak Irradiance (W/cm^2): 297.885
+78.5021: Spot Size (cm): 4.42221
+78.5021: Range (m): 7196.42
+Platform's Inherent Contrast not defined. Using Default.
+79.0021: Peak Irradiance (W/cm^2): 300.146
+79.0021: Spot Size (cm): 4.40589
+79.0021: Range (m): 7180.82
+79.5021: Peak Irradiance (W/cm^2): 302.393
+79.5021: Spot Size (cm): 4.38985
+79.5021: Range (m): 7165.5
+T = 80.000
+80.0021: Peak Irradiance (W/cm^2): 304.569
+80.0021: Spot Size (cm): 4.37449
+80.0021: Range (m): 7150.66
+80.5021: Peak Irradiance (W/cm^2): 306.847
+80.5021: Spot Size (cm): 4.35857
+80.5021: Range (m): 7135.41
+81.0021: Peak Irradiance (W/cm^2): 309.212
+81.0021: Spot Size (cm): 4.34224
+81.0021: Range (m): 7119.87
+81.5021: Peak Irradiance (W/cm^2): 311.522
+81.5021: Spot Size (cm): 4.32646
+81.5021: Range (m): 7104.99
+82.0021: Peak Irradiance (W/cm^2): 313.906
+82.0021: Spot Size (cm): 4.31036
+82.0021: Range (m): 7089.85
+82.5021: Peak Irradiance (W/cm^2): 316.305
+82.5021: Spot Size (cm): 4.29434
+82.5021: Range (m): 7074.62
+83.0021: Peak Irradiance (W/cm^2): 318.721
+83.0021: Spot Size (cm): 4.27839
+83.0021: Range (m): 7059.47
+83.5021: Peak Irradiance (W/cm^2): 321.22
+83.5021: Spot Size (cm): 4.26207
+83.5021: Range (m): 7043.93
+84.0021: Peak Irradiance (W/cm^2): 323.662
+84.0021: Spot Size (cm): 4.24632
+84.0021: Range (m): 7028.87
+84.5021: Peak Irradiance (W/cm^2): 326.086
+84.5021: Spot Size (cm): 4.23085
+84.5021: Range (m): 7014.07
+85.0021: Peak Irradiance (W/cm^2): 328.589
+85.0021: Spot Size (cm): 4.21505
+85.0021: Range (m): 6998.98
+85.5021: Peak Irradiance (W/cm^2): 331.107
+85.5021: Spot Size (cm): 4.19934
+85.5021: Range (m): 6983.92
+86.0021: Peak Irradiance (W/cm^2): 333.719
+86.0021: Spot Size (cm): 4.18323
+86.0021: Range (m): 6968.47
+86.5021: Peak Irradiance (W/cm^2): 336.255
+86.5021: Spot Size (cm): 4.16777
+86.5021: Range (m): 6953.72
+Optical signature not defined. Using default.
+Platform's Inherent Contrast not defined. Using Default.
+87.0021: Peak Irradiance (W/cm^2): 338.883
+87.0021: Spot Size (cm): 4.15193
+87.0021: Range (m): 6938.68
+87.5021: Peak Irradiance (W/cm^2): 341.621
+87.5021: Spot Size (cm): 4.13561
+87.5021: Range (m): 6923.26
+88.0021: Peak Irradiance (W/cm^2): 344.249
+88.0021: Spot Size (cm): 4.12014
+88.0021: Range (m): 6908.62
+88.5021: Peak Irradiance (W/cm^2): 346.965
+88.5021: Spot Size (cm): 4.10433
+88.5021: Range (m): 6893.64
+89.0021: Peak Irradiance (W/cm^2): 349.582
+89.0021: Spot Size (cm): 4.08927
+89.0021: Range (m): 6878.67
+89.5021: Peak Irradiance (W/cm^2): 352.188
+89.5021: Spot Size (cm): 4.07443
+89.5021: Range (m): 6863.69
+T = 90.000
+90.0021: Peak Irradiance (W/cm^2): 354.875
+90.0021: Spot Size (cm): 4.05931
+90.0021: Range (m): 6848.36
+90.5021: Peak Irradiance (W/cm^2): 357.457
+90.5021: Spot Size (cm): 4.04493
+90.5021: Range (m): 6833.72
+91.0021: Peak Irradiance (W/cm^2): 360.111
+91.0021: Spot Size (cm): 4.03031
+91.0021: Range (m): 6818.79
+91.5021: Peak Irradiance (W/cm^2): 362.866
+91.5021: Spot Size (cm): 4.0153
+91.5021: Range (m): 6803.49
+92.0021: Peak Irradiance (W/cm^2): 365.498
+92.0021: Spot Size (cm): 4.00113
+92.0021: Range (m): 6789.01
+92.5021: Peak Irradiance (W/cm^2): 368.206
+92.5021: Spot Size (cm): 3.98669
+92.5021: Range (m): 6774.06
+93.0021: Peak Irradiance (W/cm^2): 370.979
+93.0021: Spot Size (cm): 3.97208
+93.0021: Range (m): 6758.87
+93.5021: Peak Irradiance (W/cm^2): 373.644
+93.5021: Spot Size (cm): 3.95819
+93.5021: Range (m): 6744.37
+94.0021: Peak Irradiance (W/cm^2): 376.399
+94.0021: Spot Size (cm): 3.94398
+94.0021: Range (m): 6729.48
+94.5021: Peak Irradiance (W/cm^2): 379.236
+94.5021: Spot Size (cm): 3.92951
+94.5021: Range (m): 6714.26
+95.0021: Peak Irradiance (W/cm^2): 381.933
+95.0021: Spot Size (cm): 3.9159
+95.0021: Range (m): 6699.87
+95.5021: Peak Irradiance (W/cm^2): 384.637
+95.5021: Spot Size (cm): 3.90239
+95.5021: Range (m): 6685
+96.0021: Peak Irradiance (W/cm^2): 387.339
+96.0021: Spot Size (cm): 3.88904
+96.0021: Range (m): 6669.91
+96.5021: Peak Irradiance (W/cm^2): 389.971
+96.5021: Spot Size (cm): 3.87616
+96.5021: Range (m): 6655.44
+97.0021: Peak Irradiance (W/cm^2): 392.691
+97.0021: Spot Size (cm): 3.86299
+97.0021: Range (m): 6640.73
+97.5021: Peak Irradiance (W/cm^2): 395.543
+97.5021: Spot Size (cm): 3.84932
+97.5021: Range (m): 6625.56
+98.0021: Peak Irradiance (W/cm^2): 398.348
+98.0021: Spot Size (cm): 3.83603
+98.0021: Range (m): 6610.89
+98.5021: Peak Irradiance (W/cm^2): 401.146
+98.5021: Spot Size (cm): 3.8229
+98.5021: Range (m): 6596.48
+99.0021: Peak Irradiance (W/cm^2): 404.403
+99.0021: Spot Size (cm): 3.8078
+99.0021: Range (m): 6581.47
+99.5021: Peak Irradiance (W/cm^2): 408.041
+99.5021: Spot Size (cm): 3.79115
+99.5021: Range (m): 6566.72
+T = 100.000
+100.002: Peak Irradiance (W/cm^2): 411.571
+100.002: Spot Size (cm): 3.7752
+100.002: Range (m): 6552.44
+100.502: Peak Irradiance (W/cm^2): 415.304
+100.502: Spot Size (cm): 3.75855
+100.502: Range (m): 6537.38
+101.002: Peak Irradiance (W/cm^2): 418.851
+101.002: Spot Size (cm): 3.74294
+101.002: Range (m): 6523.11
+101.502: Peak Irradiance (W/cm^2): 422.485
+101.502: Spot Size (cm): 3.72715
+101.502: Range (m): 6508.53
+102.002: Peak Irradiance (W/cm^2): 426.135
+102.002: Spot Size (cm): 3.71149
+102.002: Range (m): 6493.92
+102.502: Peak Irradiance (W/cm^2): 429.6
+102.502: Spot Size (cm): 3.6968
+102.502: Range (m): 6478.9
+103.002: Peak Irradiance (W/cm^2): 432.644
+103.002: Spot Size (cm): 3.68404
+103.002: Range (m): 6464.73
+103.502: Peak Irradiance (W/cm^2): 435.698
+103.502: Spot Size (cm): 3.67136
+103.502: Range (m): 6450.16
+Platform broken.
+T = 110.000
+T = 120.000
+123.017: Peak Irradiance (W/cm^2): 32416.4
+123.017: Spot Size (cm): 0.438404
+123.017: Range (m): 1329.66
+123.517: Peak Irradiance (W/cm^2): 32673
+123.517: Spot Size (cm): 0.436692
+123.517: Range (m): 1323.91
+124.017: Peak Irradiance (W/cm^2): 32899.3
+124.017: Spot Size (cm): 0.435199
+124.017: Range (m): 1318.59
+Platform broken.
+T = 130.000
+T = 140.000
+Platform broken.
+Platform broken.
+T = 150.000
+Platform broken.
+Platform broken.
+T = 160.000
+164.016: Peak Irradiance (W/cm^2): 2881.69
+164.016: Spot Size (cm): 1.45266
+164.016: Range (m): 3878.74
+164.516: Peak Irradiance (W/cm^2): 2870.33
+164.516: Spot Size (cm): 1.45549
+164.516: Range (m): 3884.22
+165.016: Peak Irradiance (W/cm^2): 2858.3
+165.016: Spot Size (cm): 1.4585
+165.016: Range (m): 3889.84
+165.516: Peak Irradiance (W/cm^2): 2846.15
+165.516: Spot Size (cm): 1.46157
+165.516: Range (m): 3895.6
+166.016: Peak Irradiance (W/cm^2): 2833.94
+166.016: Spot Size (cm): 1.46466
+166.016: Range (m): 3901.46
+166.516: Peak Irradiance (W/cm^2): 2821.6
+166.516: Spot Size (cm): 1.46781
+166.516: Range (m): 3907.45
+167.016: Peak Irradiance (W/cm^2): 2808.67
+167.016: Spot Size (cm): 1.47114
+167.016: Range (m): 3913.71
+167.516: Peak Irradiance (W/cm^2): 2796.17
+167.516: Spot Size (cm): 1.47437
+167.516: Range (m): 3919.79
+168.016: Peak Irradiance (W/cm^2): 2783.19
+168.016: Spot Size (cm): 1.47776
+168.016: Range (m): 3926.16
+168.516: Peak Irradiance (W/cm^2): 2769.24
+168.516: Spot Size (cm): 1.48142
+168.516: Range (m): 3933
+169.016: Peak Irradiance (W/cm^2): 2756.66
+169.016: Spot Size (cm): 1.48474
+169.016: Range (m): 3939.38
+169.516: Peak Irradiance (W/cm^2): 2831.38
+169.516: Spot Size (cm): 1.465
+169.516: Range (m): 3941.55
+T = 170.000
+170.016: Peak Irradiance (W/cm^2): 2871.51
+170.016: Spot Size (cm): 1.45476
+170.016: Range (m): 3936.35
+170.516: Peak Irradiance (W/cm^2): 2891.04
+170.516: Spot Size (cm): 1.44991
+170.516: Range (m): 3927.75
+Platform broken.
+T = 180.000
+184.016: Peak Irradiance (W/cm^2): 317.858
+184.016: Spot Size (cm): 4.28903
+184.016: Range (m): 6337.64
+184.516: Peak Irradiance (W/cm^2): 320.835
+184.516: Spot Size (cm): 4.26949
+184.516: Range (m): 6322.88
+185.016: Peak Irradiance (W/cm^2): 324.02
+185.016: Spot Size (cm): 4.24888
+185.016: Range (m): 6307.38
+185.516: Peak Irradiance (W/cm^2): 327.268
+185.516: Spot Size (cm): 4.22817
+185.516: Range (m): 6291.77
+186.016: Peak Irradiance (W/cm^2): 330.22
+186.016: Spot Size (cm): 4.20961
+186.016: Range (m): 6277.48
+186.516: Peak Irradiance (W/cm^2): 333.369
+186.516: Spot Size (cm): 4.19008
+186.516: Range (m): 6262.42
+187.016: Peak Irradiance (W/cm^2): 336.57
+187.016: Spot Size (cm): 4.17051
+187.016: Range (m): 6247.28
+187.516: Peak Irradiance (W/cm^2): 339.969
+187.516: Spot Size (cm): 4.15003
+187.516: Range (m): 6231.39
+188.016: Peak Irradiance (W/cm^2): 343.123
+188.016: Spot Size (cm): 4.1313
+188.016: Range (m): 6216.82
+188.516: Peak Irradiance (W/cm^2): 346.343
+188.516: Spot Size (cm): 4.11243
+188.516: Range (m): 6202.09
+189.016: Peak Irradiance (W/cm^2): 349.655
+189.016: Spot Size (cm): 4.0933
+189.016: Range (m): 6187.01
+189.516: Peak Irradiance (W/cm^2): 352.976
+189.516: Spot Size (cm): 4.07438
+189.516: Range (m): 6172.03
+T = 190.000
+190.016: Peak Irradiance (W/cm^2): 356.351
+190.016: Spot Size (cm): 4.05543
+190.016: Range (m): 6156.94
+190.516: Peak Irradiance (W/cm^2): 359.735
+190.516: Spot Size (cm): 4.03669
+190.516: Range (m): 6141.94
+191.016: Peak Irradiance (W/cm^2): 363.204
+191.016: Spot Size (cm): 4.01776
+191.016: Range (m): 6126.59
+191.516: Peak Irradiance (W/cm^2): 366.578
+191.516: Spot Size (cm): 3.99959
+191.516: Range (m): 6111.9
+192.016: Peak Irradiance (W/cm^2): 370.141
+192.016: Spot Size (cm): 3.98068
+192.016: Range (m): 6096.91
+192.516: Peak Irradiance (W/cm^2): 373.96
+192.516: Spot Size (cm): 3.9607
+192.516: Range (m): 6081.12
+193.016: Peak Irradiance (W/cm^2): 377.522
+193.016: Spot Size (cm): 3.94234
+193.016: Range (m): 6066.64
+193.516: Peak Irradiance (W/cm^2): 381.171
+193.516: Spot Size (cm): 3.9238
+193.516: Range (m): 6052.04
+194.016: Peak Irradiance (W/cm^2): 384.987
+194.016: Spot Size (cm): 3.90469
+194.016: Range (m): 6037.03
+194.516: Peak Irradiance (W/cm^2): 388.808
+194.516: Spot Size (cm): 3.88583
+194.516: Range (m): 6022.14
+195.016: Peak Irradiance (W/cm^2): 392.566
+195.016: Spot Size (cm): 3.86755
+195.016: Range (m): 6006.84
+195.516: Peak Irradiance (W/cm^2): 396.148
+195.516: Spot Size (cm): 3.85037
+195.516: Range (m): 5992.22
+196.016: Peak Irradiance (W/cm^2): 399.866
+196.016: Spot Size (cm): 3.83278
+196.016: Range (m): 5977.31
+196.516: Peak Irradiance (W/cm^2): 403.913
+196.516: Spot Size (cm): 3.81391
+196.516: Range (m): 5961.6
+197.016: Peak Irradiance (W/cm^2): 407.648
+197.016: Spot Size (cm): 3.79673
+197.016: Range (m): 5947.56
+197.516: Peak Irradiance (W/cm^2): 411.735
+197.516: Spot Size (cm): 3.77821
+197.516: Range (m): 5932.62
+198.016: Peak Irradiance (W/cm^2): 415.611
+198.016: Spot Size (cm): 3.7609
+198.016: Range (m): 5917.8
+198.516: Peak Irradiance (W/cm^2): 419.547
+198.516: Spot Size (cm): 3.74356
+198.516: Range (m): 5902.93
+199.016: Peak Irradiance (W/cm^2): 423.521
+199.016: Spot Size (cm): 3.7263
+199.016: Range (m): 5888.08
+199.516: Peak Irradiance (W/cm^2): 427.552
+199.516: Spot Size (cm): 3.70903
+199.516: Range (m): 5873.19
+T = 200.000
+200.016: Peak Irradiance (W/cm^2): 431.692
+200.016: Spot Size (cm): 3.69155
+200.016: Range (m): 5858.04
+200.516: Peak Irradiance (W/cm^2): 435.726
+200.516: Spot Size (cm): 3.67475
+200.516: Range (m): 5843.52
+201.016: Peak Irradiance (W/cm^2): 439.904
+201.016: Spot Size (cm): 3.65759
+201.016: Range (m): 5828.72
+201.516: Peak Irradiance (W/cm^2): 444.384
+201.516: Spot Size (cm): 3.63947
+201.516: Range (m): 5813.11
+202.016: Peak Irradiance (W/cm^2): 448.561
+202.016: Spot Size (cm): 3.62281
+202.016: Range (m): 5798.8
+202.516: Peak Irradiance (W/cm^2): 452.84
+202.516: Spot Size (cm): 3.60598
+202.516: Range (m): 5784.38
+203.016: Peak Irradiance (W/cm^2): 457.307
+203.016: Spot Size (cm): 3.58866
+203.016: Range (m): 5769.57
+203.516: Peak Irradiance (W/cm^2): 461.834
+203.516: Spot Size (cm): 3.57136
+203.516: Range (m): 5754.81
+204.016: Peak Irradiance (W/cm^2): 466.334
+204.016: Spot Size (cm): 3.55442
+204.016: Range (m): 5740.1
+204.516: Peak Irradiance (W/cm^2): 470.911
+204.516: Spot Size (cm): 3.53743
+204.516: Range (m): 5725.35
+205.016: Peak Irradiance (W/cm^2): 475.671
+205.016: Spot Size (cm): 3.52003
+205.016: Range (m): 5710.27
+205.516: Peak Irradiance (W/cm^2): 480.281
+205.516: Spot Size (cm): 3.50341
+205.516: Range (m): 5695.9
+206.016: Peak Irradiance (W/cm^2): 485.09
+206.016: Spot Size (cm): 3.48633
+206.016: Range (m): 5681.15
+206.516: Peak Irradiance (W/cm^2): 489.951
+206.516: Spot Size (cm): 3.46932
+206.516: Range (m): 5666.5
+207.016: Peak Irradiance (W/cm^2): 495.008
+207.016: Spot Size (cm): 3.45189
+207.016: Range (m): 5651.76
+207.516: Peak Irradiance (W/cm^2): 500.396
+207.516: Spot Size (cm): 3.4336
+207.516: Range (m): 5636.3
+208.016: Peak Irradiance (W/cm^2): 505.271
+208.016: Spot Size (cm): 3.41731
+208.016: Range (m): 5622.44
+208.516: Peak Irradiance (W/cm^2): 510.477
+208.516: Spot Size (cm): 3.40017
+208.516: Range (m): 5607.79
+209.016: Peak Irradiance (W/cm^2): 515.67
+209.016: Spot Size (cm): 3.38332
+209.016: Range (m): 5593.14
+209.516: Peak Irradiance (W/cm^2): 520.891
+209.516: Spot Size (cm): 3.36664
+209.516: Range (m): 5578.54
+T = 210.000
+210.016: Peak Irradiance (W/cm^2): 526.1
+210.016: Spot Size (cm): 3.35024
+210.016: Range (m): 5563.86
+210.516: Peak Irradiance (W/cm^2): 531.315
+210.516: Spot Size (cm): 3.33407
+210.516: Range (m): 5549.31
+211.016: Peak Irradiance (W/cm^2): 536.79
+211.016: Spot Size (cm): 3.31734
+211.016: Range (m): 5534.35
+211.516: Peak Irradiance (W/cm^2): 542.132
+211.516: Spot Size (cm): 3.30126
+211.516: Range (m): 5520.07
+212.016: Peak Irradiance (W/cm^2): 547.817
+212.016: Spot Size (cm): 3.2844
+212.016: Range (m): 5505.19
+212.516: Peak Irradiance (W/cm^2): 553.361
+212.516: Spot Size (cm): 3.26821
+212.516: Range (m): 5490.98
+213.016: Peak Irradiance (W/cm^2): 559.145
+213.016: Spot Size (cm): 3.25157
+213.016: Range (m): 5476.39
+213.516: Peak Irradiance (W/cm^2): 564.866
+213.516: Spot Size (cm): 3.23537
+213.516: Range (m): 5461.83
+214.016: Peak Irradiance (W/cm^2): 570.767
+214.016: Spot Size (cm): 3.21891
+214.016: Range (m): 5447
+214.516: Peak Irradiance (W/cm^2): 576.862
+214.516: Spot Size (cm): 3.20217
+214.516: Range (m): 5432
+215.016: Peak Irradiance (W/cm^2): 582.55
+215.016: Spot Size (cm): 3.18679
+215.016: Range (m): 5418.29
+215.516: Peak Irradiance (W/cm^2): 588.696
+215.516: Spot Size (cm): 3.17041
+215.516: Range (m): 5403.78
+216.016: Peak Irradiance (W/cm^2): 595.05
+216.016: Spot Size (cm): 3.15375
+216.016: Range (m): 5388.99
+216.516: Peak Irradiance (W/cm^2): 601.481
+216.516: Spot Size (cm): 3.13715
+216.516: Range (m): 5374.04
+217.016: Peak Irradiance (W/cm^2): 607.397
+217.016: Spot Size (cm): 3.12211
+217.016: Range (m): 5360.39
+217.516: Peak Irradiance (W/cm^2): 613.707
+217.516: Spot Size (cm): 3.10631
+217.516: Range (m): 5345.95
+218.016: Peak Irradiance (W/cm^2): 620.063
+218.016: Spot Size (cm): 3.09064
+218.016: Range (m): 5331.16
+218.516: Peak Irradiance (W/cm^2): 626.499
+218.516: Spot Size (cm): 3.07501
+218.516: Range (m): 5316.26
+219.016: Peak Irradiance (W/cm^2): 632.481
+219.016: Spot Size (cm): 3.0607
+219.016: Range (m): 5302.67
+Platform broken.
+T = 220.000
+T = 230.000
+T = 240.000

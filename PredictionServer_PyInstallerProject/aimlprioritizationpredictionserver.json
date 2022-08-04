@@ -1,0 +1,42 @@
+{ 
+  "comms_configuration": {
+      "protocol_choice": "CDXMESH",
+      "protocol_options": [ "UDP", "CDXMESH" ],
+      "udp_host": "127.0.0.1",
+      "udp_port": 12001,
+      "rabbitmq_user_name": "guest",
+      "rabbitmq_password": "guest",
+      "rabbitmq_address": "localhost",
+      "rabbitmq_port": 5672,
+      "exchange_name": "sim-exchange",
+      "routing_key_prediction_server": "prioritizationpredictionserver.cmd.primary",
+      "routing_key_requestor": "aimlprioritization.cmd.primary"
+  },
+  "machine_learning_configuration": {
+    "normalize_model_loading": {
+        "load_normalization_model_flag": false,
+        "input_path": "phase_2_models/",
+        "input_file_name": "normalize_model_nn.pickle"
+    },
+    "dimensionality_reduction_model_loading": {
+        "load_dimensionality_reduced_model_flag": false,
+        "input_path": "phase_2_models/",
+        "input_file_name": "dimensionality_reduced_model.pickle"
+    },
+    "prediction_model_loading": {
+        "load_prediction_model_flag": false,
+        "input_path": "phase_2_models/nn",
+        "input_file_name": "trained_model_nn"
+    },
+    "feature_names_list": [
+        "speed",
+        "altitude",
+        "slantRange",
+        "classificationOverall",
+        "timeUntilFireStartMsec"
+    ],
+    "target_names_list": [
+        "score"
+    ]
+  }
+}
