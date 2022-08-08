@@ -1,0 +1,25 @@
+ML/DL Classification Notes
+
+Dataset: 1.4+ million track updates from upwards 40000 scenarios. Evenly split into 6 different possible classifications.
+
+ALL CURRENT BEST HYPERPARAMS CAN BE FOUND INSIDE CLASSIFICATION PYTHON CODE
+
+I can get updated exact demo percentages for each model if needed. 
+
+DL:
+Feed-forward NN
+	Decent prediction time (~ .6 seconds on average), begins overfitting after 600 epochs training. Reach 93-94% accuracy on generated test data. Poor accuracy on demo data. Can get more recent analysis with demo percentage as well if needed.
+RNN with LSTM
+	Slow down in prediction time, similar accuracy to Feed-forward NN. No real benefit.
+CNN with State Covariance Matrix in a combined model with feed-forward NN (not ensemble)
+	Much slower prediction time, slightly better performance than feed-forward NN on generated data. Not noticable difference on demo data.
+
+ML:
+KNN
+	Great prediction time (~ .15 seconds on average), reaches accuracy 98+% on generated test data. Mediocre at best on demo. 
+GB
+	Fantastic prediction time (~ .06-.08 seconds on average), reaches accuracy 99+% on generated test data. Current best demo model. 
+Random Forrest
+	Huge model size, similar prediction time to KNN, performs worse than knn on generated test data and demo data.
+Naive Bayes
+	Not worth mentioning

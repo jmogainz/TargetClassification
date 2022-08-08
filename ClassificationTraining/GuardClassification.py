@@ -58,9 +58,9 @@ def preprocessor(x_df, y_df):
                                                         ts_steps=ts_steps)
     else:
         (x_train, x_temp, y_train, y_temp) = train_test_split(x_df, y_df, 
-                                                          test_size=0.1, random_state=42)
+                                                          train_size=0.9, random_state=42)
         (x_dev, x_test, y_dev, y_test) = train_test_split(x_temp, y_temp,
-                                                        test_size=.5, random_state=42)
+                                                        train_size=.5, random_state=42)
 
     # if ML algo, do not one-hot encode; else, NN, do one-hot encode
     if (model_type == 'knn' or model_type == 'gb' or model_type == 'rf' or
@@ -463,49 +463,49 @@ def main():
     loaded_scaler = args.load_scaler
     perf_check = args.perf_check
 
-    if model_type == 'ts':
-        if ts_steps <= 0:
-            print("[ERROR] ts_steps must be greater than 0, if using ts data")
-            sys.exit(1)
+    if model_type == 'ts' and ts_steps <= 0:
+        print("[ERROR] ts_steps must be greater than 0, if using ts data")
+        sys.exit(1)
 
     model_loaded = False
     scaler = {}
-    try:
-        if os.path.exists(loaded_model) and os.path.exists(loaded_scaler):
-            print("[INFO] Loading trained model...")
-            if 'knn' in loaded_model:
-                model = joblib.load(loaded_model)
-                scaler['imported'] = joblib.load(loaded_scaler)
-                model_loaded = True
-                model_type = 'knn'
-            if 'nb' in loaded_model:
-                model = joblib.load(loaded_model)
-                scaler['imported'] = joblib.load(loaded_scaler)
-                model_loaded = True
-                model_type = 'nb'
-            if 'gb' in loaded_model:
-                model = joblib.load(loaded_model)
-                scaler['imported'] = joblib.load(loaded_scaler)
-                model_loaded = True
-                model_type = 'gb'
-            if 'dense' in loaded_model:
-                model = load_model(loaded_model)
-                scaler['imported'] = joblib.load(loaded_scaler)
-                model_loaded = True
-                model_type = 'dense'
-            if 'merge' in loaded_model:
-                model = load_model(loaded_model)
-                scaler['imported'] = joblib.load(loaded_scaler)
-                model_loaded = True
-                model_type = 'merge'
-            if 'ts' in loaded_model:
-                model = joblib.load(loaded_model)
-                scaler['imported'] = joblib.load(loaded_scaler)
-                model_loaded = True
-                model_type = 'ts'
-    except:
-        print("\nError loading either model or scaler")
-        sys.exit(0)
+    if os.path.exists(loaded_model) and os.path.exists(loaded_scaler):
+        print("[INFO] Loading trained model...")
+        if 'knn' in loaded_model:
+            model = joblib.load(loaded_model)
+            scaler['imported'] = joblib.load(loaded_scaler)
+            model_loaded = True
+            model_type = 'knn'
+        elif 'nb' in loaded_model:
+            model = joblib.load(loaded_model)
+            scaler['imported'] = joblib.load(loaded_scaler)
+            model_loaded = True
+            model_type = 'nb'
+        elif 'rf' in loaded_model:
+            model = joblib.load(loaded_model)
+            scaler['imported'] = joblib.load(loaded_scaler)
+            model_loaded = True
+            model_type = 'rf'
+        elif 'gb' in loaded_model:
+            model = joblib.load(loaded_model)
+            scaler['imported'] = joblib.load(loaded_scaler)
+            model_loaded = True
+            model_type = 'gb'
+        elif 'dense' in loaded_model:
+            model = load_model(loaded_model)
+            scaler['imported'] = joblib.load(loaded_scaler)
+            model_loaded = True
+            model_type = 'dense'
+        elif 'merge' in loaded_model:
+            model = load_model(loaded_model)
+            scaler['imported'] = joblib.load(loaded_scaler)
+            model_loaded = True
+            model_type = 'merge'
+        elif 'ts' in loaded_model:
+            model = joblib.load(loaded_model)
+            scaler['imported'] = joblib.load(loaded_scaler)
+            model_loaded = True
+            model_type = 'ts'
 
     x_df, y_df = dataset(args.dataset)
     train, dev, test = preprocessor(x_df, y_df) 
