@@ -71,11 +71,15 @@ class PrioritizationPredictionServer:
         self.__total_Time_Count = 0
 
         self.__ml_config = None
+        self.__feature_encoding_model = None
+        self.__target_encoding_model = None
         self.__normalize_model = None
         self.__dimensionality_reduction_model = None
         self.__prediction_model = None
         self.__feature_list = None
         self.__target_list = None
+        self.__feature_encoding_names_list = None
+        self.__target_encoding_names_list = None
 
     def loadConfig(self, config = None):
         if config is not None and config.comms_configuration is not None:
@@ -104,6 +108,21 @@ class PrioritizationPredictionServer:
                 self.__target_list = self.__ml_config.target_names_list
             else:
                 print("Warning - Missing Features and Target List in Configuration")
+            if self.__ml_config.feature_encoding_names_list and self.__ml_config.target_encoding_names_List:
+                self.__feature_encoding_names_list = self.__ml_config.feature_encoding_names_list
+                self.__target_encoding_names_list = self.__ml_config.target_encoding_names_List
+            else:
+                print("Warning - Missing Features Encoding Name List and Target Encoding Name List in Configuration")
+            if self.__ml_config.feature_encoding_model_loading:
+                temp_config = self.__ml_config.feature_encoding_model_loading
+                if temp_config.load_feature_encoding_model_flag and temp_config.input_path and temp_config.input_file_name:
+                    if temp_config.load_feature_encoding_model_flag:
+                        self.__feature_encoding_model = self.__loadTrainedModel(os.path.join(temp_config.input_path, temp_config.input_file_name))
+            if self.__ml_config.target_encoding_model_loading:
+                temp_config = self.__ml_config.target_encoding_model_loading
+                if temp_config.load_target_encoding_model_flag and temp_config.input_path and temp_config.input_file_name:
+                    if temp_config.load_target_encoding_model_flag:
+                        self.__target_encoding_model = self.__loadTrainedModel(os.path.join(temp_config.input_path, temp_config.input_file_name))
             if self.__ml_config.normalize_model_loading:
                 temp_config = self.__ml_config.normalize_model_loading
                 if temp_config.load_normalization_model_flag and temp_config.input_path and temp_config.input_file_name:
@@ -149,14 +168,26 @@ class PrioritizationPredictionServer:
         from copy import deepcopy
         features_predict = deepcopy(features)
         features_predict = features_predict.reshape(1, -1)
-        if self.__normalize_model is not None:
-            features_predict = self.__normalize_model.transform(features_predict)
-        if self.__dimensionality_reduction_model is not None:
-            features_predict = self.__dimensionality_reduction_model.transform(features_predict)
-        if self.__prediction_model is not None:
-            return self.__prediction_model.predict(features_predict)
-        else:
-            return None
+        target_predict = None
+        try:
+            if self.__feature_encoding_model is not None:
+                temp1 = features_predict[:, [i for i, el in enumerate(self.__feature_list) if el in set(self.__feature_encoding_names_list)]]
+                temp2 = features_predict[:, [i for i, el in enumerate(self.__feature_list) if el not in set(self.__feature_encoding_names_list)]]
+                temp1 = self.__feature_encoding_model.transform(temp1)
+                features_predict = np.concatenate([temp1, temp2], axis=1)
+            if self.__normalize_model is not None:
+                features_predict = self.__normalize_model.transform(features_predict)
+            if self.__dimensionality_reduction_model is not None:
+                features_predict = self.__dimensionality_reduction_model.transform(features_predict)
+            if self.__prediction_model is not None:
+                target_predict = self.__prediction_model.predict(features_predict)
+            if self.__target_encoding_model is not None:
+                raise Exception("Target Encoding Not Yet Implemented ... Future Work")
+                #target_predict = self.__target_encoding_model.transform(features_predict)
+        except:
+            print("Warning - Exception with prediction request")
+            print(features)
+        return target_predict
 
     def __createResponse(self, received_message_decoded, prediction):
         response_message = {}
@@ -217,9 +248,9 @@ class PrioritizationPredictionServer:
                     self.__total_Time = self.__total_Time + elapsed
                     self.__total_Time_Count = self.__total_Time_Count + 1
                     print("Average Elapsed Time: " + str(self.__total_Time / self.__total_Time_Count))
-                if self.__debugging:
-                    print(self.__routing_key_prediction_server + " Predicted = " + str(prediction))
                 if prediction is not None:
+                    if self.__debugging:
+                        print(self.__routing_key_prediction_server + " Predicted = " + str(prediction))
                     json_response_encoded = self.__createResponse(received_message_decoded, prediction)
                     if received_message_decoded['ReplyInfo']:
                         response_address = (received_message_decoded['ReplyInfo'].split(":")[1], int(received_message_decoded['ReplyInfo'].split(":")[2]))
@@ -251,9 +282,9 @@ class PrioritizationPredictionServer:
             self.__total_Time = self.__total_Time + elapsed
             self.__total_Time_Count = self.__total_Time_Count + 1
             print("Average Elapsed Time: " + str(self.__total_Time/self.__total_Time_Count))
-        if self.__debugging:
-            print(self.__routing_key_prediction_server + " Predicted = " + str((prediction[0])))
         if prediction is not None:
+            if self.__debugging:
+                print(self.__routing_key_prediction_server + " Predicted = " + str(prediction))
             json_response_encoded = self.__createResponse(received_message_decoded, (prediction[0]))
             if self.__debugging:
                 print("Sending Response of " + str(json.loads(json_response_encoded.decode('utf-8'))) + " on " + method.routing_key)

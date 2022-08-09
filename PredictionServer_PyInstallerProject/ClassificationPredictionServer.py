@@ -158,17 +158,21 @@ class ClassificationPredictionServer:
     def __predict(self, features):
         from copy import deepcopy
         features_predict = deepcopy(features)
-        if self.__normalize_model is not None:
-            features_predict = self.__normalize_model.transform(features_predict)
-            features_predict = features_predict.reshape(1, -1)
-        else:
-            features_predict = features_predict.values.reshape(1, -1) # still a dataframe
-        if self.__dimensionality_reduction_model is not None:
-            features_predict = self.__dimensionality_reduction_model.transform(features_predict)
-        if self.__prediction_model is not None:
-            return self.__prediction_model.predict(features_predict)
-        else:
-            return None
+        try:
+            if self.__normalize_model is not None:
+                features_predict = self.__normalize_model.transform(features_predict)
+                features_predict = features_predict.reshape(1, -1)
+            else:
+                features_predict = features_predict.values.reshape(1, -1) # still a dataframe
+            if self.__dimensionality_reduction_model is not None:
+                features_predict = self.__dimensionality_reduction_model.transform(features_predict)
+            if self.__prediction_model is not None:
+                return self.__prediction_model.predict(features_predict)
+            else:
+                return None
+        except:
+            print("Warning - Exception with prediction request")
+            print(features)
 
     def __createResponse(self, received_message_decoded, prediction):
         response_message = {}
