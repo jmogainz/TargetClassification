@@ -3,14 +3,14 @@
 # https://www.anaconda.com/download/linux-x86_64/
 # run this shell script to setup environment
 
-# run this command separately
-# conda create -n tf_gpu python=3.9.12 tensorflow-gpu -y
-# conda activate tf_gpu
+conda create -n tf_gpu python=3.9.12 tensorflow-gpu -y
+conda install -n tf_gpu -c conda-forge pandas -y
+conda install -n tf_gpu -c anaconda scikit-learn -y
+conda install -n tf_gpu -c conda-forge seaborn -y
+conda install -n tf_gpu -c conda-forge xgboost -y
+conda install -n tf_gpu -c conda-forge pika -y
+conda install -n tf_gpu -c conda-forge pyyaml -y
+conda install -n tf_gpu -c conda-forge pyinstaller -y
 
-conda install -c conda-forge pandas -y
-conda install -c anaconda scikit-learn -y
-conda install -c conda-forge seaborn -y
-conda install -c conda-forge xgboost -y
-conda install -c conda-forge pika -y
-conda install -c conda-forge pyyaml -y
-conda install -c conda-forge pyinstaller -y
+# run this command separately
+# conda activate tf_gpu
