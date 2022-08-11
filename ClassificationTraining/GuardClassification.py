@@ -172,6 +172,7 @@ def preprocessor(x_df, y_df):
                 'y_test': y_test, 'x_test_num_scov': x_test_num_scov, 'x_test_all': x_test_all}
 
         if model_type == 'ts':
+            print("[INFO] Performing time series reshaping...", end='', flush=True)
             train['x_train_all'] = train['x_train_all'].reshape(-1, ts_steps, 52)
             dev['x_dev_all'] = dev['x_dev_all'].reshape(-1, ts_steps, 52)
             test['x_test_all'] = test['x_test_all'].reshape(-1, ts_steps, 52)
@@ -181,6 +182,7 @@ def preprocessor(x_df, y_df):
             train['y_train'] = y_train.iloc[::ts_steps]
             dev['y_dev'] = y_dev.iloc[::ts_steps]
             test['y_test'] = y_test.iloc[::ts_steps]
+            print("done")
 
 
     return train, dev, test
