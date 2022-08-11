@@ -100,6 +100,9 @@ with open(f"GuardianGrafanaPlot_{filename}.js", "w") as f:
                "   legend: {\n"
                "      yanchor: \'top\',\n"
               f"      tracegroupgap: {height / (len(cols) * 1.575)},\n"
+               "      font: {\n"
+               "         color: \'black\',\n"
+               "      },\n"
                "   },\n")
 
     # define each consecutive axis
@@ -124,8 +127,13 @@ with open(f"GuardianGrafanaPlot_{filename}.js", "w") as f:
 
         buff.write(f"   yaxis{axis}: {{\n"
                     "      title: {\n" 
-                    "         color: \'black\',\n"
+                    "         font: {\n"
+                    "            color: \'black\',\n"
+                    "         },\n"
                    f"         text: \'Track {track}\',\n"
+                    "      },\n"
+                    "      tickfont: {\n"
+                    "         color: \'black\',\n"
                     "      },\n"
                     "   },\n")
 

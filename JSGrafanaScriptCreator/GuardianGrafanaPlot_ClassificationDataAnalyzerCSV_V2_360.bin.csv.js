@@ -353,6 +353,9 @@ layout = {
    legend: {
       yanchor: 'top',
       tracegroupgap: 60.150375939849624,
+      font: {
+         color: 'black',
+      },
    },
    xaxis: {
       autorange: false,
@@ -362,8 +365,13 @@ layout = {
    },
    yaxis: {
       title: {
-         color: 'black',
+         font: {
+            color: 'black',
+         },
          text: 'Track 1',
+      },
+      tickfont: {
+         color: 'black',
       },
    },
    xaxis2: {
@@ -374,8 +382,13 @@ layout = {
    },
    yaxis2: {
       title: {
-         color: 'black',
+         font: {
+            color: 'black',
+         },
          text: 'Track 2',
+      },
+      tickfont: {
+         color: 'black',
       },
    },
    xaxis3: {
@@ -386,8 +399,13 @@ layout = {
    },
    yaxis3: {
       title: {
-         color: 'black',
+         font: {
+            color: 'black',
+         },
          text: 'Track 3',
+      },
+      tickfont: {
+         color: 'black',
       },
    },
    xaxis4: {
@@ -398,8 +416,13 @@ layout = {
    },
    yaxis4: {
       title: {
-         color: 'black',
+         font: {
+            color: 'black',
+         },
          text: 'Track 4',
+      },
+      tickfont: {
+         color: 'black',
       },
    },
    xaxis5: {
@@ -410,8 +433,13 @@ layout = {
    },
    yaxis5: {
       title: {
-         color: 'black',
+         font: {
+            color: 'black',
+         },
          text: 'Track 5',
+      },
+      tickfont: {
+         color: 'black',
       },
    },
    xaxis6: {
@@ -422,8 +450,13 @@ layout = {
    },
    yaxis6: {
       title: {
-         color: 'black',
+         font: {
+            color: 'black',
+         },
          text: 'Track 6',
+      },
+      tickfont: {
+         color: 'black',
       },
    },
    xaxis7: {
@@ -434,8 +467,13 @@ layout = {
    },
    yaxis7: {
       title: {
-         color: 'black',
+         font: {
+            color: 'black',
+         },
          text: 'Track 7',
+      },
+      tickfont: {
+         color: 'black',
       },
    },
    xaxis8: {
@@ -446,8 +484,13 @@ layout = {
    },
    yaxis8: {
       title: {
-         color: 'black',
+         font: {
+            color: 'black',
+         },
          text: 'Track 8',
+      },
+      tickfont: {
+         color: 'black',
       },
    },
    xaxis9: {
@@ -457,8 +500,13 @@ layout = {
    },
    yaxis9: {
       title: {
-         color: 'black',
+         font: {
+            color: 'black',
+         },
          text: 'Track 9',
+      },
+      tickfont: {
+         color: 'black',
       },
    },
 };

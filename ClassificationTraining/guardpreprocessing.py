@@ -57,9 +57,15 @@ def combine_data(csv_file, data_dir, time_series):
 
     # if total samples is not a multiple of the time series step, remove the last few samples
     if time_series:
-        if len(df) % time_series != 0:
-            df = df[:-(len(df) % time_series)]
-
+        try:
+            sep_df = sep_data(df, specific_data_dict)
+            for label in sep_df:
+                if len(sep_df[label]) % time_series != 0:
+                    sep_df[label] = sep_df[label].iloc[:-(len(sep_df[label]) % time_series)]
+            df = pd.concat(sep_df, ignore_index=True)
+        except Exception as e:
+            print("[WARNING]", e)
+            return pd.DataFrame()
     return df
 
 def sep_data(df, class_container):
@@ -70,7 +76,8 @@ def sep_data(df, class_container):
         df_class = df_class[df_class["Subclass"] == specific_data_dict[label][1]]
         df_class = df_class[df_class["Type"] == specific_data_dict[label][2]]
         df_class = df_class[df_class["Subtype"] == specific_data_dict[label][3]]
-        class_frames[label] = df_class
+        if len(df_class) > 0:
+            class_frames[label] = df_class
 
     return class_frames
 
@@ -167,7 +174,7 @@ def clean_data(df, time_series):
     """
     features_subset = features_combined[:2] + features_combined[3:] # verticalSpeed ignored
 
-    # time series dataframes must handles differently
+    # time series dataframes must be handled differently
     if time_series:
         df_slices_list = []
         for i in range(0, len(df), time_series):
@@ -186,9 +193,15 @@ def clean_data(df, time_series):
     # exclude vertical velocity from the data, it is falsy calculated when afsim reports duplicates
     df_clean = df.drop_duplicates(inplace=False, keep='first', subset=features_subset)
 
-    # outlier removal
+    # particular removal for improved accuracy on demo version
+    ## remove all data that has both altitude above 3000 and Subtype equal to 1
+    # df_clean = df_clean[~((df_clean["altitude"] >= 3000) & (df_clean["Subtype"] == 1))]
+
     df_clean = df_clean[df_clean["verticalSpeed"] != 0]
     df_clean = df_clean[df_clean["signalToNoiseRatio"] != 0]
+ 
+    ########### NO NEED FOR THIS IF DATA IS RECORDED WELL ##############
+    # outlier removal
     # separated_df = sep_data(df_clean, specific_data_dict)
     # for label in separated_df:
     #     print(separated_df[label].describe(percentiles=[0.01, 0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 0.95, 0.99, 0.999, 0.9999]))
@@ -216,24 +229,6 @@ def retrieve(data_dir, time_series):
 def create_train_sets(data_dir='', dataset='', add=False, erase=False, specific_data_type=[],
                       specific_data_amount=[], x_train_path=[], y_train_path='',
                       time_series=0):
-    """
-    Create ML/DL training/testing sets
-        All data sources (data_dir(can be altered using spec data params), and dataset)
-        are cleaned and combined into single dataframe that is returned 
-            Must provide at least one of these data sources
-
-    Params:
-        data_dir: data directory from Guardian Batch run
-        specific_data_type: data type to extract from either dataset or data dir; can be list (ie. [5200, 2200])
-        specific_data_amount: amount of data type to extract from either dataset or data dir; can be list (ie. [100000, 25000])
-        x_train: list of output paths to store data features (only runs in main, and is strictly used for optional viewing/analysis)
-        y_train: singe output path to store data labels (only runs in main, and is strictly used for optional viewing/analysis)
-        dataset: path to csv containing previous output of guardpreprocessing.py
-        time_series: steps to use for each series in time series data (also used as a boolean)
-    Returns:
-        x_df: dataframe of x data
-        y_df: dataframe of labels
-    """
 
     df = pd.DataFrame() # initialize return dataframe
     
@@ -263,7 +258,6 @@ def create_train_sets(data_dir='', dataset='', add=False, erase=False, specific_
         print(f"[INFO] Loading data from dataset...")
         df_complete = pd.read_csv(dataset, delimiter=",")
         df_complete.columns = features_combined
-        print(f"[INFO] Shape of dataset:", df_complete.shape)
         df = pd.concat([df, df_complete]) # concat if this is main process, else just split and return
         if not __name__ == "__main__":
             x_df = df.loc[:, 'speed':'rCov9']
@@ -300,7 +294,7 @@ def create_train_sets(data_dir='', dataset='', add=False, erase=False, specific_
     for col in one_hot_df.columns:
         print(f"{col[0]}: {one_hot_df[col].sum()}")
 
-    df.to_csv("current_dataset.csv", index=False)
+    df.to_csv("current_dataset_8-9.csv", index=False)
     x_num_df.to_csv(x_train_path[0], index=False)
     x_sCov_df.to_csv(x_train_path[1], index=False)
     x_rCov_df.to_csv(x_train_path[2], index=False)

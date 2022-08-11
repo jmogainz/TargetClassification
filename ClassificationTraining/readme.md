@@ -19,7 +19,7 @@ To create a conda environment with all required dependencies installed do the fo
         * This will add custom amounts of data for each specified target class to the current dataset.
     * Subtraction run: `GuardPreprocessing.py -d current_dataset.csv -e -t [class] [class] [class] -amt [# samples] [# samples] [# samples]`
         * This will subtract custom amounts of data for each specified target class from the current dataset.
-    * Time Series run: `GuardPreprocessing.py -dir [data folder path] -t [class] [class] [class] -amt [# samples] [# samples] [# samples] -ts 4`
+    * Time Series run: `GuardPreprocessing.py -dir [data folder path] -a -t [class] [class] [class] -amt [# samples] [# samples] [# samples] -ts 4`
         * This will output a cleaned csv file ready for ML/DL training with a custom amount of data for each specified target class.
         * The data will divided into time series of length 4 seconds.
 4. Run GuardClassification.py -h to see the options.
@@ -34,6 +34,20 @@ To create a conda environment with all required dependencies installed do the fo
         * This is an extensive run that will determine the best hyper params for a given model type.
     * Time Series run: `GuardClassification.py -d current_dataset.csv -m ts -tss 4`
         * This will train a time series model using specified time step count (must match the steps used in GuardPreprocessing.py).
+
+    Model Types
+    * `rf`: Random Forest
+    * `gb`: Gradient Boosting
+    * `knn`: K Nearest Neighbors
+    * `nb`: Naive Bayes
+    * `dense`: Dense Neural Network
+    * `ts`: Time Series Neural Network
+    * `merge`: Merged Neural Network
+
+    Models outputted
+    * `*.h5`: Trained prediction model in Models/
+    * `*.save`: Trained normalization model in Models/
+
 
 > Congratulations! You have successfully built a Guardian Classification Model.
 
