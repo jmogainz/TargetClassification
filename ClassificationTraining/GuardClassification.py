@@ -299,7 +299,7 @@ def trainer(train, dev):
                    epochs=1000, batch_size=128, callbacks=[es, es_2])
 
     if model_type == 'ts':
-        model = time_series_model(ts_steps, 43) 
+        model = time_series_model(ts_steps, 43, 6) 
         opt = Adam(learning_rate=0.001)
         es = EarlyStopping(monitor='val_accuracy', mode='max', patience=20)
         es_2 = EarlyStopping(monitor='val_loss', mode='min', patience=20)

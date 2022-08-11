@@ -199,17 +199,17 @@ def merge_model():
 
     return model3
 
-def time_series_model(time_steps, features):
+def time_series_model(time_steps, features, classes):
     input = Input(shape=(time_steps, features))
 
     hidden1 = LSTM(units=40, return_sequences=True)(input)
     hidden2 = Dropout(0.2)(hidden1)
-    hidden3 = LSTM(units=32, return_sequences=True)(hidden2)
+    hidden3 = LSTM(units=32)(hidden2)
     hidden4 = Dropout(0.2)(hidden3)
     hidden5 = Dense(units=24, activation='relu')(hidden4)
     hidden6 = Dense(units=16, activation='relu')(hidden5)
     
-    output = Dense(units=6, activation='softmax')(hidden6)
+    output = Dense(units=classes, activation='softmax')(hidden6)
 
     model = Model(inputs=input, outputs=output)
 
