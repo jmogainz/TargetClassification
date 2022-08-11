@@ -4,7 +4,6 @@
 
 call conda create -n tf_gpu python=3.9.12 tensorflow-gpu -y
 call conda activate tf_gpu
-call conda install -c anaconda tensorflow-gpu -y
 call conda install -c conda-forge pandas -y
 call conda install -c anaconda scikit-learn -y
 call conda install -c conda-forge seaborn -y
