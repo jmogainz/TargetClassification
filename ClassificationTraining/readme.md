@@ -39,7 +39,6 @@ To create a conda environment with all required dependencies installed do the fo
     * `rf`: Random Forest
     * `gb`: Gradient Boosting
     * `knn`: K Nearest Neighbors
-    * `nb`: Naive Bayes
     * `dense`: Dense Neural Network
     * `ts`: Time Series Neural Network
     * `merge`: Merged Neural Network

@@ -151,6 +151,9 @@ def time_series_split(x_df, y_df, train_size, ts_steps):
         separated_x_df_test[label] = x_df[starting_index+train_class_size:ending_index]
         separated_y_df_test[label] = y_df[starting_index+train_class_size:ending_index]
 
+    # release dataframes
+    del separated_y_df, x_df, y_df
+
     x_train = pd.concat(separated_x_df_train, ignore_index=True)
     x_test = pd.concat(separated_x_df_test, ignore_index=True)
     y_train = pd.concat(separated_y_df_train, ignore_index=True)
@@ -294,11 +297,11 @@ def create_train_sets(data_dir='', dataset='', add=False, erase=False, specific_
     for col in one_hot_df.columns:
         print(f"{col[0]}: {one_hot_df[col].sum()}")
 
-    df.to_csv("current_dataset_8-9.csv", index=False)
-    x_num_df.to_csv(x_train_path[0], index=False)
-    x_sCov_df.to_csv(x_train_path[1], index=False)
-    x_rCov_df.to_csv(x_train_path[2], index=False)
-    y_df.to_csv(y_train_path, index=False)
+    df.to_csv("current_dataset.csv", index=False)
+    # x_num_df.to_csv(x_train_path[0], index=False)
+    # x_sCov_df.to_csv(x_train_path[1], index=False)
+    # x_rCov_df.to_csv(x_train_path[2], index=False)
+    # y_df.to_csv(y_train_path, index=False)
 
 
 def main():

@@ -41,7 +41,7 @@ def parse_args_classification():
     ap.add_argument("-d", "--dataset", type=str, required=True,
         help="path to input dataset from guardian")
     ap.add_argument("-m", "--model", type=str, default="dense",
-        help="type of model to train (merge, dense, knn, gb, rf, nb, ts)")
+        help="type of model to train (merge, dense, knn, gb, rf, ts)")
     ap.add_argument("-lm", "--load_model", type=str, default="",
         help="path to load model from")
     ap.add_argument("-ls", "--load_scaler", type=str, default="",
